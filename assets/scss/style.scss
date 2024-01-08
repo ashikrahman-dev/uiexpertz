@@ -57,6 +57,9 @@ body {
 .text-clr-gray5 {
   color: var(--gray-5);
 }
+.text-clr-navy-blue2 {
+  color: var(--nevi-blue2);
+}
 
 // BG color
 .bg-clr-neviBlue {
@@ -464,64 +467,173 @@ body {
   // card slider
 
   
-.card-wrapper {
-  position: relative;
+// .card-wrapper {
+//   position: relative;
   
-  .card {
-    width: 70%;
-    max-width: 300px;
-    position: absolute;
-    top: -200px;
-    left: 20%;
-    display: block;
-    transition: transform .5s ease;  
-    // transform-origin: bottom center;
-    background-color: transparent !important;
-    border: 0;
-    cursor: pointer;
-  }
+//   .card {
+//     width: 70%;
+//     max-width: 300px;
+//     position: absolute;
+//     top: -200px;
+//     left: 20%;
+//     display: block;
+//     transition: transform .5s ease;  
+//     // transform-origin: bottom center;
+//     background-color: transparent !important;
+//     border: 0;
+//     cursor: pointer;
+//   }
   
-  .card.polaroid .card-bg {
-    padding-top: 90%;
+//   .card.polaroid .card-bg {
+//     padding-top: 90%;
  
-  }
+//   }
   
-  .card-bg {
-    padding-top: 130%;
-    position: relative;
-  }
+//   .card-bg {
+//     padding-top: 130%;
+//     position: relative;
+//   }
   
-  .card-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
+//   .card-img {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//   }
   
-  .card-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 22px;
-  }
+//   .card-img img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     border-radius: 22px;
+//   }
   
-  .polaroid .card-img img {
-    border-radius: 22px
-  }
+//   .polaroid .card-img img {
+//     border-radius: 22px
+//   }
   
-  .left-card {
-    transform: rotate(-15deg);
-  }
+//   .left-card {
+//     transform: rotate(-15deg);
+//   }
   
-  .right-card {
-    transform: rotate(15deg);
-  }
+//   .right-card {
+//     transform: rotate(15deg);
+//   }
   
-  .card.active {
-    transform: rotate(0);
-  }
+//   .card.active {
+//     transform: rotate(0);
+//   }
+// }
+
+
+
+
+
+.carousel {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: space-around;
 }
+.carousel__list {
+	display: flex;
+	list-style: none;
+	position: relative;
+	justify-content: center;
+  right: 150px;
+    top: -150px;
+}
+.carousel__item {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 31vw;
+  height: 365px;
+	max-width: 31vw;
+	aspect-ratio: 1.77/1;
+	border-radius: 20px;
+	position: absolute;
+	background-color: BLACK;
+	transition: all 0.25s ease-in-out;
+}
+.carousel__item:hover {
+	transition: all 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 1000px) {
+	.carousel__item {
+		width: calc(100vw - 10rem);
+	}
+}
+@media screen and (max-width: 768px) {
+	.carousel__item {
+		width: calc(100vw - 2rem);
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+.carousel__item:nth-child(1) {
+	background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item:nth-child(2) {
+	background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item:nth-child(3) {
+	background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item:nth-child(4) {
+	background-image: url(https://i.postimg.cc/Wb0T56jx/Rectangle-17624.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item:nth-child(5) {
+	background-image: url(https://i.postimg.cc/9MYpQkjy/case-studies-img.png);
+	background-position: center;
+	background-size: cover;
+}
+.carousel__item[data-pos="0"] {
+	z-index: 5;
+}
+
+.carousel__item[data-pos="-1"],
+.carousel__item[data-pos="1"] {
+	filter: brightness(50%);
+}
+.carousel__item[data-pos="-1"] {
+	transform: translateX(-15%) scale(0.9);
+	z-index: 4;
+}
+.carousel__item[data-pos="1"] {
+	transform: translateX(15%) scale(0.9);
+	z-index: 4;
+}
+.carousel__item[data-pos="-2"],
+.carousel__item[data-pos="2"] {
+	filter: brightness(20%);
+}
+.carousel__item[data-pos="-2"] {
+	transform: translateX(-25%) scale(0.8);
+	z-index: 3;
+}
+.carousel__item[data-pos="2"] {
+	transform: translateX(25%) scale(0.8);
+	z-index: 3;
+}
+
+#particles-js {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
 
 /* Cards aniamtion */
 .card.animate-leave {
@@ -649,60 +761,28 @@ body {
 /* banner  - END*/
 
 .tabSliderWrap {
-  .splide {
-    width: 250px;
-    height: 120px;
-  }
-  .splide__pagination {
-    display: none;
-  }
+
   .splide__slide {
     display: flex;
     align-items: center;
     justify-content: end !important;
+
+    div {
+      color: hsla(0, 0%, 100%, 0.4);
+      transition: all 150ms ease-in-out;
+    }
+
     &.is-active {
       div {
-        background: var(
-          --Diamond-CTA,
-          linear-gradient(
-              to bottom right,
-              #f1ff48 0%,
-              #f6faca 16%,
-              #d7a4e4 32%,
-              #c5c0ff 50%
-            )
-            bottom right / 50% 50% no-repeat,
-          linear-gradient(
-              to bottom left,
-              #f1ff48 0%,
-              #f6faca 16%,
-              #d7a4e4 32%,
-              #c5c0ff 50%
-            )
-            bottom left / 50% 50% no-repeat,
-          linear-gradient(
-              to top left,
-              #f1ff48 0%,
-              #f6faca 16%,
-              #d7a4e4 32%,
-              #c5c0ff 50%
-            )
-            top left / 50% 50% no-repeat,
-          linear-gradient(
-              to top right,
-              #f1ff48 0%,
-              #f6faca 16%,
-              #d7a4e4 32%,
-              #c5c0ff 50%
-            )
-            top right / 50% 50% no-repeat
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         font-size: 36px !important;
         font-weight: 500;
         line-height: 52px;
+        transition: all 150ms ease-in-out;
+
+        background: linear-gradient(157deg, #F1FF48 -6.07%, #F6FACA 20.83%, #D7A4E4 36.81%, #C5C0FF 50.83%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
   }
@@ -711,28 +791,177 @@ body {
     &.splide__arrow--prev {
       position: absolute;
       left: calc(100% + 20px);
-      top: 44%;
+      top: 29%;
     }
     &.splide__arrow--next {
       position: absolute;
       left: calc(100% + 20px);
-      top: 60%;
+      top: 46%;
     }
   }
 }
 
 
+/** ==================================
+* Cost snapshot section style -/Start
+====================================*/
+
+.cost-snapshot  {
+  padding-block: 10px;
+
+  .pricing-section-bg-shape {
+    bottom: 180px;
+    left: 115px;
+
+    animation: pricingBgShape 4.5s ease infinite;
+    @keyframes pricingBgShape {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(25px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+  }
+
+  .pricing-lets-talk-btn {
+    margin-top: 60px;
+  }
+
+  .pricing-table-wrapper {
+
+    .pricing-table-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 8px;
+    }
+
+    .single-pricing-table {
+      padding: 50px;
+      border-radius: 36px;
+
+      &:hover {
+        .single-pricing-plan-icon {
+          animation-play-state: running;
+        }
+      }
 
 
 
+      .single-pricing-plan-icon {
+        animation: planIcon 1.5s ease infinite;
+        animation-play-state: paused;
 
+        @keyframes planIcon {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-15px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
 
+        }
+      }
 
+      .plan-price {
+        margin-top: 27px;
+        p {
+          font-size: 24px;
+          line-height: 1.41em;
+          margin-bottom: 10px;
+        }
+        h3 {
+          font-size: 36px;
+          line-height: 1.27em;
+        }
+      }
 
+      .pricing-plan-service-list {
+        ul {
+          gap: 8px;
+          margin-top: 20px;
+          li {
+            gap: 10px;
+            font-size: 18px;
+            line-height: 1.55em;
+          }
+        }
+      }
 
-.splide__arrow:disabled {
-  opacity: 1 !important;
+    }
+  }
+
+  .common-btn {
+    height: 80px;
+    padding: 10px 50px !important;
+    
+      svg * {
+        fill: var(--nevi-blue);
+      }
+
+    &::after {
+      background-color: var(--primary) !important;
+    }
+    &:hover {
+      color: #fff !important;
+      svg {
+        transform: rotate(45deg);
+      }
+      svg * {
+        fill: #ffffff !important;
+      }
+      &::after {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        border-radius: 100px;
+      }
+    }
+  }
 }
+
+
+// .pricing-cursor-hover-wrap {
+//   position: relative;
+//   width: 132px;
+//   height: 132px;
+//   background: linear-gradient(153deg, #F1FF48 -14.76%, #F6FACA 20.59%, #D7A4E4 41.58%, #C5C0FF 60%);
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-family: "Sharp Grotesk Medium 25";
+//   .cursor-text {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     p {
+//       margin-bottom: 0;
+//       font-size: 12px;
+//       text-transform: uppercase;
+//     }
+//     span {
+//       position: absolute;
+//       left: 50%;
+//       font-size: 12px;
+//       font-family: "Sharp Grotesk Medium 25";
+//       transform-origin: 0 66px;
+//     }
+//   }
+// }
+/** ==================================
+* Cost snapshot section style -/End
+====================================*/
+
+
+
 
 /* Initially hide all content items */
 .tab-content-item {
@@ -957,7 +1186,7 @@ body {
                 width: 100%;
                 max-height: 768px;
                 height: 100%;
-                padding: 50px;
+                padding: 40px;
 
                 &.invention-main-slide-bg-1 {
                     border-radius: 62px;
