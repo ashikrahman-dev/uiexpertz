@@ -21,15 +21,6 @@ $('.commonBtn').hover(
 
 // Get all tab items and content items
 $(document).ready(function() {
-    function syncTabs() {
-        var activeTabIndex = $('.splide__list .splide__slide.active').index();
-        $('.tab-content .tab-content-item').removeClass('d-block');
-        $('.tab-content .tab-content-item').eq(activeTabIndex).addClass('d-block');
-      }
-  
-      // Synchronize on page load
-      syncTabs();
-
 
       // custom accordion
     $(function () {
@@ -54,8 +45,8 @@ $(document).ready(function() {
 	// $('.card-wrapper .card').last().addClass('active');
 	// $('.card-wrapper .card').last().prev().addClass('next');
   // // Autoplay interval 
-	// var interval = 5000;
-	// var myInt = setInterval(function () {
+	// let interval = 5000;
+	// let myInt = setInterval(function () {
 	// 							$('.card.active').trigger('click');
 	// 			      }, interval);
   // // Clickable toggle
@@ -93,8 +84,8 @@ const carouselItems = document.querySelectorAll(".carousel__item");
 const elems = Array.from(carouselItems);
 let intervalId;
 carouselList.addEventListener("click", function (event) {
-	var newActive = event.target;
-	var isItem = newActive.closest(".carousel__item");
+	let newActive = event.target;
+	let isItem = newActive.closest(".carousel__item");
 
 	if (!isItem || newActive.classList.contains("carousel__item_active")) {
 		return;
@@ -125,7 +116,7 @@ function update(newActive) {
 	current.classList.remove("carousel__item_active");
 
 	[current, prev, next, first, last].forEach(function (item) {
-		var itemPos = item.dataset.pos;
+		let itemPos = item.dataset.pos;
 
 		item.dataset.pos = getPos(itemPos, newActivePos);
 	});
@@ -285,54 +276,81 @@ particlesJS("particles-js", {
 // Splide slider activator.
 
 /* =========== Services Two Slider ===========*/
-new Splide("#slider1", {
-    type: "loop",
-    drag: "free",
-    perPage: 3,
-    gap: "1.875rem",
-    direction: "ttb",
-    height: "60rem",
-    arrows: false,
-    pagination: false,
-    focus: "center",
-    autoScroll: {
-        speed: 0.6,
-    },
-}).mount(window.splide.Extensions);
+//Services slider 1
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#slider1');
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type: "loop",
+        drag: "free",
+        perPage: 3,
+        gap: "1.875rem",
+        direction: "ttb",
+        height: "60rem",
+        arrows: false,
+        pagination: false,
+        focus: "center",
+        autoScroll: {
+            speed: 0.6,
+        },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+
+//Services slider 2
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#slider2');
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type: "loop",
+        drag: "free",
+        perPage: 3,
+        gap: "1.875rem",
+        direction: "ttb",
+        height: "60rem",
+        focus: "center",
+        arrows: false,
+        pagination: false,
+        autoScroll: {
+            speed: -0.6,
+        },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
 
 
-new Splide("#slider2", {
-    type: "loop",
-    drag: "free",
-    perPage: 3,
-    gap: "1.875rem",
-    direction: "ttb",
-    height: "60rem",
-    focus: "center",
-    arrows: false,
-    pagination: false,
-    autoScroll: {
-        speed: -0.6,
-    },
-}).mount(window.splide.Extensions);
+//Text slide - start
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#slider3');
 
-new Splide("#slider3", {
-    type: "loop",
-    drag: "free",
-    perPage: 3,
-    gap: "1.875rem",
-    height: "6rem",
-    focus: "center",
-    autoWidth: true,
-    arrows: false,
-    pagination: false,
-    
-    autoScroll: {
-        speed: 1.3,
-        pauseOnHover: false,
-    },
-}).mount(window.splide.Extensions);
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type: "loop",
+        drag: "free",
+        perPage: 3,
+        gap: "2.5rem",
+        height: "6rem",
+        focus: "center",
+        autoWidth: true,
+        arrows: false,
+        pagination: false,
+        
+        autoScroll: {
+            speed: 1.3,
+            pauseOnHover: true,
+        },
+      });
 
+      splide.mount(window.splide.Extensions);
+  });
+});
+//Text slide - end
 
 
 $(window).on("load", function () {
@@ -350,20 +368,20 @@ $(window).on("load", function () {
 
 
 
-      // Function to handle scroll event
-      function handleScroll() {
-        // Get the scroll position
-        const scrollTop = window.scrollY - 300;
+      // // Function to handle scroll event
+      // function handleScroll() {
+      //   // Get the scroll position
+      //   const scrollTop = window.scrollY - 300;
         
-        // Calculate blur amount based on scroll position
-        const blurValue = (scrollTop / 100) * 2; // You can adjust the factor for blur effect
+      //   // Calculate blur amount based on scroll position
+      //   const blurValue = (scrollTop / 100) * 2; // You can adjust the factor for blur effect
         
-        // Apply blur using GSAP to the banner section
-        gsap.to('.banner', { filter: `blur(${blurValue}px)`, ease: 'power4.out' });
-      }
+      //   // Apply blur using GSAP to the banner section
+      //   gsap.to('.banner', { filter: `blur(${blurValue}px)`, ease: 'power4.out' });
+      // }
     
-      // Listen for scroll event and call the handleScroll function
-      window.addEventListener('scroll', handleScroll);
+      // // Listen for scroll event and call the handleScroll function
+      // window.addEventListener('scroll', handleScroll);
     
 });
 
@@ -446,10 +464,10 @@ $(window).on("load", function () {
 
   
   // animation
-  var scene = document.getElementById('js-scene1');
-  var parallax = new Parallax(scene);
-  // var scene = document.getElementById('js-scene2');
-  // var parallax = new Parallax(scene);
+  // let scene = document.getElementById('js-scene1');
+  // let parallax = new Parallax(scene);
+  // let scene = document.getElementById('js-scene2');
+  // let parallax = new Parallax(scene);
 
 
 // gsap hover animation
@@ -515,39 +533,85 @@ card.forEach((el) => {
 //gsap scroll
 
 
+//Partners Carousel - Start
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#partnersCarousel');
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type   : 'loop',
+        perPage: 5,
+        perMove: 1,
+        arrows: false,
+        pagination: false,
+        height: '27.5rem',
+        drag: 'free',
+        autoScroll: {
+            speed: 0.6,
+            pauseOnHover: false,
+        },
+
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+//Partners Carousel - Start
 
 
-new Splide( '#partnersCarousel', {
-  type   : 'loop',
-  perPage: 5,
-  perMove: 1,
-  arrows: false,
-  pagination: false,
-  height: '27.5rem',
-  drag: 'free',
-  autoScroll: {
-      speed: 0.6,
-      pauseOnHover: false,
-  },
-} ).mount(window.splide.Extensions);
+// FAQ Accordion slider - Start 
+document.addEventListener('DOMContentLoaded', function () {
+  let splideElements = document.querySelectorAll('#faq-accordion');
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+        type   : 'loop',
+        direction: 'ttb',
+        perPage: 3,
+        perMove: 1,
+        arrows: false,
+        pagination: false,
+        drag: 'free',
+        autoHeight: true,
+        height    : '36rem',
+        wheel    : true,
+        autoScroll: {
+            speed: 1,
+            pauseOnHover: true,
+        },
+        
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+// FAQ Accordion slider - End
 
 
-new Splide( '#faq-accordion', {
-  type   : 'loop',
-  direction: 'ttb',
-  perPage: 3,
-  perMove: 1,
-  arrows: false,
-  pagination: false,
-  drag: 'free',
-  autoHeight: true,
-  height    : '36rem',
-  wheel    : true,
-  autoScroll: {
-      speed: 1,
-      pauseOnHover: true,
-  },
-} ).mount(window.splide.Extensions);
+// Mission & Vision slider - Start 
+document.addEventListener('DOMContentLoaded', function () {
+    let splideElements = document.querySelectorAll('#missionVisionSlide');
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type   : 'loop',
+            direction: 'ttb',
+            perPage: 1,
+            perMove: 1,
+            padding: '20rem',
+            arrows: false,
+            pagination: false,
+            gap: "1.54rem",
+            autoplay: true,
+            autoHeight: true,
+            height    : '32rem',
+            focus: 'center',
+        });
+
+        splide.mount();
+    });
+});
+// Mission & Vision slider - End
 
 
 //Copyright year print
@@ -637,7 +701,7 @@ function createAnimation() {
 
 
 document.addEventListener( 'DOMContentLoaded', function () {
-  var main = new Splide( '#client_testimonial', {
+  let main = new Splide( '#client_testimonial', {
     type: 'loop',
     perPage: 1,
     perMove: 1,
@@ -652,7 +716,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
     speed: 1200,
   } );
 
-  var thumbnails = new Splide( '#testimonialThumbnails', {
+  let thumbnails = new Splide( '#testimonialThumbnails', {
       type: 'loop',
       perPage: 4,
       gap: '1.875rem',
@@ -710,12 +774,12 @@ document.addEventListener( 'DOMContentLoaded', function () {
 
 
 // Cursor animation.
-// const priceCursorText = document.querySelector(".cursor-text p");
-// priceCursorText.innerHTML = priceCursorText.innerText.split('').map(
-//   (char, i) => `<span style="transform:rotate(${i * 8.3}deg)">${char}</span>`
-// ).join('');
 
 
+// Cursor JS - Start
+
+
+// Cursor JS - End
 
 
 
@@ -800,8 +864,8 @@ gsap.to("#animated-path", {
     trigger: "#trigger",
     start: "50% 60%",
     end: "50% 0%",
-    scrub: true,
-    markers:true,
+    scrub: false,
+    markers:false,
   }
 });
 
