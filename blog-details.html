@@ -62,13 +62,24 @@
                         <a class="navbar-brand" href="#">
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid" />
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <img src="assets/img/hambarger.svg" class="d-none" alt="">
+                            <div class="hamburger">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <div class="ui-menu-link-wrap d-flex align-items-center me-auto">
+                                <a href="index.html" class="ui-menu-link text-decoration-none">Home</a>
+                                <a href="ui-ux-design.html" class="ui-menu-link text-decoration-none">Our services</a>
+                                <a href="case-study.html" class="ui-menu-link text-decoration-none">Case study</a>
+                                <a href="blog.html" class="ui-menu-link text-decoration-none">Blog</a>
+                            </div>
+                            <ul class="navbar-nav ms-auto phn mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link text-white fs-5 me-4" aria-current="page"
                                         href="tel:+88012458368">
@@ -83,7 +94,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="d-flex">
+                            <div class="d-flex letstalkBtn">
                                 <a class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase fw-medium btn-flow btn-flow-fill is-shadow button-effect reverse"
                                     href="#">Let’s talk</a>
                             </div>
@@ -96,13 +107,13 @@
 
 
             <!-- subpage-banner -->
-            <div class="subpage-banner bg-clr-black position-relative">
+            <div class="subpage-banner bg-clr-black position-relative blogshape blog-details-page">
                 <div class="container">
                     <div class="banner-content pb-0">
-                        <div class="row align-items-center gx-5">
+                        <div class="row align-items-center gx-0 gx-lg-4 gx-xl-5">
                             <div class="col-lg-6">
-                                <div class="blog-img pe-lg-5">
-                                    <img src="assets/img/blog-img002.png" alt="blog image" class="img-fluid w-100">
+                                <div class="blog-img pe-0 pe-xl-5">
+                                    <img src="assets/img/blog-img002.webp" alt="blog image" class="img-fluid w-100">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -135,11 +146,11 @@
                         </div>
                     </div>
                     <div class="divider-1"></div>
-                    <div class="post-authore-info pb-5 pt-4">
-                        <div class="row">
+                    <div class="post-authore-info pb-4 pt-4">
+                        <div class="row gy-4">
                             <div class="col-xl-3 col-lg-4 col-sm-6">
                                 <div class="post-info d-flex gap-3 align-items-center">
-                                    <img src="assets/img/authure-img.svg" alt="img" class="img-fluid">
+                                    <img src="assets/img/authure-img.png" alt="img" class="img-fluid">
                                     <div class="authore-info">
                                         <h6 class="ff-sg-semibold-20 fw-semi-bold text-white mb-0">Postsed by</h6>
                                         <p class="fs-4 ff-sg-light-20 text-white mb-0">
@@ -185,8 +196,7 @@
                     </div>
                 </div>
                 <div class="banner-shape">
-                    <img src="assets/img/sub-banner-shape2.svg" alt="shape"
-                        class="img-fluid position-absolute end-0 bottom-0">
+                    <img src="assets/img/award.webp" alt="shape" class="img-fluid ">
                 </div>
             </div>
             <!--/ subpage-banner - end -->
@@ -195,8 +205,8 @@
             <!-- blog-content-wrapper -->
             <div class="blog-content-wrapper py-5 position-relative">
                 <div class="container">
-                    <div class="row py-5">
-                        <div class="col-lg-7">
+                    <div class="row py-lg-5 py-md-4 py-2 flex-lg-row flex-column flex-column-reverse">
+                        <div class="col-lg-7 col-xl-7 ">
                             <div class="blog-details-content pe-lg-5">
 
                                 <h2>
@@ -290,7 +300,7 @@
                                 </p>
 
                                 <div class="inner-img">
-                                    <img src="assets/img/blog-img002.png" alt="" class="img-fluid">
+                                    <img src="assets/img/blog-img002.webp" alt="" class="img-fluid">
                                 </div>
 
                                 <ul>
@@ -311,7 +321,7 @@
                                     </li>
                                 </ul>
 
-                                <div class="inner-box">
+                                <div class="inner-box mb-5 mb-lg-0">
                                     <h3>
                                         On sait depuis longtemps
                                         que travailler avec du texte lisible et contenant du sens
@@ -327,7 +337,7 @@
 
                             </div>
                         </div>
-                        <div class="offset-lg-1 col-lg-4">
+                        <div class="col-lg-5 offset-xxl-1 col-xl-5 col-xxl-4 mb-4 mb-lg-0 ">
                             <div class="sidebar">
                                 <div class="sidebar-right">
                                     <h3>Table items</h3>
@@ -418,50 +428,51 @@
             <!-- Call to action -/End -->
 
 
+
             <!-- Footer section /-Start -->
             <section class="footer-section position-relative overflow-hidden">
                 <div class="container">
                     <div class="footer-top">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="footer-logo">
                                     <a href="index.html">
                                         <img src="assets/img/logo.svg" alt="Footer logo" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="footer-widget">
                                     <h5 class="footer-widget-heading ff-sg-medium-20 text-clr-primary fs-5">
                                         Quick Links
                                     </h5>
                                     <nav class="footer-widget-menu">
                                         <ul class="d-flex flex-column">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Work</a></li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="ui-ux-design.html">Work</a></li>
+                                            <li><a href="contact-us.html">Contact</a></li>
                                             <li><a href="#">Career</a></li>
-                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="footer-widget">
                                     <h5 class="footer-widget-heading ff-sg-medium-20 text-clr-primary fs-5">
                                         Services
                                     </h5>
                                     <nav class="footer-widget-menu">
                                         <ul class="d-flex flex-column">
-                                            <li><a href="#">Ui Ux Design</a></li>
-                                            <li><a href="#">Wordpress development</a></li>
-                                            <li><a href="#">Web maintainance</a></li>
+                                            <li><a href="ui-ux-design.html">Ui Ux Design</a></li>
+                                            <li><a href="wordpress-development.html">Wordpress development</a></li>
+                                            <li><a href="webmaintainance.html">Web maintainance</a></li>
                                             <li><a href="#">Hosting</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="footer-widget">
                                     <h5 class="footer-widget-heading ff-sg-medium-20 text-clr-primary fs-5">
                                         Contact info
@@ -480,9 +491,10 @@
                         </div>
                     </div>
                     <div class="footer-middle-social-media">
-                        <div class="footer-social-media-col-row d-flex ">
-                            <div class="footer-social-media-col ">
-                                <div class="social-media-icon-wrap d-flex">
+                        <div class="footer-social-media-col-row d-flex flex-lg-nowrap flex-wrap">
+                            <div class="footer-social-media-col w-100">
+                                <div
+                                    class="social-media-icon-wrap d-flex justify-content-lg-start justify-content-center">
 
                                     <a href="#" class="sm-single-icon d-flex justify-content-center align-items-center">
                                         <span>
@@ -676,14 +688,32 @@
                             Want to Say hi?
                         </div>
                     </div>
-                    <div class="footer-copyright ff-sg-book-20 text-center">
-                        Copyright © <span id="year"></span> | UiExpertz | All Rights Reserved
+                    <div class="footer-bottom d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                        <div class="footer-copyright ff-sg-book-20 text-center">
+                            Copyright © <span id="year"></span> | UiExpertz | All Rights Reserved
+                        </div>
+                        <div class="d-flex align-items-center gap-2 footer-bottom-menu-item">
+                            <div class="footer-dot"> </div>
+                            <a href="#" class="footer-bottom-link text-decoration-none">Terms of condition</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 footer-bottom-menu-item">
+                            <div class="footer-dot"> </div>
+                            <a href="#" class="footer-bottom-link text-decoration-none">Privacy policy</a>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-bg-shape position-absolute"></div>
                 <div class="footer-bg-shape2 position-absolute"></div>
             </section>
             <!-- Footer section /-Start -->
+
+
+ 
+
+    <div class="relative z-10 d-none d-md-block">
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+    </div>
 
 
         </div>

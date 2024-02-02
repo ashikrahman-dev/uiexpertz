@@ -61,13 +61,24 @@
                         <a class="navbar-brand" href="#">
                             <img src="assets/img/logo.svg" alt="logo" class="img-fluid" />
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                           <img src="assets/img/hambarger.svg" class="d-none" alt="">
+                           <div class="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <div class="ui-menu-link-wrap d-flex align-items-center me-auto">
+                                <a href="index.html" class="ui-menu-link text-decoration-none">Home</a>
+                                <a href="ui-ux-design.html" class="ui-menu-link text-decoration-none">Our services</a>
+                                <a href="case-study.html" class="ui-menu-link text-decoration-none">Case study</a>
+                                <a href="blog.html" class="ui-menu-link text-decoration-none">Blog</a>
+                            </div>
+                            <ul class="navbar-nav ms-auto phn mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link text-white fs-5 me-4" aria-current="page"
                                         href="tel:+88012458368">
@@ -82,7 +93,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <div class="d-flex">
+                            <div class="d-flex letstalkBtn">
                                 <a class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase fw-medium btn-flow btn-flow-fill is-shadow button-effect reverse"
                                     href="#">Let’s talk</a>
                             </div>
@@ -94,13 +105,13 @@
 
             <!--banner -->
             <section class="banner overflow-hidden" id="js-scene1">
-                <div class="banner-shape">
+                <div class="banner-shape d-md-block d-none">
                     <div class="view-all items__inner">
                         <div class="items__layer horse layer" data-depth=".2">
                             <div class="items__item">
                                 <div class="d-flex align-items-center gap-3 moving-image">
                                     <div class="mainRight">
-                                        <img src="assets/img/bannerImg.png" class="img-fluid" alt="">
+                                        <img src="assets/img/bannerImg.webp" class="img-fluid" alt="">
                                         <div class="circle">
 
                                             <div class="icon-block">
@@ -135,7 +146,7 @@
                                     <img src="assets/img/btnarrow.svg" class="icon-scale is-2" />
                                 </a>
                             </div>
-                            <div class="banner-side-content d-flex align-items-start gap-4">
+                            <div class="banner-side-content d-flex align-items-start gap-md-4 gap-2 flex-wrap">
                                 <h3 class="text-white fs-90 ff-sg-thin-25">5k+</h3>
                                 <div class="top-notch-content">
                                     <p class="text-white fs-22 ff-sg-book-20">
@@ -145,87 +156,12 @@
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <!-- <div class="slider__column splide" id="bannerSlider" >
-                    <div class="splide__track">
-                       <ul class="splide__list" style="height: 500px;">
-                          <li class="splide__slide"><img src="https://source.unsplash.com/1920x1280/?animal" alt="Slider"></li>
-                          <li class="splide__slide"><img src="https://source.unsplash.com/1920x1280/?nature" alt="Slider"></li>
-                          <li class="splide__slide"><img src="https://source.unsplash.com/1920x1280/?people" alt="Slider"></li>
-                          <li class="splide__slide"><img src="https://source.unsplash.com/1920x1280/?flower" alt="Slider"></li>
-                          <li class="splide__slide"><img src="https://source.unsplash.com/1920x1280/?travel" alt="Slider"></li>
-                          <li class="splide__slide"><img src="https://source.unsplash.com/1920x1280/?fruits" alt="Slider"></li>
-                       </ul>
-                    </div>
-                 </div> -->
-                            <!-- <div class="card-wrapper">
 
-                                <div class="card left-card">
-                                    <div class="card-bg">
-                                        <div class="card-img">
-                                            <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card right-card">
-                                    <div class="card-bg">
-                                        <div class="card-img">
-                                            <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card left-card">
-                                    <div class="card-bg">
-                                        <div class="card-img">
-                                            <img src="assets/img/case-studies-img.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card right-card">
-                                    <div class="card-bg">
-                                        <div class="card-img">
-                                            <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card left-card">
-                                    <div class="card-bg">
-                                        <div class="card-img">
-                                            <img src="assets/img/case-studies-img.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card right-card">
-                                    <div class="card-bg">
-                                        <div class="card-img">
-                                            <img src="assets/img/3d-slide-img1.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card left-card">
-                                    <div class="card-bg">
-                                        <div class="card-img">
-                                            <img src="assets/img/3d-slide-img2.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card right-card">
-                                    <div class="card-bg">
-                                        <div class="card-img">
-                                            <img src="assets/img/case-studies-img.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div> -->
-
-                            <div class="desktop-wrapper">
+                            <div class="mobile-banner-img d-md-none d-block text-center">
+                                <img src="assets/img/mobile-banner-img.png" class="img-fluid" alt="">
+                            </div>
+                            
+                            <div class="desktop-wrapper d-md-block d-none">
                                 <div class="carousel reflect">
                                     <ul class="carousel__list" data-aos="fade-up" data-aos-duration="1000"
                                         data-aos-easing="ease">
@@ -249,8 +185,7 @@
                 <div class="container">
                     <div class="section-heading">
                         <h2 class="spl-title text-center ff-sg-thin-25">
-                            Our inventi<span class="position-relative">o<img src="assets/img/star.svg" alt="icon"
-                                    class="star-icon position-absolute end-0 img-fluid" /></span>ns
+                            Our inventi<span class="heading-inner-star-shape">o</span>ns
                         </h2>
                     </div>
                 </div>
@@ -418,7 +353,7 @@
                         </div>
                         <div class="col-lg-8">
                             <div class="d-flex align-items-center services-item-two-column-wrap overflow-hidden">
-                                <div class="services-item-left-column w-100">
+                                <div class="services-item-left-column w-100  d-sm-block d-none">
                                     <div class="first-slider-wrapper">
                                         <div class="splide" id="slider1" role="group"
                                             aria-label="Splide Basic HTML Example">
@@ -514,7 +449,7 @@
             <!-- Services area -/End -->
 
             <!-- case-studies -->
-            <div class="relative z-10">
+            <div class="relative z-10 d-none d-md-block">
                 <div class="cursor"></div>
                 <div class="cursor-follower"></div>
             </div>
@@ -541,7 +476,7 @@
                                 data-tilt-max="0.25" data-tilt-speed="400" data-tilt-perspective="50">
                                     <a href="/" class="img-container">
                                         <!-- <img class="rounded object-cover w-full" src="https://images.unsplash.com/photo-1620439032938-aadc7c683c8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8eEh4WVRNSExnT2N8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt=""> -->
-                                        <img src="assets/img/case-studies-img.png" alt="img" class="img-fluid  w-full">
+                                        <img src="assets/img/case-studies-img.webp" alt="img" class="img-fluid  w-full">
                                     </a>
                                 </div>
 
@@ -641,11 +576,6 @@
                                             <img src="assets/img/partner-logo-1.svg" alt="Partners Logo"
                                                 class="img-fluid">
                                         </div>
-                                        <div
-                                            class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
-                                            <img src="assets/img/partner-logo-2.svg" alt="Partners Logo"
-                                                class="img-fluid">
-                                        </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
@@ -653,11 +583,6 @@
                                         <div
                                             class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
                                             <img src="assets/img/partner-logo-2.svg" alt="Partners Logo"
-                                                class="img-fluid">
-                                        </div>
-                                        <div
-                                            class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
-                                            <img src="assets/img/partner-logo-3.svg" alt="Partners Logo"
                                                 class="img-fluid">
                                         </div>
                                     </div>
@@ -667,11 +592,6 @@
                                         <div
                                             class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
                                             <img src="assets/img/partner-logo-5.svg" alt="Partners Logo"
-                                                class="img-fluid">
-                                        </div>
-                                        <div
-                                            class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
-                                            <img src="assets/img/partner-logo-7.svg" alt="Partners Logo"
                                                 class="img-fluid">
                                         </div>
                                     </div>
@@ -683,11 +603,6 @@
                                             <img src="assets/img/partner-logo-1.svg" alt="Partners Logo"
                                                 class="img-fluid">
                                         </div>
-                                        <div
-                                            class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
-                                            <img src="assets/img/partner-logo-4.svg" alt="Partners Logo"
-                                                class="img-fluid">
-                                        </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
@@ -695,11 +610,6 @@
                                         <div
                                             class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
                                             <img src="assets/img/partner-logo-6.svg" alt="Partners Logo"
-                                                class="img-fluid">
-                                        </div>
-                                        <div
-                                            class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
-                                            <img src="assets/img/partner-logo-2.svg" alt="Partners Logo"
                                                 class="img-fluid">
                                         </div>
                                     </div>
@@ -711,8 +621,12 @@
                                             <img src="assets/img/partner-logo-7.svg" alt="Partners Logo"
                                                 class="img-fluid">
                                         </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="d-flex flex-column justify-content-evenly h-100">
                                         <div
-                                            class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
+                                            class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
                                             <img src="assets/img/partner-logo-3.svg" alt="Partners Logo"
                                                 class="img-fluid">
                                         </div>
@@ -723,11 +637,6 @@
                                         <div
                                             class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right carousel-border">
                                             <img src="assets/img/partner-logo-3.svg" alt="Partners Logo"
-                                                class="img-fluid">
-                                        </div>
-                                        <div
-                                            class="partners-carousel-item d-flex align-items-center justify-content-center h-100 carousel-border-right">
-                                            <img src="assets/img/partner-logo-5.svg" alt="Partners Logo"
                                                 class="img-fluid">
                                         </div>
                                     </div>
@@ -742,7 +651,7 @@
             <!-- cost snapshot -->
             <section class="cost-snapshot section-padding-140 bg-clr-neviBlue position-relative">
                 <div class="pricing-section-bg-shape position-absolute">
-                    <img src="assets/img/pricing-section-bg-shape.svg" alt="shape" class="img-fluid">
+                    <img src="assets/img/pricesectionshape.webp" alt="shape" class="img-fluid">
                 </div>
                 <div class="container">
                     <div class="row align-items-center">
@@ -4348,7 +4257,7 @@
                                     What say our client’s
                                 </h2>
                                 <div class="">
-                                    <div class="svwwrap d-flex align-items-start gap-4">
+                                    <div class="svwwrap d-flex align-items-start gap-sm-4 gap-1">
                                         <div class="svg1">
                                             <div class="svg-section svg-icon">
                                                 <div id="trigger"></div>
@@ -4390,7 +4299,7 @@
 
                             <div class="">
                                 <div class="splide" id="client_testimonial" aria-label="Custom Arrows Example">
-
+                                    <ul class="splide__pagination"></ul>
                                     <div class="splide__track">
                                         <ul class="splide__list">
                                             <li class="splide__slide">
@@ -4689,7 +4598,9 @@
                                                 </div>
                                             </li>
                                         </ul>
+                                    
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -4928,7 +4839,7 @@
             <!-- FAQ section -/ Start  -->
             <section class="faq-section bg-gray-gradient section-padding-140 faq">
                 <div class="container">
-                    <div class="row align-items-start">
+                    <div class="row align-items-start flex-lg-row flex-column flex-column-reverse">
                         <div class="col-lg-6">
 
                             <div class="faq-accordion-sec-wrap">
@@ -5060,7 +4971,7 @@
                             </div>
 
                         </div>
-                        <div class="col-lg-5 offset-lg-1">
+                        <div class="col-lg-5 offset-lg-1 mb-lg-0 mb-5">
                             <div class="faq-section-title">
                                 <h2 class="ff-sg-semibold-25 fs-78 text-clr-gray1 split-word">
                                     Most asked <span class="text-clr-gray1">questions</span>
@@ -5071,7 +4982,7 @@
                 </div>
                 
                 <div class="faqshape d-inline-block ">
-                    <img src="assets/img/award.svg" class="img-fluid" alt="" />
+                    <img src="assets/img/award.webp" class="img-fluid" alt="" />
                 </div>
             </section>
             <!-- FAQ section -/ End -->
@@ -5117,45 +5028,45 @@
                 <div class="container">
                     <div class="footer-top">
                         <div class="row">
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="footer-logo">
                                     <a href="index.html">
                                         <img src="assets/img/logo.svg" alt="Footer logo" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="footer-widget">
                                     <h5 class="footer-widget-heading ff-sg-medium-20 text-clr-primary fs-5">
                                         Quick Links
                                     </h5>
                                     <nav class="footer-widget-menu">
                                         <ul class="d-flex flex-column">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Work</a></li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="ui-ux-design.html">Work</a></li>
+                                            <li><a href="contact-us.html">Contact</a></li>
                                             <li><a href="#">Career</a></li>
-                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="footer-widget">
                                     <h5 class="footer-widget-heading ff-sg-medium-20 text-clr-primary fs-5">
                                         Services
                                     </h5>
                                     <nav class="footer-widget-menu">
                                         <ul class="d-flex flex-column">
-                                            <li><a href="#">Ui Ux Design</a></li>
-                                            <li><a href="#">Wordpress development</a></li>
-                                            <li><a href="#">Web maintainance</a></li>
+                                            <li><a href="ui-ux-design.html">Ui Ux Design</a></li>
+                                            <li><a href="wordpress-development.html">Wordpress development</a></li>
+                                            <li><a href="webmaintainance.html">Web maintainance</a></li>
                                             <li><a href="#">Hosting</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 mb-5 mb-lg-0">
                                 <div class="footer-widget">
                                     <h5 class="footer-widget-heading ff-sg-medium-20 text-clr-primary fs-5">
                                         Contact info
@@ -5174,9 +5085,9 @@
                         </div>
                     </div>
                     <div class="footer-middle-social-media">
-                        <div class="footer-social-media-col-row d-flex ">
-                            <div class="footer-social-media-col ">
-                                <div class="social-media-icon-wrap d-flex">
+                        <div class="footer-social-media-col-row d-flex flex-lg-nowrap flex-wrap">
+                            <div class="footer-social-media-col w-100">
+                                <div class="social-media-icon-wrap d-flex justify-content-lg-start justify-content-center">
 
                                     <a href="#" class="sm-single-icon d-flex justify-content-center align-items-center">
                                         <span>
@@ -5370,8 +5281,18 @@
                             Want to Say hi?
                         </div>
                     </div>
-                    <div class="footer-copyright ff-sg-book-20 text-center">
-                        Copyright © <span id="year"></span> | UiExpertz | All Rights Reserved
+                    <div class="footer-bottom d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                        <div class="footer-copyright ff-sg-book-20 text-center">
+                            Copyright © <span id="year"></span> | UiExpertz | All Rights Reserved
+                        </div>
+                        <div class="d-flex align-items-center gap-2 footer-bottom-menu-item">
+                            <div class="footer-dot"> </div>
+                            <a href="#" class="footer-bottom-link text-decoration-none">Terms of condition</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 footer-bottom-menu-item">
+                            <div class="footer-dot"> </div>
+                            <a href="#" class="footer-bottom-link text-decoration-none">Privacy policy</a>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-bg-shape position-absolute"></div>
@@ -5397,6 +5318,7 @@
 
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
     <script src="assets/js/splide.min.js"></script>
     <script src="assets/js/paralax.js"></script>
     <!-- Script JS -->

@@ -1,3 +1,6 @@
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const lenis = new Lenis({
@@ -38,9 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       element.classList.add("active");
     }, 1000);
-  } else {
-    console.error('Element with class ".fill" not found');
-  }
+  } 
 
   // all gsap code here
 
@@ -146,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scrub: true,
         markers: false,
       },
-      x: 300,
+      x: $(window).width() > 1000 ? "300" : "100",
     });
 
   }
@@ -164,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
         scrub: true,
         markers: false,
       },
-      x: 300,
+      x: $(window).width() > 1000 ? "300" : "100",
     });
 
   }
@@ -343,14 +344,14 @@ if (textscroll) {
 
   let tl12 = gsap.timeline();
   tl12.to("#scrollingText", {
-    x:1000,
-    duration:50,
+    x:$(window).width() > 1400 ? "1000" : $(window).width()< 991  ? "400" : "800" ,
+    duration:10,
     // repeat:-1,
     ease:'linear'
   })
   let tl13 = gsap.timeline();
   tl13.to('#scrollingText', {
-    xPercent: -15,
+    xPercent: $(window).width() > 1300 ? "-15" : $(window).width()< 1100  ? "-25" : "-20" ,
     scrollTrigger:{
       trigger:"#scrollingText",
       scrub:1
@@ -389,7 +390,7 @@ if (textscroll2) {
 
   let tl12 = gsap.timeline();
   tl12.to("#scrollingText2", {
-    x:1000,
+    x:$(window).width() > 1400 ? "1000" : $(window).width()< 991  ? "400" : "800" ,
     duration:50,
     // repeat:-1,
     ease:'linear'
@@ -467,41 +468,7 @@ $(document).ready(function () {
     }
   });
 
-  // $('.card-wrapper .card').last().addClass('active');
-  // $('.card-wrapper .card').last().prev().addClass('next');
-  // // Autoplay interval
-  // let interval = 5000;
-  // let myInt = setInterval(function () {
-  // 							$('.card.active').trigger('click');
-  // 			      }, interval);
-  // // Clickable toggle
-  // $('.card').on('click', function(){
-  // 	clearInterval(myInt);
-  //   // Prevent multiple fast clicks to break the functioning
-  // 	$('.card').css({'pointer-events' : 'none'});
-  // 	$('.card.active').addClass('animate-leave').removeClass('active');
-  // 	$('.card.next').addClass('active').removeClass('next');
-  // 	$('.card-wrapper .card').last().prev().prev().addClass('next');
-  // 	setTimeout( function(){
-  // 		$('.card.animate-leave').addClass('animate-back').removeClass('animate-leave');
-  // 		$('.card-wrapper').prepend( $('.animate-back') );
-  // 	}, 300); // Wait for the animation to end
-  // 	setTimeout( function(){
-  // 		$('.card.animate-back').removeClass('animate-back');
-  // 		$('.card').css({'pointer-events' : 'auto'});
-  // 		clearInterval(myInt);
-  // 		myInt = setInterval(function () {
-  // 			$('.card.active').trigger('click');
-  // 		}, interval);
-  // 	}, 700);
-  // });
 
-  // // Just for fun
-  // $('.polaroid-style').on('click', function(){
-  // 	$('.card').toggleClass('polaroid')
-  // });
-
-  // =============================  CAROUSEL  ============================ //
 
   // Find the element with the target class
   var targetElement1 = document.querySelector(".desktop-wrapper");
@@ -622,75 +589,6 @@ $(document).ready(function () {
     }, index++ * (interval / 3));
   }
 
-  // =============================== Particles =============================== //
-
-  // particlesJS("particles-js", {
-  // 	particles: {
-  // 		number: {
-  // 			value: 400,
-  // 			density: {
-  // 				enable: true,
-  // 				value_area: 2800
-  // 			}
-  // 		},
-  // 		color: {
-  // 			value: "#FFFFFF"
-  // 		},
-  // 		shape: {
-  // 			type: "circle",
-  // 			stroke: {
-  // 				width: 0.5,
-  // 				color: "#152166"
-  // 			},
-  // 			image: {
-  // 				src: "",
-  // 				width: 1,
-  // 				height: 1
-  // 			}
-  // 		},
-  // 		opacity: {
-  // 			value: 1,
-  // 			random: true,
-  // 			anim: {
-  // 				enable: true,
-  // 				speed: 1,
-  // 				opacity_min: 0,
-  // 				sync: false
-  // 			}
-  // 		},
-  // 		size: {
-  // 			value: 2,
-  // 			random: true,
-  // 			anim: {
-  // 				enable: true,
-  // 				speed: 2,
-  // 				size_min: 0,
-  // 				sync: false
-  // 			}
-  // 		},
-  // 		line_linked: {
-  // 			enable: false,
-  // 			distance: 80,
-  // 			color: "#3c2876",
-  // 			opacity: 0,
-  // 			width: 0
-  // 		},
-  // 		move: {
-  // 			enable: true,
-  // 			speed: 0.1,
-  // 			direction: "none",
-  // 			random: true,
-  // 			straight: true,
-  // 			out_mode: "out",
-  // 			bounce: false,
-  // 			attract: {
-  // 				enable: false,
-  // 				rotateX: 1000,
-  // 				rotateY: 2200
-  // 			}
-  // 		}
-  // 	}
-  // });
 });
 
 // Splide slider activator.
@@ -714,6 +612,11 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: 0.6,
       },
+      breakpoints: {
+        776: {
+          height: "45rem",
+        },
+      }
     });
 
     splide.mount(window.splide.Extensions);
@@ -738,6 +641,11 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: -0.6,
       },
+      breakpoints: {
+        776: {
+          height: "45rem",
+        },
+      }
     });
 
     splide.mount(window.splide.Extensions);
@@ -764,6 +672,14 @@ document.addEventListener("DOMContentLoaded", function () {
       autoScroll: {
         speed: 1,
       },
+      breakpoints: {
+        776: {
+          height: "40rem",
+        },
+        600: {
+          height: "35rem",
+        }
+      }
     });
 
     splide.mount(window.splide.Extensions);
@@ -810,47 +726,8 @@ $(window).on("load", function () {
     });
   });
 
-  // // Function to handle scroll event
-  // function handleScroll() {
-  //   // Get the scroll position
-  //   const scrollTop = window.scrollY - 300;
-
-  //   // Calculate blur amount based on scroll position
-  //   const blurValue = (scrollTop / 100) * 2; // You can adjust the factor for blur effect
-
-  //   // Apply blur using GSAP to the banner section
-  //   gsap.to('.banner', { filter: `blur(${blurValue}px)`, ease: 'power4.out' });
-  // }
-
-  // // Listen for scroll event and call the handleScroll function
-  // window.addEventListener('scroll', handleScroll);
 });
 
-// Splide slider activator.
-
-// product slider
-
-// new Splide("#curvedSlider", {
-//     type: "loop",
-//     drag: "free",
-//     perPage: 2,
-//     padding: '10rem',
-//     gap: "4rem",
-//     height: "auto",
-//     arrows: false,
-//     pagination: false,
-//     autoScroll: {
-//         speed: -1,
-//       },
-//     breakpoints: {
-//       991: {
-//         perPage: 2,
-//         gap: "2rem",
-//       },
-//     },
-//   }).mount(window.splide.Extensions);
-
-//partners carousel
 
 // gsap hover animation
 
@@ -905,27 +782,50 @@ card.forEach((el) => {
 //gsap scroll
 
 //Partners Carousel - Start
+//Partners Carousel - Start
+//Partners Carousel - Start
 document.addEventListener("DOMContentLoaded", function () {
   let splideElements = document.querySelectorAll("#partnersCarousel");
 
   splideElements.forEach(function (element) {
     let splide = new Splide(element, {
       type: "loop",
-      perPage: 5,
-      perMove: 1,
       arrows: false,
       pagination: false,
+      padding: "180px",
       height: "27.5rem",
       drag: "free",
+      grid: {
+        rows: 2,
+        cols: 4,
+      },
       autoScroll: {
         speed: 0.6,
         pauseOnHover: false,
       },
+      breakpoints: {
+        991: {
+          padding: "50px",
+          grid: {
+            rows: 2,
+            cols: 2,
+          },
+        },
+        575: {
+          padding: "0px",
+          grid: {
+            rows: 2,
+            cols: 2,
+          },
+        },
+      }
     });
 
     splide.mount(window.splide.Extensions);
   });
 });
+//Partners Carousel - Start
+//Partners Carousel - Start
 //Partners Carousel - Start
 
 // FAQ Accordion slider - Start
@@ -948,6 +848,7 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 1,
         pauseOnHover: true,
       },
+   
     });
 
     splide.mount(window.splide.Extensions);
@@ -994,9 +895,9 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 1,
     perMove: 1,
     gap: "4rem",
-    pagination: false,
-    direction: "ttb",
-    height:$(window).width() > 1300 ? "30rem" : "39rem" , 
+    pagination: $(window).width() > 767 ? "false" : "true",
+    direction: $(window).width() > 767 ? "ttb" : "ltr" ,
+    height:$(window).width() > 1300 ? "32rem" : $(window).width()< 1100  ? "27rem" : "39rem" , 
     autoHeight: true,
     arrows: false,
     cover: true,
@@ -1021,6 +922,16 @@ document.addEventListener("DOMContentLoaded", function () {
       mouse: 4,
       touch: 10,
     },
+    breakpoints: {
+      991: {
+        perPage: 3,
+        padding: "2.75rem",
+      },
+      667: {
+        perPage: 2,
+        padding: "0.75rem",
+      },
+    }
   });
 
   main.sync(thumbnails);
@@ -1084,6 +995,22 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 0.9,
         pauseOnHover: true,
       },
+      breakpoints: {
+        991: {
+          perPage: 2,
+          padding: "0rem",
+        },
+        667: {
+          perPage: 2,
+          padding: "0.75rem",
+          gap: "1rem",
+        },
+        576: {
+          perPage: 1,
+          padding: "3.75rem",
+          gap: "1rem",
+        },
+      }
     });
 
     splide.mount(window.splide.Extensions);
@@ -1135,8 +1062,39 @@ if (targetElement5) {
 }
 
 
+
+
 // animation
-let scene = document.getElementById("js-scene1");
-let parallax = new Parallax(scene);
+const banner = document.querySelector(".banner");
+if (banner) {
+  let scene = document.getElementById("js-scene1");
+  let parallax = new Parallax(scene);
+} 
+
 // let scene = document.getElementById('js-scene2');
 // let parallax = new Parallax(scene);
+
+
+//navbar
+
+
+// hamburger menu
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  if (scrollTop > 100) {
+    $(".navbar").addClass("fixed");
+  } else {
+    $(".navbar").removeClass("fixed");
+  }
+});
+
+$(document).ready(function () {
+
+  $('.hamburger').click(function () {
+    $(this).toggleClass("is-active");
+    $('body').toggleClass('body-active');
+    $('.navbar').toggleClass('hamburger-fixed');
+    $('html').toggleClass('no-js lenis lenis-smooth lenis-scrolling');
+  });
+
+});
