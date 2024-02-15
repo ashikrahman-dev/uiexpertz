@@ -247,7 +247,75 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
-  // Find the element with the target class
+  // subbanner 15-2-24
+  var subbannerarea = document.querySelector(".sub-page-banner-area2");
+
+  // Check if the element was found
+  if (subbannerarea) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const rotatingElement = document.querySelector('.smallSquare');
+  
+    gsap.to(rotatingElement, {
+      rotation: 100,
+      ease: 'none',
+      top: '100px',
+      opacity:'0',
+      scrollTrigger: {
+        trigger: rotatingElement,
+        start: 'top 20%', // Adjust as needed
+        end: 'bottom 20%', // Adjust as needed
+        scrub: true,
+        opacity:'1',
+        top: '0px',
+      },
+    });
+    const rotatingElement2 = document.querySelector('.bigSquare');
+  
+    gsap.to(rotatingElement2, {
+      rotation: 10,
+      ease: 'none',
+      
+      scrollTrigger: {
+        trigger: rotatingElement,
+        start: 'top 20%', // Adjust as needed
+        end: 'bottom 20%', // Adjust as needed
+        scrub: true,
+        top: '400px',
+      },
+    });
+  }
+
+  var targetElement3 = document.querySelector(".titleDownToUp");
+  if (targetElement3) {
+    // First, create your GSAP timeline
+    const tl = gsap.timeline({
+      defaults: {
+        duration: 0.5,
+        ease: "power3.easeOut",
+      },
+    });
+
+    // Define the animation within the timeline
+    tl.fromTo(
+      ".spl-title",
+      { y: "100%", opacity: 0.2 },
+      { y: "0%", opacity: 1 }
+    );
+
+    // Use ScrollTrigger to trigger the animation on scroll
+    ScrollTrigger.create({
+      animation: tl,
+      trigger: ".spl-title",
+      start: "top 80%",
+      end: "bottom 40%",
+      markers: false,
+      scrub: true,
+    });
+  }
+  // subbanner 15-2-24 end
+
+
   var award = document.querySelector(".faq");
 
   // Check if the element was found
