@@ -1291,9 +1291,7 @@ body.body-active {
 .invention-inner-slide-item .scroller[data-animated="true"] .scroller__inner {
   animation-play-state: paused; }
 
-.invention-inner-slide-item:hover
-.scroller[data-animated="true"]
-.scroller__inner {
+.invention-inner-slide-item:hover .scroller[data-animated="true"] .scroller__inner {
   animation-play-state: running; }
 
 @keyframes scroll {
@@ -3679,17 +3677,17 @@ body::-webkit-scrollbar-corner {
 
 .blog-content-wrapper {
   /*=======================
-  - Blog page style - Start
-  =======================*/
+- Blog page style - Start
+=======================*/
   /*
-  * Category slider responsive style
-  */
+* Category slider responsive style
+*/
   /*
-  * Category slider responsive style
-  */
+* Category slider responsive style
+*/
   /*=======================
-  - Blog page style - End
-  =======================*/ }
+- Blog page style - End
+=======================*/ }
   .blog-content-wrapper .blog-details-content h2 {
     color: var(--nevi-blue);
     font-family: "Sharp Grotesk SemiBold 25";
@@ -4214,5 +4212,93 @@ body::-webkit-scrollbar-corner {
 .scrollTextAnimation #scrollingText2 {
   width: 320vw;
   left: -80px; }
+
+/* Webflow text animation style - Start */
+.animated-text-gradient {
+  background: -webkit-linear-gradient(270deg, #F8F8FA 0%, rgba(235, 235, 244, 0) 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 480px !important;
+  top: -0px !important; }
+  @media (max-width: 1199px) {
+    .animated-text-gradient {
+      font-size: 380px !important; } }
+  @media (max-width: 991px) {
+    .animated-text-gradient {
+      font-size: 320px !important; } }
+  @media (max-width: 767px) {
+    .animated-text-gradient {
+      font-size: 280px !important; } }
+  @media (max-width: 575px) {
+    .animated-text-gradient {
+      font-size: 150px !important; } }
+
+.webflow-image-box-wrapper {
+  padding-top: 160px; }
+  @media (max-width: 575px) {
+    .webflow-image-box-wrapper {
+      padding-top: 40px; } }
+  @media (max-width: 991px) {
+    .webflow-image-box-wrapper {
+      padding-top: 60px; } }
+  @media (max-width: 1199px) {
+    .webflow-image-box-wrapper {
+      padding-top: 80px; } }
+  .webflow-image-box-wrapper .row {
+    --bs-gutter-y: 50px; }
+    .webflow-image-box-wrapper .row .col-lg-4:nth-child(2) {
+      margin-top: -112px; }
+      @media (max-width: 1199px) {
+        .webflow-image-box-wrapper .row .col-lg-4:nth-child(2) {
+          margin-top: 50px; } }
+  .webflow-image-box-wrapper .webflow-image-box {
+    transition: all 700ms ease-in-out; }
+    .webflow-image-box-wrapper .webflow-image-box:hover .webflow-image-box-img {
+      animation-play-state: running; }
+    .webflow-image-box-wrapper .webflow-image-box .webflow-image-box-img {
+      padding-bottom: 30px;
+      animation: webflowFeatureImg 1.8s ease infinite;
+      animation-play-state: paused; }
+@keyframes webflowFeatureImg {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(-20px); }
+  100% {
+    transform: translateY(0px); } }
+    .webflow-image-box-wrapper .webflow-image-box h3 {
+      font-size: 28px;
+      line-height: 1.35em;
+      margin-bottom: 20px; }
+
+.webflow-services-area .animated-text-gradient-wrap {
+  top: -18px !important; }
+  @media (max-width: 575px) {
+    .webflow-services-area .animated-text-gradient-wrap {
+      top: -154px !important; } }
+  @media (max-width: 767px) {
+    .webflow-services-area .animated-text-gradient-wrap {
+      top: -100px !important; } }
+  @media (max-width: 991px) {
+    .webflow-services-area .animated-text-gradient-wrap {
+      top: -82px !important; } }
+  @media (max-width: 1199px) {
+    .webflow-services-area .animated-text-gradient-wrap {
+      top: -58px !important; } }
+
+.webflow-services-area-bottom-shape {
+  content: "";
+  left: calc(50% - 381px);
+  bottom: -446px;
+  position: absolute;
+  width: 762px;
+  height: 748px;
+  border-radius: 800px;
+  background: url("../img/webflow-feature-bg-shape.png");
+  backdrop-filter: blur(100px);
+  z-index: -5;
+  opacity: 0.9; }
+
+/* Webflow text animation style -End */
 
 /*# sourceMappingURL=style.css.map */
