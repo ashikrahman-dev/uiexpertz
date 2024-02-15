@@ -5,3 +5,14 @@
   background-position: center;
   background-repeat: no-repeat;
   text-align: center; }
+
+.sopify-success-stories {
+  background: url("../img/shopify-success-stories-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .sopify-success-stories .sopify-success-stories-img {
+    background: url("../img/shopify-success-triangle.png");
+    background-size: 180px;
+    background-position: bottom center;
+    background-repeat: no-repeat; }
