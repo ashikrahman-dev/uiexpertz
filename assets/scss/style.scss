@@ -346,19 +346,19 @@ body {
     padding-left: 60px;
     gap: 40px;
 
-    ul{
-      li{
-        &.dropdownItems{
-          &:hover{
-            .drop-menu{
+    ul {
+      li {
+        &.dropdownItems {
+          &:hover {
+            .drop-menu {
               transition: all 0.3s ease;
               top: 70px;
               opacity: 1;
               visibility: visible;
 
-              a{
-                span{
-                  img{
+              a {
+                span {
+                  img {
                     transform: rotate(180deg);
                   }
                 }
@@ -369,7 +369,7 @@ body {
       }
     }
 
-    .drop-menu{
+    .drop-menu {
       position: absolute;
       background: #242526;
       width: 180px;
@@ -377,7 +377,7 @@ body {
       top: 85px;
       opacity: 0;
       visibility: hidden;
-      box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     }
 
 
@@ -385,6 +385,7 @@ body {
       gap: 20px;
       padding-left: 30px;
     }
+
     @media (max-width: 1200px) {
       gap: 20px;
       padding-left: 30px;
@@ -404,6 +405,7 @@ body {
       @media (max-width: 1200px) {
         font-size: 13px;
       }
+
       @media (max-width: 991px) {
         display: block !important;
         padding-bottom: 20px;
