@@ -349,6 +349,14 @@ body {
     ul {
       li {
         &.dropdownItems {
+          a {
+            span {
+              margin-left: 10px;
+              @media (max-width:1200px) {
+                margin-left: 2px;
+              }
+            }
+          }
           &:hover {
             .drop-menu {
               transition: all 0.3s ease;
@@ -356,11 +364,11 @@ body {
               opacity: 1;
               visibility: visible;
 
-              a {
-                span {
-                  img {
-                    transform: rotate(180deg);
-                  }
+            }
+            a {
+              span {
+                img {
+                  transform: rotate(180deg);
                 }
               }
             }
@@ -2873,6 +2881,7 @@ body.body-active {
     transform: translateX(-40%);
   }
 }
+
 
 // award-winning-area
 
@@ -6802,3 +6811,195 @@ body::-webkit-scrollbar-corner {
 
 
 /* Webflow text animation style -End */
+
+
+
+
+
+
+
+
+
+/* subpage banner2 15-2-24 -start */
+
+
+.common-btn-wrap{
+  .commonBtn {
+    width: 266px;
+    overflow: hidden;
+    position: relative;
+    z-index: 22;
+    cursor: pointer;
+
+    @media (max-width: 776px) {
+      margin: auto !important;
+      padding-top: 40px;
+      width: 237px;
+    }
+
+    @media (max-width: 1500px) {
+      width: 256px;
+
+      .icon-scale {
+        max-width: 70px;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 776px) {
+      width: 256px;
+
+      .icon-scale {
+        max-width: 52px;
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      transition: 0.3s all linear;
+
+      .btn-info {
+        transform: translateX(80px);
+
+        @media (max-width: 1500px) {
+          transform: translateX(70px);
+        }
+
+        @media (max-width: 776px) {
+          transform: translateX(52px);
+        }
+      }
+    }
+
+    .is-1 {
+      transition: 0.3s all ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: 20px;
+      z-index: -22;
+      width: 50px;
+
+      @media (max-width: 1500px) {
+        left: 0;
+      }
+    }
+
+    .class1-for-img1 {
+      visibility: visible;
+      opacity: 1;
+      left: 0;
+      transform: scale(1);
+      width: 80px;
+    }
+
+    .class1-for-img2 {
+      z-index: -22;
+      transform: scale(0.5);
+      transition: 0.3s all ease-in-out;
+    }
+  }
+  .btn-flow {
+    height: 80px;
+    padding: 20px 50px !important;
+    background-color: #5648FF !important;
+    color: #fff !important;
+
+    @media (max-width: 1500px) {
+      height: 70px;
+    }
+
+    @media (max-width: 776px) {
+      height: 52px;
+    }
+
+    &.btn-flow-fill {
+      color: #fff;
+
+      &:hover {
+        background-color: #D4F941 !important;
+        color: #00154C !important;
+      }
+    }
+  }
+}
+
+.sub-page-banner-area2{
+  background-color: #000920;
+  min-height: 750px;
+  padding: 100px 0;
+  overflow: hidden !important;
+
+  @media (max-width:991px) {
+    padding: 200px 0 100px 0;
+  }
+  .smallSquare{
+    position: relative;
+  }
+  .subBannerContent{
+    .banner-pra{
+      font-size: 22px;
+      color: #C1C6D4;
+      padding: 20px 0;
+
+      @media (max-width: 776px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  
+ 
+  &.lowerShape {
+    position: relative !important;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 80%;
+      right: 30%;
+      border-radius: 590px;
+      background: linear-gradient(142deg,
+          #f1ff48 10.51%,
+          #f6faca 25.88%,
+          #5648ff 41.25%,
+          #c5c0ff 58.89%);
+      filter: blur(150px);
+      width: 590px;
+      height: 590px;
+      animation: 16s linear 0s normal forwards infinite gradient;
+    }
+  }
+
+  @keyframes gradient {
+    0% {
+      transform: translateX(-40%);
+    }
+  
+    30% {
+      transform: translateX(80%);
+    }
+  
+    60% {
+      transform: translateX(-40%);
+    }
+  
+    80% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(-40%);
+    }
+  }
+  
+}
+.fs-52{
+  font-size: 52px;
+  line-height: 62px;
+  @media (max-width: 776px) {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+/* subpage banner2 15-2-24 -End */

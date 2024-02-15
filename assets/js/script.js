@@ -247,7 +247,47 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
-  // Find the element with the target class
+  // subbanner 15-2-24
+  var subbannerarea = document.querySelector(".sub-page-banner-area2");
+
+  // Check if the element was found
+  if (subbannerarea) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const rotatingElement = document.querySelector('.smallSquare');
+  
+    gsap.to(rotatingElement, {
+      rotation: 100,
+      ease: 'none',
+      top: '100px',
+      opacity:'0',
+      scrollTrigger: {
+        trigger: rotatingElement,
+        start: 'top 20%', // Adjust as needed
+        end: 'bottom 20%', // Adjust as needed
+        scrub: true,
+        opacity:'1',
+        top: '0px',
+      },
+    });
+    const rotatingElement2 = document.querySelector('.bigSquare');
+  
+    gsap.to(rotatingElement2, {
+      rotation: 10,
+      ease: 'none',
+      
+      scrollTrigger: {
+        trigger: rotatingElement,
+        start: 'top 20%', // Adjust as needed
+        end: 'bottom 20%', // Adjust as needed
+        scrub: true,
+        top: '400px',
+      },
+    });
+  }
+  // subbanner 15-2-24 end
+
+
   var award = document.querySelector(".faq");
 
   // Check if the element was found
