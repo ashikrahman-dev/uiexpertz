@@ -285,6 +285,34 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+
+  var targetElement3 = document.querySelector(".titleDownToUp");
+  if (targetElement3) {
+    // First, create your GSAP timeline
+    const tl = gsap.timeline({
+      defaults: {
+        duration: 0.5,
+        ease: "power3.easeOut",
+      },
+    });
+
+    // Define the animation within the timeline
+    tl.fromTo(
+      ".spl-title",
+      { y: "100%", opacity: 0.2 },
+      { y: "0%", opacity: 1 }
+    );
+
+    // Use ScrollTrigger to trigger the animation on scroll
+    ScrollTrigger.create({
+      animation: tl,
+      trigger: ".spl-title",
+      start: "top 80%",
+      end: "bottom 40%",
+      markers: false,
+      scrub: true,
+    });
+  }
   // subbanner 15-2-24 end
 
 
