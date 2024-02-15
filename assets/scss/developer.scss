@@ -824,8 +824,11 @@
         }
 
         .portfolio-slide-item {
+            max-width: 762px;
+
             img {
                 border-radius: 36px;
+                max-width: 100%;
             }
         }
     }
