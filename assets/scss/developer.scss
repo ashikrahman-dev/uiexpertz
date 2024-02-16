@@ -777,12 +777,17 @@
                 border-right: 0;
             }
 
+            &:nth-child(3) {
+                padding-left: 0;
+            }
+
             &:nth-child(4) {
                 border-right: 0;
             }
 
             &:nth-child(5) {
                 padding-bottom: 0;
+                padding-left: 0;
                 border-bottom: 0;
             }
 
@@ -790,6 +795,58 @@
                 padding-bottom: 0;
                 border-right: 0;
                 border-bottom: 0;
+            }
+
+            &:hover {
+                .services-item-img {
+                    img {
+                        animation-play-state: running;
+                    }
+                }
+            }
+
+            .services-item-img {
+                width: 162px;
+                height: 162px;
+                background: #0D2259;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    animation: spectrumIconAnimation 6s ease-in-out 0s infinite normal none;
+                    animation-play-state: paused;
+
+                    @keyframes spectrumIconAnimation {
+
+                        0%,
+                        100% {
+                            transform: translateY(0);
+                        }
+
+                        10%,
+                        30%,
+                        50%,
+                        70% {
+                            transform: translateY(-5px);
+                        }
+
+                        20%,
+                        40%,
+                        60% {
+                            transform: translateY(5px);
+                        }
+
+                        80% {
+                            transform: translateY(5px);
+                        }
+
+                        90% {
+                            transform: translateY(-5px);
+                        }
+                    }
+                }
             }
 
             .services-item-content {

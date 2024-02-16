@@ -1,7 +1,6 @@
-<svg width="162" height="162" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="162" height="162" rx="81" fill="#0D2259"/>
-<path d="M72 47C72 46.4477 72.4477 46 73 46H91C91.5523 46 92 46.4477 92 47V98H72V47Z" stroke="white" stroke-width="2"/>
-<path d="M42 65C42 63.8954 42.8954 63 44 63H62C63.1046 63 64 63.8954 64 65V99H42V65Z" fill="#D4F941"/>
-<path d="M100 75C100 73.8954 100.895 73 102 73H119C120.105 73 121 73.8954 121 75V99H100V75Z" fill="#5648FF"/>
-<path d="M40 97C40 98.1046 40.8954 99 42 99H121C122.105 99 123 98.1046 123 97H40Z" fill="white"/>
+<svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 13C30 12.4477 30.4477 12 31 12H48C48.5523 12 49 12.4477 49 13V64H30V13Z" stroke="white" stroke-width="2"/>
+<path d="M2 31C2 29.8954 2.89543 29 4 29H21C22.1046 29 23 29.8954 23 31V65H2V31Z" fill="#D4F941"/>
+<path d="M56 41C56 39.8954 56.8954 39 58 39H74C75.1046 39 76 39.8954 76 41V65H56V41Z" fill="#5648FF"/>
+<path d="M0 63C0 64.1046 0.895431 65 2 65H74C75.1046 65 76 64.1046 76 63H0Z" fill="white"/>
 </svg>
