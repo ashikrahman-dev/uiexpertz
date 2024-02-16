@@ -286,6 +286,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  //common-shape animation
+  var commonshape = document.querySelector(".common-rounded-shape");
+
+  // Check if the element was found
+  if (commonshape) {
+    gsap.registerPlugin(ScrollTrigger);
+    const startanimation = document.querySelector('.cta-2-srape');
+  
+    gsap.to(startanimation, {
+      rotation: 60,
+      ease: 'none',
+      
+      scrollTrigger: {
+        trigger: startanimation,
+        start: 'top 80%', // Adjust as needed
+        end: 'bottom 20%', // Adjust as needed
+        scrub: true,
+        // top: '400px',
+      },
+    });
+  }
+
   var targetElement3 = document.querySelector(".titleDownToUp");
   if (targetElement3) {
     // First, create your GSAP timeline

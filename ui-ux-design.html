@@ -71,11 +71,26 @@
                 </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="ui-menu-link-wrap d-flex align-items-center me-auto">
-                        <a href="index.html" class="ui-menu-link text-decoration-none">Home</a>
-                        <a href="ui-ux-design.html" class="ui-menu-link text-decoration-none">Our services</a>
-                        <a href="case-study.html" class="ui-menu-link text-decoration-none">Case study</a>
-                        <a href="blog.html" class="ui-menu-link text-decoration-none">Blog</a>
+                    <div class="ui-menu-link-wrap me-auto">
+                        <ul class="d-flex align-items-center gap-xxl-5 gap-3 list-unstyled m-0  ">
+                            <li><a href="index.html"
+                                    class="ui-menu-link text-decoration-none ff-sg-book-25">Home</a></li>
+                            <li class="dropdownItems"> <a href="ui-ux-design.html"
+                                    class="ui-menu-link text-decoration-none ff-sg-book-25">Our services
+                                    <span><img src="assets/img/dropdownArrow.svg" class="img-fluid"
+                                            alt=""></span></a>
+                                <ul class="drop-menu">
+                                    <li><a href="#">Drop menu 1</a></li>
+                                    <li><a href="#">Drop menu 2</a></li>
+                                    <li><a href="#">Drop menu 3</a></li>
+                                    <li><a href="#">Drop menu 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="case-study.html"
+                                    class="ui-menu-link text-decoration-none ff-sg-book-25">Case study</a></li>
+                            <li><a href="blog.html"
+                                    class="ui-menu-link text-decoration-none ff-sg-book-25">Blog</a></li>
+                        </ul>
                     </div>
                     <ul class="navbar-nav ms-auto phn mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -135,33 +150,62 @@
 
 
             <!-- Sub page banner feature -/start -->
-            <section class="subpage-feature section-padding-140">
+            <div class="feature-service  common-btn-wrap section-padding-140">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="featuresImg">
-                                <img src="assets/img/uiuxfeature.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="featuresContent">
-                               <h2>Craft an experience
-                                for customers, not
-                                just a product!</h2>
-                                <p>Embark on a transformative journey with UIExpertz proficients, crafting unparalleled UI/UX brilliance to seamlessly elevate digital experiences and enhance user interactions effortlessly and innovatively.</p>
-                            </div>
-                        </div>
+                  <div class="row gx-5 align-items-center">
+                    <div class="col-md-6">
+                      <div class="feature-img-bg">
+                        <img
+                          class="img-fluid"
+                          src="./assets/img/uiuxfeature.png"
+                          alt="img"
+                        />
+                      </div>
                     </div>
+                    <div class="col-md-6">
+                      <div class="mt-5">
+                        <h2 class="ff-sg-semibold-25 fs-48 text-clr-neviBlue mb-4">
+                            Craft an experience
+                            for customers, not
+                            just a product!
+                        </h2>
+                        <p class="fs-4">
+                            Embark on a transformative journey with UIExpertz proficients, crafting unparalleled UI/UX brilliance to seamlessly elevate digital experiences and enhance user interactions effortlessly and innovatively.
+                        </p>
+                        <a href="#" class="commonBtn text-decoration-none mt-5 d-flex align-items-center gap-0">
+                          <img src="assets/img/btnarrow.svg" class="icon-scale is-1" />
+                          <div class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase ff-sg-medium-20 btn-flow btn-flow-fill is-shadow button-effect reverse"
+                              href="#">Let’s talk</div>
+                          <img src="assets/img/btnarrow.svg" class="icon-scale is-2" />
+                      </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </section>
+              </div>
             <!-- Sub page banner feature -/End -->
 
 
             <!-- CTA-2  -/start -->
-            <section class="cta-2 section-padding-140">
+            <section class="cta-2 section-padding-140 common-rounded-shape common-btn-wrap btnbgBlack">
+                <div class="cta-2-srape">
+                    <img src="assets/img/cta-2-shape.png" class="img-fluid" alt="">
+                </div>
                 <div class="container">
-                    <div class="cta-2-wrap">
-                        
+                    <div class="cta-2-wrap text-center">
+                        <h2 class="fs-68 ff-sg-semibold-25 text-clr-gray1">Connect with your audience through intuitive design!
+                        </h2>
+                        <p class="fs-4 text-clr-gray1 my-4">We design intuitive UI UX solutions that connect you with 
+                            your audience. Whether it's a website, an app, or a product, we
+                            make it easy and engaging.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="commonBtn text-decoration-none mt-3 d-flex align-items-center gap-0">
+                                    <img src="assets/img/grayBtnArrow.svg" class="icon-scale is-1" />
+                                    <div class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase ff-sg-medium-20 btn-flow btn-flow-fill is-shadow button-effect reverse"
+                                        href="#">Let’s talk</div>
+                                    <img src="assets/img/grayBtnArrow.svg" class="icon-scale is-2" />
+                                </a>
+                            </div>
                     </div>
                 </div>
             </section>

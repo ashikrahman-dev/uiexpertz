@@ -326,6 +326,7 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    z-index: 9999;
   }
 
   .navbar-nav {
@@ -464,8 +465,8 @@ body {
   transition: all 0.3s;
 
   &.btn-flow-fill {
-    background-color: var(--nevi-blue) !important;
-    color: #fff;
+    background-color: var(--primary-2) !important;
+    color: var(--nevi-blue) !important;
 
     &:hover {
       background-color: var(--primary-2) !important;
@@ -3129,7 +3130,7 @@ body.body-active {
     position: fixed;
     left: 5%;
     width: 40%;
-    top: 0;
+    top: 47px;
     mix-blend-mode: multiply;
     background-size: contain;
     background-repeat: no-repeat;
@@ -4167,6 +4168,9 @@ body::-webkit-scrollbar-corner {
 
 //Benefit area
 .benefit-area {
+  position: relative;
+  z-index: 22;
+  overflow: hidden;
   .row {
     --bs-gutter-y: 80px;
 
@@ -6820,7 +6824,7 @@ body::-webkit-scrollbar-corner {
 
 
 
-/* subpage banner2 15-2-24 -start */
+/*  15-2-24 -start */
 
 
 .common-btn-wrap{
@@ -6897,6 +6901,11 @@ body::-webkit-scrollbar-corner {
       z-index: -22;
       transform: scale(0.5);
       transition: 0.3s all ease-in-out;
+    }
+  }
+  &.btnbgBlack{
+    .btn-flow{
+      background-color: #00154C !important;
     }
   }
   .btn-flow {
@@ -7002,4 +7011,32 @@ body::-webkit-scrollbar-corner {
     line-height: 48px;
   }
 }
-/* subpage banner2 15-2-24 -End */
+
+
+/*  cta-2 -start */
+.cta-2{
+  background: var(--Primary-Color-System-Liner-CTA, linear-gradient(291deg, #F1FF48 7.28%, #F6FACA 32.76%, #DE59FF 58.24%, #C5C0FF 87.48%));
+backdrop-filter: blur(60px);
+position: relative;
+z-index: 88;
+overflow: hidden;
+
+.cta-2-srape{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: -200px;
+  transform: translateY(-50%);
+  z-index: -10;
+  mix-blend-mode: overlay;
+}
+.cta-2-wrap{
+  max-width: 1026px;
+  width: 100%;
+  margin: auto;
+}
+}
+/*  cta-2 -End */
+
+
+/*  15-2-24 -End */
