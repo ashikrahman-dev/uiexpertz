@@ -353,11 +353,13 @@ body {
           a {
             span {
               margin-left: 10px;
+
               @media (max-width:1200px) {
                 margin-left: 2px;
               }
             }
           }
+
           &:hover {
             .drop-menu {
               transition: all 0.3s ease;
@@ -366,6 +368,7 @@ body {
               visibility: visible;
 
             }
+
             a {
               span {
                 img {
@@ -4171,6 +4174,7 @@ body::-webkit-scrollbar-corner {
   position: relative;
   z-index: 22;
   overflow: hidden;
+
   .row {
     --bs-gutter-y: 80px;
 
@@ -6827,7 +6831,7 @@ body::-webkit-scrollbar-corner {
 /*  15-2-24 -start */
 
 
-.common-btn-wrap{
+.common-btn-wrap {
   .commonBtn {
     width: 266px;
     overflow: hidden;
@@ -6903,11 +6907,13 @@ body::-webkit-scrollbar-corner {
       transition: 0.3s all ease-in-out;
     }
   }
-  &.btnbgBlack{
-    .btn-flow{
+
+  &.btnbgBlack {
+    .btn-flow {
       background-color: #00154C !important;
     }
   }
+
   .btn-flow {
     height: 80px;
     padding: 20px 50px !important;
@@ -6933,7 +6939,7 @@ body::-webkit-scrollbar-corner {
   }
 }
 
-.sub-page-banner-area2{
+.sub-page-banner-area2 {
   background-color: #000920;
   min-height: 750px;
   padding: 100px 0;
@@ -6942,11 +6948,13 @@ body::-webkit-scrollbar-corner {
   @media (max-width:991px) {
     padding: 200px 0 100px 0;
   }
-  .smallSquare{
+
+  .smallSquare {
     position: relative;
   }
-  .subBannerContent{
-    .banner-pra{
+
+  .subBannerContent {
+    .banner-pra {
       font-size: 22px;
       color: #C1C6D4;
       padding: 20px 0;
@@ -6957,8 +6965,8 @@ body::-webkit-scrollbar-corner {
     }
   }
 
-  
- 
+
+
   &.lowerShape {
     position: relative !important;
 
@@ -6984,28 +6992,30 @@ body::-webkit-scrollbar-corner {
     0% {
       transform: translateX(-40%);
     }
-  
+
     30% {
       transform: translateX(80%);
     }
-  
+
     60% {
       transform: translateX(-40%);
     }
-  
+
     80% {
       transform: translateX(-100%);
     }
-  
+
     100% {
       transform: translateX(-40%);
     }
   }
-  
+
 }
-.fs-52{
+
+.fs-52 {
   font-size: 52px;
   line-height: 62px;
+
   @media (max-width: 776px) {
     font-size: 38px;
     line-height: 48px;
@@ -7014,29 +7024,125 @@ body::-webkit-scrollbar-corner {
 
 
 /*  cta-2 -start */
-.cta-2{
+.cta-2 {
   background: var(--Primary-Color-System-Liner-CTA, linear-gradient(291deg, #F1FF48 7.28%, #F6FACA 32.76%, #DE59FF 58.24%, #C5C0FF 87.48%));
-backdrop-filter: blur(60px);
-position: relative;
-z-index: 88;
-overflow: hidden;
+  backdrop-filter: blur(60px);
+  position: relative;
+  z-index: 88;
+  overflow: hidden;
 
-.cta-2-srape{
-  display: inline-block;
-  position: absolute;
-  top: 60%;
-  left: -200px;
-  transform: translateY(-50%);
-  z-index: -10;
-  mix-blend-mode: overlay;
+  .cta-2-srape {
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: -200px;
+    transform: translateY(-50%);
+    z-index: -10;
+    mix-blend-mode: overlay;
+  }
+
+  .cta-2-wrap {
+    max-width: 1026px;
+    width: 100%;
+    margin: auto;
+  }
 }
-.cta-2-wrap{
-  max-width: 1026px;
-  width: 100%;
-  margin: auto;
-}
-}
+
 /*  cta-2 -End */
 
+
+/*  webguard start */
+.webguard{
+  position: relative;
+  .rightShape{
+    position: absolute;
+    top: 60%;
+    left:-100px;
+    z-index: 55;
+  }
+}
+.webguardImg {
+  position: relative;
+  cursor: pointer;
+
+
+
+  .shapeRight {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+
+    animation: planIcon 3.5s ease infinite;
+    // animation-play-state: paused;
+
+    @keyframes planIcon {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-25px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+  }
+
+
+  .roundedCircle {
+    width: 132px;
+    height: 132px;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    cursor: pointer;
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    .circleArrow {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 22;
+    }
+  }
+
+  .rounded-text {
+    width: 132px;
+    height: 132px;
+    cursor: pointer;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rotating {
+    animation: rotating 12s linear infinite;
+
+
+  }
+
+}
+
+/*  webguard -End */
+
+.bg-clr-gray1 {
+  background-color: var(--gray-1);
+}
 
 /*  15-2-24 -End */
