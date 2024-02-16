@@ -155,9 +155,35 @@
 .spectrum-area .spectrum-services-wrap .spectrum-services-item { gap: 60px; border-bottom: 1px solid #2A3E70; padding: 60px 80px; border-right: 1px solid #2A3E70; }
 .spectrum-area .spectrum-services-wrap .spectrum-services-item:nth-child(1) { padding-top: 0; padding-left: 0; }
 .spectrum-area .spectrum-services-wrap .spectrum-services-item:nth-child(2) { padding-top: 0; border-right: 0; }
+.spectrum-area .spectrum-services-wrap .spectrum-services-item:nth-child(3) { padding-left: 0; }
 .spectrum-area .spectrum-services-wrap .spectrum-services-item:nth-child(4) { border-right: 0; }
-.spectrum-area .spectrum-services-wrap .spectrum-services-item:nth-child(5) { padding-bottom: 0; border-bottom: 0; }
+.spectrum-area .spectrum-services-wrap .spectrum-services-item:nth-child(5) { padding-bottom: 0; padding-left: 0; border-bottom: 0; }
 .spectrum-area .spectrum-services-wrap .spectrum-services-item:nth-child(6) { padding-bottom: 0; border-right: 0; border-bottom: 0; }
+.spectrum-area .spectrum-services-wrap .spectrum-services-item:hover .services-item-img img { -webkit-animation-play-state: running; animation-play-state: running; }
+.spectrum-area .spectrum-services-wrap .spectrum-services-item .services-item-img { width: 162px; height: 162px; background: #0D2259; border-radius: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.spectrum-area .spectrum-services-wrap .spectrum-services-item .services-item-img img { -webkit-animation: spectrumIconAnimation 6s ease-in-out 0s infinite normal none; animation: spectrumIconAnimation 6s ease-in-out 0s infinite normal none; -webkit-animation-play-state: paused; animation-play-state: paused; }
+@-webkit-keyframes spectrumIconAnimation { 0%,
+                        100% { -webkit-transform: translateY(0); transform: translateY(0); }
+  10%,
+                        30%,
+                        50%,
+                        70% { -webkit-transform: translateY(-5px); transform: translateY(-5px); }
+  20%,
+                        40%,
+                        60% { -webkit-transform: translateY(5px); transform: translateY(5px); }
+  80% { -webkit-transform: translateY(5px); transform: translateY(5px); }
+  90% { -webkit-transform: translateY(-5px); transform: translateY(-5px); } }
+@keyframes spectrumIconAnimation { 0%,
+                        100% { -webkit-transform: translateY(0); transform: translateY(0); }
+  10%,
+                        30%,
+                        50%,
+                        70% { -webkit-transform: translateY(-5px); transform: translateY(-5px); }
+  20%,
+                        40%,
+                        60% { -webkit-transform: translateY(5px); transform: translateY(5px); }
+  80% { -webkit-transform: translateY(5px); transform: translateY(5px); }
+  90% { -webkit-transform: translateY(-5px); transform: translateY(-5px); } }
 .spectrum-area .spectrum-services-wrap .spectrum-services-item .services-item-content { max-width: 350px; }
 .spectrum-area .spectrum-services-wrap .spectrum-services-item .services-item-content h4 { margin-bottom: 16px; }
 .spectrum-area .spectrum-services-wrap .spectrum-services-item .services-item-content p { font-size: 18px; color: #C1C6D4; }
