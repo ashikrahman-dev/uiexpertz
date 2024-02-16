@@ -231,6 +231,8 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 .gray-bg-section { background: #ffffff; background: -webkit-gradient(linear, right top, left top, from(rgba(236, 239, 244, 0.9)), color-stop(53.43%, rgba(236, 239, 244, 0.9)), color-stop(102.89%, rgba(255, 255, 255, 0.72))); background: linear-gradient(270deg, rgba(236, 239, 244, 0.9) 0%, rgba(236, 239, 244, 0.9) 53.43%, rgba(255, 255, 255, 0.72) 102.89%); }
 
+.fs-132 { font-size: 132px; }
+
 /*
 *- Common left image section
 *- SaaS Feature style
