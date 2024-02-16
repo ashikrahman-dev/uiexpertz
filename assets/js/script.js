@@ -308,6 +308,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  //rouned shape animation 
+    var webguard = document.querySelector(".webguard");
+
+    // Check if the element was found
+    if (webguard) {
+      const items = document.querySelectorAll('.webguardImg')
+
+      items.forEach((el) => {
+        const image = el.querySelector('.roundedCircle')
+        
+        el.addEventListener('mouseenter', (e) => {
+          gsap.to(image, { autoAlpha: 1 })
+        })
+        
+         el.addEventListener('mouseleave', (e) => {
+          gsap.to(image, { autoAlpha: 0 })
+        })
+        
+        el.addEventListener('mousemove', (e) => {
+          gsap.set(image, { x: e.offsetX, y: e.offsetY }) // Adjusted to set both x and y positions
+        })
+      })
+    }
+
+
   var targetElement3 = document.querySelector(".titleDownToUp");
   if (targetElement3) {
     // First, create your GSAP timeline
