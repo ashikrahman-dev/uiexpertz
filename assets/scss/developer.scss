@@ -761,44 +761,87 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
         .spectrum-services-item {
             gap: 60px;
             border-bottom: 1px solid #2A3E70;
             padding: 60px 80px;
             border-right: 1px solid #2A3E70;
 
+            @media (max-width: 1199px) {
+                gap: 40px;
+                padding: 40px;
+            }
+
             &:nth-child(1) {
                 padding-top: 0;
                 padding-left: 0;
+
+                @media (max-width: 991px) {
+                    border-right: 0;
+                    padding-right: 0;
+                }
             }
 
             &:nth-child(2) {
                 padding-top: 0;
                 border-right: 0;
+
+                @media (max-width: 991px) {
+                    padding-top: 40px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
 
             &:nth-child(3) {
                 padding-left: 0;
+
+                @media (max-width: 991px) {
+                    border-right: 0;
+                    padding-right: 0;
+                }
             }
 
             &:nth-child(4) {
                 border-right: 0;
+
+                @media (max-width: 991px) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
 
             &:nth-child(5) {
                 padding-bottom: 0;
                 padding-left: 0;
                 border-bottom: 0;
+
+                @media (max-width: 991px) {
+                    border-right: 0;
+                    border-bottom: 1px solid #2A3E70;
+                    padding-bottom: 40px;
+                    padding-right: 0;
+                }
             }
 
             &:nth-child(6) {
                 padding-bottom: 0;
                 border-right: 0;
                 border-bottom: 0;
+
+                @media (max-width: 991px) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
 
             &:hover {
                 .services-item-img {
+
                     img {
                         animation-play-state: running;
                     }
@@ -806,17 +849,34 @@
             }
 
             .services-item-img {
-                width: 162px;
-                height: 162px;
+                padding: 43px;
                 background: #0D2259;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-shrink: 0;
+
+                @media (max-width: 1199px) {
+                    padding: 32px;
+                }
+
+                @media (max-width: 991px) {
+                    padding: 24px;
+                }
 
                 img {
                     animation: spectrumIconAnimation 2.5s ease-in-out 0s infinite normal none;
                     animation-play-state: paused;
+                    width: 76px;
+
+                    @media (max-width: 1199px) {
+                        width: 52px;
+                    }
+
+                    @media (max-width: 991px) {
+                        width: 36px;
+                    }
 
                     @keyframes spectrumIconAnimation {
                         0% {
@@ -870,6 +930,10 @@
 
             .services-item-content {
                 max-width: 350px;
+
+                @media (max-width: 991px) {
+                    max-width: 460px;
+                }
 
                 h4 {
                     margin-bottom: 16px;
@@ -925,6 +989,68 @@ section.bg-clr-primary {
 * Portfolio section -/Start
 */
 
+
+/*
+*- Common left image section
+*- SaaS Feature style
+*/
+
+.saas-feature {
+    padding: 40px 0;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+
+    img {
+        box-shadow: 60px 70px 90px 0 rgba(22, 8, 49, 0.12);
+        border-radius: 36px;
+
+        @media (max-width: 1199px) {
+            border-radius: 26px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 560px;
+        height: 560px;
+        left: calc(50% - 280px);
+        top: calc(50% - 280px);
+        background: linear-gradient(291deg, #F1FF48 7.28%, #F6FACA 32.76%, #DE59FF 58.24%, #C5C0FF 87.48%);
+        border-radius: 50%;
+        z-index: -1;
+        animation: featureBgAnimation 25s ease-in-out 0s infinite normal none;
+
+        @media (max-width: 1199px) {
+            width: 420px;
+            height: 420px;
+            left: calc(50% - 210px);
+            top: calc(50% - 210px);
+        }
+
+        @keyframes featureBgAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+
+.gray-bg-section {
+    background: #ffffff;
+    background: linear-gradient(270deg, rgba(236, 239, 244, 0.90) 0%, rgba(236, 239, 244, 0.90) 53.43%, rgba(255, 255, 255, 0.72) 102.89%);
+}
+
+/*
+*- Common left image section
+*- SaaS Feature style
+*/
 
 
 /*==============================

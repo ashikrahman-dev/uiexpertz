@@ -43,6 +43,7 @@
     <!-- Splide slider css  -->
     <link rel="stylesheet" type="text/css" href="assets/css/splide.min.css" />
     <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/foysal.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/developer.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
@@ -71,11 +72,26 @@
                             </div>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <div class="ui-menu-link-wrap d-flex align-items-center me-auto">
-                                <a href="index.html" class="ui-menu-link text-decoration-none">Home</a>
-                                <a href="ui-ux-design.html" class="ui-menu-link text-decoration-none">Our services</a>
-                                <a href="case-study.html" class="ui-menu-link text-decoration-none">Case study</a>
-                                <a href="blog.html" class="ui-menu-link text-decoration-none">Blog</a>
+                            <div class="ui-menu-link-wrap me-auto">
+                                <ul class="d-flex align-items-center gap-xxl-5 gap-3 list-unstyled m-0  ">
+                                    <li><a href="index.html"
+                                            class="ui-menu-link text-decoration-none ff-sg-book-25">Home</a></li>
+                                    <li class="dropdownItems"> <a href="ui-ux-design.html"
+                                            class="ui-menu-link text-decoration-none ff-sg-book-25">Our services
+                                            <span><img src="assets/img/dropdownArrow.svg" class="img-fluid"
+                                                    alt=""></span></a>
+                                        <ul class="drop-menu">
+                                            <li><a href="#">Drop menu 1</a></li>
+                                            <li><a href="#">Drop menu 2</a></li>
+                                            <li><a href="#">Drop menu 3</a></li>
+                                            <li><a href="#">Drop menu 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="case-study.html"
+                                            class="ui-menu-link text-decoration-none ff-sg-book-25">Case study</a></li>
+                                    <li><a href="blog.html"
+                                            class="ui-menu-link text-decoration-none ff-sg-book-25">Blog</a></li>
+                                </ul>
                             </div>
                             <ul class="navbar-nav ms-auto phn mb-2 mb-lg-0">
                                 <li class="nav-item">
@@ -103,97 +119,106 @@
             <!--/ header -->
 
             <!-- Sub page banner -/Start -->
-            <section class="sub-page-banner-area d-flex align-items-center justify-content-center">
-                <div class="banner-shape">
-                    <img src="assets/img/sub-page-banner-bg-img.png" class="img-fluid subpageImg" alt="">
-                    <div class="d-flex align-items-center gap-3">
-                    </div>
-                </div>
+            <section
+                class="sub-page-banner-area2 common-btn-wrap lowerShape d-flex align-items-center justify-content-center">
                 <div class="container">
-                    <div class="sub-page-banner-wrap">
-                        <div class="sub-page-banner-heading mx-auto pb-1 d-flex justify-content-center">
-                            <h1 class="ff-sg-semibold-25 text-white text-center ">
-                                Support & maintenance
-                            </h1>
-                            <div class="mainRight">
-                                <!-- <img src="assets/img/sub-page-banner-bg-img.png" class="img-fluid" alt=""> -->
-                                <div class="circle">
-                                    <div class="icon-block">
-                                        <img src="assets/img/roundshape1.png" class="img-fluid" alt="app icon" />
-                                    </div>
-                                    <div class="icon-block">
-                                        <img src="assets/img/roundshape2.png" class="img-fluid" alt="blockchain icon" />
-                                    </div>
-                                </div>
+                    <div class="row align-items-center gap-lg-0 gap-5">
+                        <div class="col-lg-6">
+                            <div class="subBannerContent text-center text-md-start">
+                                <h2 class="fs-52 text-white ff-sg-semibold-25">SaaS Design</h2>
+                                <p class="banner-pra">
+                                    "Support & Maintenance ensure optimal functioning
+                                    by troubleshooting, bug fixes, updates, enhancements,
+                                    addressing inquiries.
+                                </p>
+                                <a href="#" class="commonBtn text-decoration-none mt-2 d-flex align-items-center gap-0">
+                                    <img src="assets/img/btnarrow2.svg" class="icon-scale is-1" />
+                                    <div class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase ff-sg-medium-20 btn-flow btn-flow-fill is-shadow button-effect reverse"
+                                        href="#">Let’s talk</div>
+                                    <img src="assets/img/btnarrow2.svg" class="icon-scale is-2" />
+                                </a>
                             </div>
                         </div>
-                        <!-- Breadcrumbs start  -->
-                        <div class="page-breadcrumbs">
-                            <ul class="d-flex align-items-center list-unstyled text-white fs-6">
-                                <li class="ff-sg-medium-20">
-                                    <a href="index.html" class="text-white ff-sg-medium-20 text-decoration-none">
-                                        Home
-                                    </a>
-                                </li>
-                                <li>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M5.93994 13.28L10.2866 8.9333C10.7999 8.41997 10.7999 7.57997 10.2866 7.06664L5.93994 2.71997"
-                                            stroke="white" stroke-width="1.5" stroke-miterlimit="10"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </li>
-                                <li class="ff-sg-bold-20 text-nowrap">Wordpress Development</li>
-                            </ul>
+                        <div class="col-lg-6">
+                            <div
+                                class="subBannerImg d-flex flex-md-nowrap flex-wrap align-items-start justify-content-center">
+                                <img src="assets/img/saas-design-banner-img.png"
+                                    class="img-fluid d-inline-block smallSquare" alt="Banner">
+                                <!-- <img src="assets/img/uiuxBanner.png" class="img-fluid opacity-100 bigSquare" alt=""> -->
+                            </div>
                         </div>
-                        <!-- Breadcrumbs End  -->
                     </div>
                 </div>
             </section>
             <!-- Sub page banner -/End -->
 
 
-            <!-- wordpress development process -/start -->
-            <div class="development-process section-padding-140">
+            <!-- Services Common Left image section -/start -->
+            <div class="feature-service common-btn-wrap section-padding-140">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4 mb-lg-0 mb-4">
-                            <div class="dev-process-item">
-                                <h3 class=" text-clr-gray1 fs-36 ff-sg-semibold-25">Site Monitoring</h3>
-                                <p class=" text-clr-gray2 fs-6 pt-lg-5 pt-3">Stand out from the crowd with tailor-made
-                                    WordPress themes that elevate your website’s aesthetics and functionality</p>
+                    <div class="row gx-5">
+                        <div class="col-lg-6">
+                            <div class="saas-feature">
+                                <img class="img-fluid" src="assets/img/saas-design-left-img-1.svg" alt="img" data-tilt
+                                    data-tilt-max="0.05" data-tilt-speed="1500" data-tilt-perspective="15" />
                             </div>
                         </div>
-                        <div class="col-lg-4 mb-lg-0 mb-4">
-                            <div class="dev-process-item">
-                                <h3 class=" text-clr-gray1 fs-36 ff-sg-semibold-25">Platform Migration</h3>
-                                <p class=" text-clr-gray2 fs-6 pt-lg-5 pt-3">Stand out from the crowd with tailor-made
-                                    WordPress themes that elevate your website’s aesthetics and functionality</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="dev-process-item">
-                                <h3 class=" text-clr-gray1 fs-36 ff-sg-semibold-25">Security Check</h3>
-                                <p class=" text-clr-gray2 fs-6 pt-lg-5 pt-3">Stand out from the crowd with tailor-made
-                                    WordPress themes that elevate your website’s aesthetics and functionality</p>
+                        <div class="col-lg-6">
+                            <div class="mt-5">
+                                <h2 class="ff-sg-semibold-25 fs-48 text-clr-neviBlue mb-4">
+                                    Powering prosperity-Shopify web services unleashed
+                                </h2>
+                                <p class="fs-4">
+                                    Maximize Your Online Potential: Exploring the Versatility &
+                                    Efficiency of Shopify's Comprehensive Web Services for
+                                    Unparalleled E-commerce Success and Growth.
+                                </p>
+                                <a href="#" class="commonBtn text-decoration-none mt-5 d-flex align-items-center gap-0">
+                                    <img src="assets/img/btnarrow.svg" class="icon-scale is-1" />
+                                    <div class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase ff-sg-medium-20 btn-flow btn-flow-fill is-shadow button-effect reverse"
+                                        href="#">Let’s talk</div>
+                                    <img src="assets/img/btnarrow.svg" class="icon-scale is-2" />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-scroll-animation overflow-hidden">
-                <div class="imageWrapper">
-                    <img src="assets/img/gllosy-circle.png" class="img-fluid" alt="circle" />
+            <!-- Services Common Left image section -/End -->
+
+
+
+            <!-- Services Common Right image section -/start -->
+            <div class="feature-service common-btn-wrap section-padding-140 gray-bg-section">
+                <div class="container">
+                    <div class="row gx-5 flex-column-reverse flex-lg-row">
+                        <div class="col-lg-6">
+                            <div class="mt-5">
+                                <h2 class="ff-sg-semibold-25 fs-48 text-clr-neviBlue mb-4">
+                                    Crafting success with SaaS design services- elevate your business.
+                                </h2>
+                                <p class="fs-4">
+                                    Empower your business growth and efficiency through expert SaaS design services,
+                                    driving success in the digital landscape.
+                                </p>
+                                <a href="#" class="commonBtn text-decoration-none mt-5 d-flex align-items-center gap-0">
+                                    <img src="assets/img/btnarrow.svg" class="icon-scale is-1" />
+                                    <div class="btn btn-info text-white px-4 fs-6 rounded-pill text-uppercase ff-sg-medium-20 btn-flow btn-flow-fill is-shadow button-effect reverse"
+                                        href="#">Let’s talk</div>
+                                    <img src="assets/img/btnarrow.svg" class="icon-scale is-2" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="">
+                                <img class="img-fluid" src="assets/img/saas-design-right-img-1.png" alt="img" data-tilt
+                                    data-tilt-max="0.05" data-tilt-speed="1500" data-tilt-perspective="15" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h1 id="scrollingText">
-                    11111111
-                </h1>
-
             </div>
-            <!-- wordpress development process -/End -->
-
-
+            <!-- Services Common Right image section -/End -->
 
 
             <!-- Spectrum section -/Start -->
@@ -207,7 +232,8 @@
                     </div>
                     <div class="spectrum-services-wrap">
                         <!-- services-item -->
-                        <div class="spectrum-services-item d-flex align-items-center">
+                        <div
+                            class="spectrum-services-item d-flex align-items-start align-items-lg-center flex-column flex-lg-row">
                             <div class="services-item-img">
                                 <img src="assets/img/spectrum-services-icon-1.svg" alt="icon" class="img-fluid">
                             </div>
@@ -217,13 +243,12 @@
                                 </h4>
                                 <p class="ff-sg-book-20 mb-0">
                                     To unlock new possibilities for your SaaS growth, we identify its hidden
-                                    strengths and weaknesses.
-                                </p>
                             </div>
                         </div>
                         <!-- services-item -->
                         <!-- services-item -->
-                        <div class="spectrum-services-item d-flex align-items-center">
+                        <div
+                            class="spectrum-services-item d-flex align-items-start align-items-lg-center flex-column flex-lg-row">
                             <div class="services-item-img">
                                 <img src="assets/img/spectrum-services-icon-2.svg" alt="icon" class="img-fluid">
                             </div>
@@ -239,7 +264,8 @@
                         </div>
                         <!-- services-item -->
                         <!-- services-item -->
-                        <div class="spectrum-services-item d-flex align-items-center">
+                        <div
+                            class="spectrum-services-item d-flex align-items-start align-items-lg-center flex-column flex-lg-row">
                             <div class="services-item-img">
                                 <img src="assets/img/spectrum-services-icon-3.svg" alt="icon" class="img-fluid">
                             </div>
@@ -255,7 +281,8 @@
                         </div>
                         <!-- services-item -->
                         <!-- services-item -->
-                        <div class="spectrum-services-item d-flex align-items-center">
+                        <div
+                            class="spectrum-services-item d-flex align-items-start align-items-lg-center flex-column flex-lg-row">
                             <div class="services-item-img">
                                 <img src="assets/img/spectrum-services-icon-4.svg" alt="icon" class="img-fluid">
                             </div>
@@ -271,7 +298,8 @@
                         </div>
                         <!-- services-item -->
                         <!-- services-item -->
-                        <div class="spectrum-services-item d-flex align-items-center">
+                        <div
+                            class="spectrum-services-item d-flex align-items-start align-items-lg-center flex-column flex-lg-row">
                             <div class="services-item-img">
                                 <img src="assets/img/spectrum-services-icon-5.svg" alt="icon" class="img-fluid">
                             </div>
@@ -287,7 +315,8 @@
                         </div>
                         <!-- services-item -->
                         <!-- services-item -->
-                        <div class="spectrum-services-item d-flex align-items-center">
+                        <div
+                            class="spectrum-services-item d-flex align-items-start align-items-lg-center flex-column flex-lg-row">
                             <div class="services-item-img">
                                 <img src="assets/img/spectrum-services-icon-6.svg" alt="icon" class="img-fluid">
                             </div>
@@ -393,9 +422,6 @@
             <!-- Portfolio section -/End -->
 
 
-
-
-
             <!-- Text carousel -/Start -->
             <section class="bg-clr-primary text-carousel about-text-carousel ui-ux-design-text-carousel">
                 <div class="splide" id="slider3" role="group" aria-label="Splide Basic HTML Example">
@@ -459,113 +485,6 @@
                 </div>
             </section>
             <!-- Text carousel -/End -->
-
-
-            <!-- support and maintainance content -/Start -->
-            <div class="maintenance-content section-padding-140 bg-clr-dark-navy-blue ">
-                <div class="container">
-                    <div class="maintenance-content-heading">
-                        <h2 class="text-white fs-68 ff-sg-semibold-25 mb-lg-0 mb-5">Support & <br
-                                class="d-none d-lg-inline ">
-                            <span class="text-clr-primary">maintenance</span>
-                        </h2>
-                    </div>
-                </div>
-                <div class="support-content-items">
-                    <div class="support-content-item">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="support-title mb-lg-0 mb-4">
-                                        <div class="item-title d-flex align-items-center gap-4">
-                                            <img src="assets/img/support-item-img.png" class="img-fluid" alt="">
-                                            <h4 class="fs-36 ff-sg-light-25 text-white">Regular Backups</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="support-desc">
-                                        <p class="fs-4 ff-sg-light-20">f type and scrambled it to make a type specimen
-                                            book. It has survived not only five centuries, but also the leap into
-                                            electronic typesetting, remaining essentially unchanged. It was popularised
-                                            in the</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="support-content-item">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="support-title  mb-lg-0 mb-4">
-                                        <div class="item-title d-flex align-items-center gap-4">
-                                            <img src="assets/img/support-item-img.png" class="img-fluid" alt="">
-                                            <h4 class="fs-36 ff-sg-light-25 text-white">Plugins Update</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="support-desc">
-                                        <p class="fs-4 ff-sg-light-20">f type and scrambled it to make a type specimen
-                                            book. It has survived not only five centuries, but also the leap into
-                                            electronic typesetting, remaining essentially unchanged. It was popularised
-                                            in the</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="support-content-item">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="support-title  mb-lg-0 mb-4">
-                                        <div class="item-title d-flex align-items-center gap-4">
-                                            <img src="assets/img/support-item-img.png" class="img-fluid" alt="">
-                                            <h4 class="fs-36 ff-sg-light-25 text-white">Security Check</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="support-desc">
-                                        <p class="fs-4 ff-sg-light-20">f type and scrambled it to make a type specimen
-                                            book. It has survived not only five centuries, but also the leap into
-                                            electronic typesetting, remaining essentially unchanged. It was popularised
-                                            in the</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="support-content-item">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="support-title  mb-lg-0 mb-4">
-                                        <div class="item-title d-flex align-items-center gap-4">
-                                            <img src="assets/img/support-item-img.png" class="img-fluid" alt="">
-                                            <h4 class="fs-36 ff-sg-light-25 text-white">Technical Support:</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="support-desc">
-                                        <p class="fs-4 ff-sg-light-20">f type and scrambled it to make a type specimen
-                                            book. It has survived not only five centuries, but also the leap into
-                                            electronic typesetting, remaining essentially unchanged. It was popularised
-                                            in the</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- support and maintainance content -/End -->
-
-
-
 
 
             <!-- Partners logo carousel -/Start -->
