@@ -1089,6 +1089,12 @@ section.bg-clr-primary {
     z-index: 5;
     text-align: center;
 
+    &.mobile-app-left-img {
+        img {
+            box-shadow: none;
+        }
+    }
+
     img {
         box-shadow: 60px 70px 90px 0 rgba(22, 8, 49, 0.12);
         border-radius: 36px;
@@ -1233,3 +1239,40 @@ section.bg-clr-primary {
 /*==============================
 - Saas Design page style - /End
 ===============================*/
+
+
+
+
+
+
+/*==================================
+- Website Design page style - /Start
+===================================*/
+
+.only-top-border-section {
+    @media (max-width: 991px) {
+        padding-block: 100px;
+    }
+
+    @media (max-width: 767px) {
+        padding-block: 80px;
+    }
+
+    .section-img {
+        padding-top: 108px;
+
+        @media (max-width: 991px) {
+            padding-top: 0px;
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 0px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+/*==================================
+- Website Design page style - /End
+===================================*/

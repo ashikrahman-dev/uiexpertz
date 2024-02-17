@@ -241,6 +241,7 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
 *- SaaS Feature style
 */
 .saas-feature { padding: 40px 0; position: relative; z-index: 5; text-align: center; }
+.saas-feature.mobile-app-left-img img { -webkit-box-shadow: none; box-shadow: none; }
 .saas-feature img { -webkit-box-shadow: 60px 70px 90px 0 rgba(22, 8, 49, 0.12); box-shadow: 60px 70px 90px 0 rgba(22, 8, 49, 0.12); border-radius: 36px; }
 @media (max-width: 1399px) { .saas-feature img { border-radius: 28px; } }
 @media (max-width: 1199px) { .saas-feature img { border-radius: 26px; } }
@@ -272,3 +273,15 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
 /*==============================
 - Saas Design page style - /End
 ===============================*/
+/*==================================
+- Website Design page style - /Start
+===================================*/
+@media (max-width: 991px) { .only-top-border-section { padding-block: 100px; } }
+@media (max-width: 767px) { .only-top-border-section { padding-block: 80px; } }
+.only-top-border-section .section-img { padding-top: 108px; }
+@media (max-width: 991px) { .only-top-border-section .section-img { padding-top: 0px; padding-bottom: 60px; } }
+@media (max-width: 767px) { .only-top-border-section .section-img { padding-top: 0px; padding-bottom: 50px; } }
+
+/*==================================
+- Website Design page style - /End
+===================================*/
