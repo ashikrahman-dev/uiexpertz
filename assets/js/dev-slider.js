@@ -193,17 +193,54 @@ document.addEventListener("DOMContentLoaded", function () {
             type: "loop",
             perPage: 2,
             perMove: 1,
-            padding: "10rem",
+            padding: "14rem",
             arrows: false,
             pagination: false,
             gap: "30px",
-            autoWidth: true,
+            autoWidth: false,
             drag: "free",
+            width: "100%",
             focus: "center",
             speed: 3500,
             autoScroll: {
-                speed: 1,
+                speed: 0.8,
                 pauseOnHover: true,
+            },
+            breakpoints: {
+                1499: {
+                    perPage: 2,
+                    padding: "2rem",
+                    gap: "30px",
+                },
+                1199: {
+                    perPage: 1,
+                    padding: "18rem",
+                    gap: "30px",
+                },
+                991: {
+                    perPage: 1,
+                    padding: "10rem",
+                    gap: "24px",
+                },
+                767: {
+                    perPage: 1,
+                    padding: "8rem",
+                },
+                575: {
+                    perPage: 1,
+                    padding: "4rem",
+                    gap: "20px",
+                },
+                450: {
+                    perPage: 1,
+                    padding: "2rem",
+                    gap: "20px",
+                },
+                375: {
+                    perPage: 1,
+                    padding: "1.5rem",
+                    gap: "16px",
+                },
             },
         });
 
@@ -223,17 +260,54 @@ document.addEventListener("DOMContentLoaded", function () {
             type: "loop",
             perPage: 2,
             perMove: 1,
-            padding: "10rem",
+            padding: "14rem",
             arrows: false,
             pagination: false,
             gap: "30px",
-            autoWidth: true,
+            autoWidth: false,
             drag: "free",
+            width: "100%",
             focus: "center",
             speed: 3500,
             autoScroll: {
-                speed: -1,
+                speed: -0.8,
                 pauseOnHover: true,
+            },
+            breakpoints: {
+                1499: {
+                    perPage: 2,
+                    padding: "2rem",
+                    gap: "30px",
+                },
+                1199: {
+                    perPage: 1,
+                    padding: "18rem",
+                    gap: "30px",
+                },
+                991: {
+                    perPage: 1,
+                    padding: "10rem",
+                    gap: "24px",
+                },
+                767: {
+                    perPage: 1,
+                    padding: "8rem",
+                },
+                575: {
+                    perPage: 1,
+                    padding: "4rem",
+                    gap: "20px",
+                },
+                450: {
+                    perPage: 1,
+                    padding: "2rem",
+                    gap: "20px",
+                },
+                375: {
+                    perPage: 1,
+                    padding: "1.5rem",
+                    gap: "16px",
+                },
             },
         });
 
