@@ -152,6 +152,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
   //title left to right 
+  var titilePosition = document.querySelector(".common-title-position");
+  if (titilePosition) {
+    // Execute your JavaScript code here
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".projecttitle-overview", {
+      scrollTrigger: {
+        trigger: ".projecttitle-overview",
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true,
+        markers: false,
+      },
+      x: $(window).width() > 1000 ? "300" : "100",
+    });
+
+  }
+  //title left to right 
   var styleguide = document.querySelector(".commonsec");
   if (styleguide) {
     // Execute your JavaScript code here
