@@ -6441,7 +6441,7 @@ body::-webkit-scrollbar-corner {
 
 // contact-info-wrapper
 .contact-info-wrapper {
-  padding: 120px 0;
+  padding: 120px 0 0 0;
   position: relative;
 
   .projecttitle {
@@ -6679,6 +6679,10 @@ body::-webkit-scrollbar-corner {
   background-position: center center;
   border-radius: 36px;
 
+  @media (max-width:1200px) {
+    padding: 30px;
+  }
+
   .ls-7{
     letter-spacing: 0.72px;
   }
@@ -6695,7 +6699,7 @@ body::-webkit-scrollbar-corner {
       background-color: transparent;
       border: 0;
       border-radius: 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid var(--gray-1);
       color: #fff;
       font-family: "Sharp Grotesk Book 20";
       font-size: 18px;
@@ -6733,7 +6737,7 @@ body::-webkit-scrollbar-corner {
 
     .btn-submit {
       border-radius: 150px;
-      border: 1px solid rgba(255, 255, 255, 0.5);
+      border: 1px solid var(--gray-1);
       background-color: transparent;
       padding: 20px 30px;
       font-family: "Sharp Grotesk SemiBold 20";
@@ -6753,7 +6757,7 @@ body::-webkit-scrollbar-corner {
       &:hover {
         background-color: #4e3eff;
         border-color: #4e3eff;
-        font-size: 28px;
+        font-size: 24px;
         color: #fff;
       }
     }
@@ -6772,7 +6776,7 @@ body::-webkit-scrollbar-corner {
     color: var(--gray-1);
     transition: all 0.3s linear;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
       padding: 15px 35px;
       font-size: 20px;
     }
@@ -7345,6 +7349,21 @@ body::-webkit-scrollbar-corner {
 
 .bg-clr-gray1 {
   background-color: var(--gray-1);
+}
+
+.core-area{
+  position: relative;
+  z-index: 58;
+  .coreShape{
+    position: absolute;
+    top: -265px;
+    left: 200px;
+    z-index: 44;
+  }
+  .core-pra{
+    max-width: 366px;
+    width: 100%;
+  }
 }
 
 /*  15-2-24 -End */
