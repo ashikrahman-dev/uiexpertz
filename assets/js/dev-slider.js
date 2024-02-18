@@ -338,6 +338,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 speed: 0.5,
                 pauseOnHover: false,
             },
+            breakpoints: {
+                1399: {
+                    height: "400px",
+                },
+                1199: {
+                    height: "360px",
+                },
+                991: {
+                    height: "480px",
+                },
+                767: {
+                    height: "400px",
+                },
+                575: {
+                    height: "360px",
+                    gap: "10px",
+                },
+                450: {
+                    height: "340px",
+                },
+                420: {
+                    height: "270px",
+                },
+                400: {
+                    height: "280px",
+                },
+                375: {
+                    height: "250px",
+                },
+            },
         });
 
         splide.mount(window.splide.Extensions);
@@ -367,6 +397,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 speed: -0.4,
                 pauseOnHover: false,
             },
+            breakpoints: {
+                1399: {
+                    height: "400px",
+                },
+                1199: {
+                    height: "360px",
+                },
+                991: {
+                    height: "480px",
+                },
+                767: {
+                    height: "400px",
+                },
+                575: {
+                    height: "360px",
+                    gap: "10px",
+                },
+                450: {
+                    height: "340px",
+                },
+                420: {
+                    height: "270px",
+                },
+                400: {
+                    height: "280px",
+                },
+                375: {
+                    height: "250px",
+                },
+            },
         });
 
         splide.mount(window.splide.Extensions);
@@ -395,6 +455,36 @@ document.addEventListener("DOMContentLoaded", function () {
             autoScroll: {
                 speed: 0.2,
                 pauseOnHover: false,
+            },
+            breakpoints: {
+                1399: {
+                    height: "400px",
+                },
+                1199: {
+                    height: "360px",
+                },
+                991: {
+                    height: "480px",
+                },
+                767: {
+                    height: "400px",
+                },
+                575: {
+                    height: "360px",
+                    gap: "10px",
+                },
+                450: {
+                    height: "340px",
+                },
+                420: {
+                    height: "270px",
+                },
+                400: {
+                    height: "280px",
+                },
+                375: {
+                    height: "250px",
+                },
             },
         });
 

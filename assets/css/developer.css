@@ -247,6 +247,7 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
 @media (max-width: 1199px) { .saas-feature > img { border-radius: 26px; } }
 @media (max-width: 991px) { .saas-feature > img { border-radius: 34px; } }
 @media (max-width: 767px) { .saas-feature > img { border-radius: 28px; } }
+.saas-feature.another-gradient-color::before { background: -webkit-gradient(linear, left top, left bottom, from(#D3CFFF), to(#DAEFEE)); background: linear-gradient(180deg, #D3CFFF 0%, #DAEFEE 100%); }
 .saas-feature::before { position: absolute; content: ''; width: 560px; height: 560px; left: calc(50% - 280px); top: calc(50% - 280px); background: linear-gradient(291deg, #F1FF48 7.28%, #F6FACA 32.76%, #DE59FF 58.24%, #C5C0FF 87.48%); border-radius: 50%; z-index: -1; -webkit-animation: featureBgAnimation 25s ease-in-out 0s infinite normal none; animation: featureBgAnimation 25s ease-in-out 0s infinite normal none; }
 @media (max-width: 1399px) { .saas-feature::before { width: 460px; height: 460px; left: calc(50% - 230px); top: calc(50% - 230px); } }
 @media (max-width: 1199px) { .saas-feature::before { width: 420px; height: 420px; left: calc(50% - 210px); top: calc(50% - 210px); } }
@@ -285,7 +286,13 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
 .border-radius-24 { border-radius: 24px; }
 
 .portfolio-animation-slide-wrap { gap: 18px; padding-inline: 32px; max-width: 642px; margin: 0 auto; -webkit-backdrop-filter: blur(30px); backdrop-filter: blur(30px); -webkit-box-shadow: 60px 70px 90px rgba(22, 8, 49, 0.18); box-shadow: 60px 70px 90px rgba(22, 8, 49, 0.18); position: relative; border-radius: 36px; z-index: -1; }
-.portfolio-animation-slide-wrap::before { content: ""; position: absolute; inset: 0; border-radius: 36px; padding: 1px; background: linear-gradient(149deg, #c5c0ff 0%, #de59ff 33%, #f6faca 67%, #f1ff48 100%); -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; z-index: 5; }
+@media (max-width: 991px) { .portfolio-animation-slide-wrap { border-radius: 24px; } }
+@media (max-width: 768px) { .portfolio-animation-slide-wrap { border-radius: 20px; } }
+@media (max-width: 575px) { .portfolio-animation-slide-wrap { gap: 10px; padding-inline: 16px; border-radius: 16px; } }
+.portfolio-animation-slide-wrap::before { content: ""; position: absolute; inset: 0; border-radius: 36px; padding: 1px; background: linear-gradient(149deg, #c5c0ff 0%, #de59ff 33%, #f6faca 67%, #f1ff48 100%); -webkit-mask: linear-gradient(149deg, #c5c0ff 0%, #de59ff 33%, #f6faca 67%, #f1ff48 100%) content-box, linear-gradient(149deg, #c5c0ff 0%, #de59ff 33%, #f6faca 67%, #f1ff48 100%); -webkit-mask-composite: xor; mask-composite: exclude; z-index: 5; }
+@media (max-width: 991px) { .portfolio-animation-slide-wrap::before { border-radius: 24px; } }
+@media (max-width: 768px) { .portfolio-animation-slide-wrap::before { border-radius: 20px; } }
+@media (max-width: 575px) { .portfolio-animation-slide-wrap::before { border-radius: 16px; } }
 .portfolio-animation-slide-wrap .portfolio-image-slide img { border-radius: 6px; }
 
 /*==================================
