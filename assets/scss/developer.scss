@@ -1095,7 +1095,7 @@ section.bg-clr-primary {
         }
     }
 
-    img {
+    >img {
         box-shadow: 60px 70px 90px 0 rgba(22, 8, 49, 0.12);
         border-radius: 36px;
 
@@ -1113,6 +1113,12 @@ section.bg-clr-primary {
 
         @media (max-width: 767px) {
             border-radius: 28px;
+        }
+    }
+
+    &.another-gradient-color {
+        &::before {
+            background: linear-gradient(180deg, #D3CFFF 0%, #DAEFEE 100%);
         }
     }
 
@@ -1224,6 +1230,7 @@ section.bg-clr-primary {
     }
 }
 
+.saas-feature>img {}
 
 .gray-bg-section {
     background: #ffffff;
@@ -1275,6 +1282,66 @@ section.bg-clr-primary {
 
 .border-radius-24 {
     border-radius: 24px;
+
+}
+
+.portfolio-animation-slide-wrap {
+    gap: 18px;
+    padding-inline: 32px;
+    max-width: 642px;
+    margin: 0 auto;
+    backdrop-filter: blur(30px);
+    box-shadow: 60px 70px 90px rgba(22, 8, 49, 0.18);
+    position: relative;
+    border-radius: 36px;
+    z-index: -1;
+
+    @media (max-width: 991px) {
+        border-radius: 24px;
+    }
+
+    @media (max-width: 768px) {
+        border-radius: 20px;
+    }
+
+    @media (max-width: 575px) {
+        gap: 10px;
+        padding-inline: 16px;
+        border-radius: 16px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 36px;
+        padding: 1px;
+        background: linear-gradient(149deg, rgba(197, 192, 255, 1) 0%, rgba(222, 89, 255, 1) 33%, rgba(246, 250, 202, 1) 67%, rgba(241, 255, 72, 1) 100%);
+        -webkit-mask:
+            linear-gradient(149deg, rgba(197, 192, 255, 1) 0%, rgba(222, 89, 255, 1) 33%, rgba(246, 250, 202, 1) 67%, rgba(241, 255, 72, 1) 100%) content-box,
+            linear-gradient(149deg, rgba(197, 192, 255, 1) 0%, rgba(222, 89, 255, 1) 33%, rgba(246, 250, 202, 1) 67%, rgba(241, 255, 72, 1) 100%);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: 5;
+
+        @media (max-width: 991px) {
+            border-radius: 24px;
+        }
+
+        @media (max-width: 768px) {
+            border-radius: 20px;
+        }
+
+        @media (max-width: 575px) {
+            border-radius: 16px;
+        }
+    }
+
+    .portfolio-image-slide {
+        img {
+            border-radius: 6px;
+        }
+    }
 
 }
 
