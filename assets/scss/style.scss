@@ -6671,85 +6671,105 @@ body::-webkit-scrollbar-corner {
 //   }
 // }
 
+.left-info{
+  padding: 60px;
+  background-image: url(../img/contactleftBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 36px;
+
+  .ls-7{
+    letter-spacing: 0.72px;
+  }
+  .border-b-gray{
+    border-bottom: 1px solid #BFC7D9;
+  }
+}
+
 .contact-us-wrap {
   form {
     max-width: 762px;
 
-    .form-control {
+    .form-control, .form-select {
       background-color: transparent;
       border: 0;
       border-radius: 0;
       border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       color: #fff;
       font-family: "Sharp Grotesk Book 20";
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 300;
       line-height: 34px;
       padding: 20px 0 30px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       transition: all 0.3s;
+      color: var(--gray-1);
+
+      &::placeholder{
+        color: var(--gray-1) !important;
+        font-size: 18px;
+      }
 
       @media (max-width: 991px) {
-        font-size: 20px;
+        font-size: 16px;
       }
 
       @media (max-width: 575px) {
-        font-size: 18px;
+        font-size: 16px;
         padding: 10px 0 20px;
       }
 
       &:focus {
         box-shadow: none !important;
-        font-size: 20px;
+        font-size: 18px;
       }
 
       &::placeholder {
         color: rgba(255, 255, 255, 0.5);
       }
     }
+    
 
     .btn-submit {
       border-radius: 150px;
       border: 1px solid rgba(255, 255, 255, 0.5);
       background-color: transparent;
       padding: 20px 30px;
-      color: #fff;
-      font-family: "Sharp Grotesk Book 20";
-      font-size: 36px;
-      font-weight: 500;
+      font-family: "Sharp Grotesk SemiBold 20";
+      font-size: 24px;
       line-height: 46px;
       width: 100%;
       transition: all 0.3s;
-      margin-top: 30px;
 
       @media (max-width: 991px) {
-        font-size: 30px;
+        font-size: 22px;
       }
 
       @media (max-width: 575px) {
-        font-size: 27px;
+        font-size: 20px;
       }
 
       &:hover {
         background-color: #4e3eff;
         border-color: #4e3eff;
-        font-size: 30px;
+        font-size: 28px;
+        color: #fff;
       }
     }
   }
 }
 
 .interested-cat-list {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 
   .interested-cat {
     padding: 30px 60px;
     border-radius: 250px;
-    border: 1px solid #8E9BBC;
+    border: 1px solid #00154C;
     font-size: 24px;
-    font-style: normal;
     font-weight: 300;
-    color: #AAB4CF;
+    color: var(--gray-1);
     transition: all 0.3s linear;
 
     @media (max-width: 768px) {
