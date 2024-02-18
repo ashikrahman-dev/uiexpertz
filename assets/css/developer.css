@@ -298,3 +298,14 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
 /*==================================
 - Website Design page style - /End
 ===================================*/
+/*==================================
+- Shopify page style - /End
+===================================*/
+.feature-service .feature-img-bg { padding: 40px 0; background: url("../img/shopify-bg-circle.png"); background-size: contain; background-position: center; background-repeat: no-repeat; text-align: center; }
+
+.shopify-success-stories { background: url("../img/shopify-success-stories-bg.png"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.shopify-success-stories .shopify-success-stories-img { background: url("../img/shopify-success-triangle.png"); background-size: 180px; background-position: bottom center; background-repeat: no-repeat; }
+
+/*==================================
+- Shopify page style - /End
+===================================*/
