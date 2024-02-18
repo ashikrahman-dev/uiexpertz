@@ -2952,7 +2952,7 @@ body.body-active {
   .faqshape {
     position: absolute;
     right: -200px;
-    bottom: -100px;
+    bottom: -300px;
     z-index: -22;
 
     @media (max-width: 991px) {
@@ -4217,6 +4217,16 @@ body::-webkit-scrollbar-corner {
       font-size: 48px;
       line-height: 1.25em;
       margin-bottom: 30px;
+
+      @media (max-width:991px) {
+        font-size: 40px;
+      }
+      @media (max-width:776px) {
+        font-size: 36px;
+      }
+      @media (max-width: 576px) {
+        font-size: 30px;
+      }
     }
 
     p {
@@ -5069,7 +5079,7 @@ body::-webkit-scrollbar-corner {
 }
 
 .development-process {
-  background: rgba(240, 243, 251, 0.8);
+  background: rgba(240, 243, 251, 0.80);
 
   backdrop-filter: blur(20px);
 
@@ -7364,17 +7374,46 @@ body::-webkit-scrollbar-corner {
     max-width: 366px;
     width: 100%;
   }
+  .benefit-item-icon{
+    margin-bottom: 40px !important;
+  }
 }
 
 .employee-feedback{
   background: linear-gradient(180deg, rgba(236, 239, 244, 0.95) 0%, rgba(255, 255, 255, 0.42) 56.17%, rgba(255, 255, 255, 0.00) 100%);
 backdrop-filter: blur(30px);
+position: relative;
+overflow: hidden;
+z-index: 11;
+
+.employeeShape{
+  bottom: -300px;
+  position: absolute;
+  right: -200px;
+  z-index: -22;
+  @media (max-width:776px) {
+    bottom: -167px;
+    position: absolute;
+    right: -130px;
+    z-index: -22;
+    height: 352px;
+    width: 352px;
+  }
+}
 
 .employee-image-wrap{
   position: relative;
   max-width: 562px;
   width: 100%;
   height: 652px;
+
+  @media (max-width:1200px) {
+    height: 400px;
+  }
+  @media (max-width:991px) {
+    height: 380px;
+    max-width: 370px;
+  }
   .enployee-background{
     .employeeBg{
       position: absolute;
@@ -7390,6 +7429,71 @@ backdrop-filter: blur(30px);
 
   }
 }
+}
+
+
+.vacancies{
+  background-color: var(--gray-1);
+  padding: 120px 0 140px 0;
+
+  .vacancies-item{
+    border-radius: 12px;
+   background-color: #00154C;
+    padding: 40px 30px;
+  }
+  .vacancies-border{
+    background-color: #4C5B82;
+    border-radius: 12px;
+    padding: 1px;
+    transition: .2s all linear;
+
+    &:hover{
+      background: var(--Primary-Color-System-Liner-CTA, linear-gradient(291deg, #F1FF48 7.28%, #F6FACA 32.76%, #DE59FF 58.24%, #C5C0FF 87.48%));
+    }
+  }
+
+  .vacancies-subpra{
+    color: #97A3C1;
+  }
+  .vacancies-rule{
+    max-width: 241px;
+    width: 100%;
+
+    @media (max-width:991px) {
+      margin-bottom: 30px;
+    }
+  }
+  .vacancies-details{
+    max-width: 500px;
+    width: 100%;
+    @media (max-width:991px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .vacancies-button{
+    .applyNowBtn{
+      height: 60px;
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #fff;
+      border-radius: 100px;
+      transition: .2s all linear;
+
+      @media (max-width:1400px) {
+        height: 50px;
+      padding: 0 30px;
+      }
+
+      &:hover{
+        background-color: #D4F941;
+        border-color: #D4F941;
+        color: var(--gray-1) !important;
+      }
+    }
+  }
 }
 
 /*  15-2-24 -End */

@@ -378,6 +378,30 @@ document.addEventListener("DOMContentLoaded", function () {
       scrub: true,
     });
   }
+
+//career
+
+var shaperotate = document.querySelector(".employee-feedback ");
+
+// Check if the element was found
+if (shaperotate) {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const rotatingElement = document.querySelector('.employeeShape');
+
+  gsap.to(rotatingElement, {
+    rotation: 100,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: rotatingElement,
+      start: 'top 50%', // Adjust as needed
+      end: 'bottom 20%', // Adjust as needed
+      scrub: true,
+    },
+  });
+}
+
+
   // subbanner 15-2-24 end
 
 
