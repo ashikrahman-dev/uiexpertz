@@ -315,3 +315,90 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 //  SaaS Design Portfolio Slider 2 - Start
+
+// Portfolio image animation slide - 1 -/Start
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll("#portfolio-first-slide");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 3,
+            perMove: 1,
+            direction: "ttb",
+            height: "480px",
+            arrows: false,
+            pagination: false,
+            autoHeight: true,
+            gap: "16px",
+            autoWidth: false,
+            speed: 3500,
+            pauseOnHover: false,
+            autoScroll: {
+                speed: 0.5,
+                pauseOnHover: false,
+            },
+        });
+
+        splide.mount(window.splide.Extensions);
+    });
+});
+// Portfolio image animation slide -1 -/End
+
+// Portfolio image animation slide - 2 -/Start
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll("#portfolio-second-slide");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 3,
+            perMove: 1,
+            direction: "ttb",
+            height: "480px",
+            arrows: false,
+            pagination: false,
+            autoHeight: true,
+            gap: "16px",
+            autoWidth: false,
+            speed: 3500,
+            pauseOnHover: false,
+            autoScroll: {
+                speed: -0.4,
+                pauseOnHover: false,
+            },
+        });
+
+        splide.mount(window.splide.Extensions);
+    });
+});
+// Portfolio image animation slide -2 -/End
+
+// Portfolio image animation slide - 3 -/Start
+document.addEventListener("DOMContentLoaded", function () {
+    let splideElements = document.querySelectorAll("#portfolio-third-slide");
+
+    splideElements.forEach(function (element) {
+        let splide = new Splide(element, {
+            type: "loop",
+            perPage: 3,
+            perMove: 1,
+            direction: "ttb",
+            height: "480px",
+            arrows: false,
+            pagination: false,
+            autoHeight: true,
+            gap: "16px",
+            autoWidth: false,
+            speed: 3500,
+            pauseOnHover: false,
+            autoScroll: {
+                speed: 0.2,
+                pauseOnHover: false,
+            },
+        });
+
+        splide.mount(window.splide.Extensions);
+    });
+});
+// Portfolio image animation slide -3 -/End
