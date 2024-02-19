@@ -288,7 +288,11 @@ ScrollTrigger.create({
 gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
 
   }
+
+
   // subbanner 15-2-24
+
+
   var subbannerarea = document.querySelector(".sub-page-banner-area2");
 
   // Check if the element was found
@@ -311,6 +315,7 @@ gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
         top: '0px',
       },
     });
+
     const rotatingElement2 = document.querySelector('.bigSquare');
   
     gsap.to(rotatingElement2, {
@@ -371,6 +376,27 @@ gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
           gsap.set(image, { x: e.offsetX, y: e.offsetY }) // Adjusted to set both x and y positions
         })
       })
+    }
+  // dymon shape 
+    var webguard2 = document.querySelector(".service-info");
+
+    // Check if the element was found
+    if (webguard2) {
+      gsap.registerPlugin(ScrollTrigger);
+      const startanimation2 = document.querySelector('.worldwide');
+    
+      gsap.to(startanimation2, {
+        rotation: 60,
+        ease: 'none',
+        
+        scrollTrigger: {
+          trigger: startanimation2,
+          start: 'top 80%', // Adjust as needed
+          end: 'bottom 20%', // Adjust as needed
+          scrub: true,
+          // top: '400px',
+        },
+      });
     }
 
 
