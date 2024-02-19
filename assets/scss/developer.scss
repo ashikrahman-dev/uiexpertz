@@ -1380,3 +1380,43 @@ section.bg-clr-primary {
 /*==================================
 - Shopify page style - /End
 ===================================*/
+
+
+
+
+/*==================================
+- 404 Error page style - /Start
+===================================*/
+.not-found-page {
+    min-height: 100vh;
+    background: url('../img/error-page-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .page-heading {
+        margin-bottom: 40px;
+    }
+
+    .error-page-button {
+        padding: 20px 50px;
+        background: #020E34;
+        border-radius: 150px;
+        margin: 0 auto;
+        transition: all 230ms ease-in-out;
+
+        &:hover {
+            background: #5648FF;
+        }
+    }
+
+
+}
+
+/*==================================
+- 404 Error page style - /End
+===================================*/
