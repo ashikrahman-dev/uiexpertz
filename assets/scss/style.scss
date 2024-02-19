@@ -41,7 +41,7 @@ body {
 // container resize
 .container {
   @media (min-width: 1400px) {
-    max-width: 1590px;
+    max-width: 1557px;
   }
 }
 
@@ -4310,6 +4310,72 @@ body::-webkit-scrollbar-corner {
 }
 
 //Benefit area
+
+.benefit-single-item{
+  .benefit-item-icon {
+    img{
+     
+    }
+  }
+
+
+  
+  &:hover {
+    .benefit-item-icon {
+        img {
+          animation: spectrumIconAnimation 2.5s ease-in-out 0s infinite normal none;
+        }
+    }
+}
+}
+
+@keyframes spectrumIconAnimation {
+  0% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+  }
+
+  10% {
+      transform: rotate(2deg);
+  }
+
+  20% {
+      transform: rotate(-4deg);
+  }
+
+  30% {
+      transform: rotate(4deg);
+  }
+
+  40% {
+      transform: rotate(-4deg);
+  }
+
+  50% {
+      transform: rotate(4deg);
+  }
+
+  60% {
+      transform: rotate(-4deg);
+  }
+
+  70% {
+      transform: rotate(4deg);
+  }
+
+  80% {
+      transform: rotate(-2deg);
+  }
+
+  90% {
+      transform: rotate(2deg);
+  }
+
+  100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+  }
+}
 .benefit-area {
   position: relative;
   z-index: 22;
@@ -5080,10 +5146,7 @@ body::-webkit-scrollbar-corner {
 
 .development-process {
   background: rgba(240, 243, 251, 0.80);
-
   backdrop-filter: blur(20px);
-
-  .dev-process-item {}
 }
 
 .text-scroll-animation {
@@ -5332,8 +5395,20 @@ body::-webkit-scrollbar-corner {
 /* ==================================
 = styleguide -/ start
 ================================== */
+.maintenance-content{
+
+  &.casePbm{
+    padding-top: 410px;
+  margin-top: -300px;
+  position: relative;
+  padding-bottom: 140px;
+  }
+}
 .styleguide {
   background-color: var(--gray-1);
+  // padding-top: 470px;
+  // margin-top: -300px;
+  position: relative;
 
   .styleguide-title {
     .title {
@@ -7281,33 +7356,6 @@ body::-webkit-scrollbar-corner {
   position: relative;
   cursor: pointer;
 
-
-
-  .shapeRight {
-    position: absolute;
-    right: -100px;
-    top: -100px;
-
-    animation: planIcon 3.5s ease infinite;
-    // animation-play-state: paused;
-
-    @keyframes planIcon {
-      0% {
-        transform: translateY(0px);
-      }
-
-      50% {
-        transform: translateY(-25px);
-      }
-
-      100% {
-        transform: translateY(0px);
-      }
-    }
-
-  }
-
-
   .roundedCircle {
     width: 132px;
     height: 132px;
@@ -7355,6 +7403,38 @@ body::-webkit-scrollbar-corner {
 
 }
 
+.webguardWrap{
+  position: relative;
+  .shapeRight {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+
+    @media (max-width:776px) {
+      width: 140px;
+      right: -50px;
+    }
+
+    animation: planIcon 3.5s ease infinite;
+    // animation-play-state: paused;
+
+    @keyframes planIcon {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-25px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+
+  }
+}
+
 /*  webguard -End */
 
 .bg-clr-gray1 {
@@ -7379,8 +7459,31 @@ body::-webkit-scrollbar-corner {
   }
 }
 
+.common-right-shape{
+  .employeeShape{
+    bottom: -300px;
+    position: absolute;
+    right: -200px;
+    z-index: -22;
+    @media (max-width:776px) {
+      bottom: -167px;
+      position: absolute;
+      right: -130px;
+      z-index: -22;
+      height: 352px;
+      width: 352px;
+    }
+
+    &.caseShape{
+      height: 500px !important;
+      max-width: 500px !important;
+      width: 100%;
+    }
+  }
+}
+
 .employee-feedback{
-  background: linear-gradient(180deg, rgba(236, 239, 244, 0.95) 0%, rgba(255, 255, 255, 0.42) 56.17%, rgba(255, 255, 255, 0.00) 100%);
+background: linear-gradient(180deg, rgba(236, 239, 244, 0.95) 0%, rgba(255, 255, 255, 0.42) 56.17%, rgba(255, 255, 255, 0.00) 100%);
 backdrop-filter: blur(30px);
 position: relative;
 overflow: hidden;
@@ -7399,6 +7502,8 @@ z-index: 11;
     height: 352px;
     width: 352px;
   }
+
+
 }
 
 .employee-image-wrap{
@@ -7494,6 +7599,62 @@ z-index: 11;
       }
     }
   }
+}
+.pt-110{
+  padding-top: 110px;
+}
+
+.identity-design{
+  position: relative;
+
+  .identityImgs{
+    position: relative;
+    z-index: 60;
+  }
+  .identity-shape{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 0px;
+
+    animation: planIcon 3.5s ease infinite;
+    // animation-play-state: paused;
+
+    @keyframes planIcon {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-25px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  }
+}
+
+.service-info{
+  position: relative;
+  // overflow-x: hidden;
+
+  .worldwide{
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+
+    @media (max-width:776px) {
+      height: 400px;
+      width: 300px;
+      bottom: -200px;
+    }
+  }
+}
+
+.text-scroll-animation{
+  // overflow-x: hidden !important;
 }
 
 /*  15-2-24 -End */

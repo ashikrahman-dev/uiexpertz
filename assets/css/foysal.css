@@ -1,4 +1,65 @@
-.feature-service .feature-img-bg { padding: 40px 0; background: url("../img/shopify-bg-circle.png"); background-size: contain; background-position: center; background-repeat: no-repeat; text-align: center; }
+.feature-service .feature-img-bg {
+  padding: 40px 0;
+  background: url("../img/shopify-bg-circle.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center; }
 
-.shopify-success-stories { background: url("../img/shopify-success-stories-bg.png"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.shopify-success-stories .shopify-success-stories-img { background: url("../img/shopify-success-triangle.png"); background-size: 180px; background-position: bottom center; background-repeat: no-repeat; }
+.shopify-success-stories {
+  background: url("../img/shopify-success-stories-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .shopify-success-stories .shopify-success-stories-img {
+    background: url("../img/shopify-success-triangle.png");
+    background-size: 180px;
+    background-position: bottom center;
+    background-repeat: no-repeat; }
+
+.play-btn-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px; }
+  .play-btn-wrapper .button-outer-circle {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .play-btn-wrapper .button-outer-circle.has-scale-animation {
+      -webkit-animation: smallScale 3s infinite;
+              animation: smallScale 3s infinite; }
+      .play-btn-wrapper .button-outer-circle.has-scale-animation:hover {
+        -webkit-animation: none;
+                animation: none; }
+    .play-btn-wrapper .button-outer-circle .play-btn {
+      border: none;
+      outline: none;
+      background-color: transparent; }
+
+@-webkit-keyframes smallScale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0; } }
+
+@keyframes smallScale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 0; } }

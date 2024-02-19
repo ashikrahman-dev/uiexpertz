@@ -18,7 +18,51 @@
   .shopify-success-stories-img {
     background: url("../img/shopify-success-triangle.png");
     background-size: 180px;
-    background-position:  bottom center;
+    background-position: bottom center;
     background-repeat: no-repeat;
+  }
+}
+
+.play-btn-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+
+  .button-outer-circle {
+    background: rgba(#fff, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &.has-scale-animation {
+      animation: smallScale 3s infinite;
+      &:hover{
+        animation: none;
+      }
+    }
+
+    .play-btn {
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+  }
+
+}
+
+@keyframes smallScale {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 0;
   }
 }

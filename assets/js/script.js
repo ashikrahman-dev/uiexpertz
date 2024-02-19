@@ -188,14 +188,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
   // overview img
-  var targetElement19 = document.querySelector(".overviewImg");
-  if (targetElement19) {
-    gsap.to(".overviewImg", {
-      duration: 70, rotation: 1000, transformOrigin: "50% 50%", repeat: -1
-  });
-  
-
-  }
+  // var targetElement19 = document.querySelector(".overviewImg");
+  // if (targetElement19) {
+  //   gsap.to(".overviewImg", {
+  //     duration: 70, rotation: 1000, transformOrigin: "50% 50%", repeat: -1
+  // });
+  // }
   // scroll zoom image
   var casestudy = document.querySelector(".case-details");
   if (casestudy) {
@@ -265,7 +263,36 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   }
+
+  // Find the element with the target class
+  var imgscroll = document.querySelector(".imgScroll");
+
+  // Check if the element was found
+  if (imgscroll) {
+    let proxy = { skew: 0 },
+    skewSetter = gsap.quickSetter(".skewElem", "skewY", "deg"), // fast
+    clamp = gsap.utils.clamp(-20, 20); // don't let the skew go beyond 20 degrees. 
+
+ScrollTrigger.create({
+  onUpdate: (self) => {
+    let skew = clamp(self.getVelocity() / -300);
+    // only do something if the skew is MORE severe. Remember, we're always tweening back to 0, so if the user slows their scrolling quickly, it's more natural to just let the tween handle that smoothly rather than jumping to the smaller skew.
+    if (Math.abs(skew) > Math.abs(proxy.skew)) {
+      proxy.skew = skew;
+      gsap.to(proxy, {skew: 0, duration: 0.8, ease: "power3", overwrite: true, onUpdate: () => skewSetter(proxy.skew)});
+    }
+  }
+});
+
+// make the right edge "stick" to the scroll bar. force3D: true improves performance
+gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
+
+  }
+
+
   // subbanner 15-2-24
+
+
   var subbannerarea = document.querySelector(".sub-page-banner-area2");
 
   // Check if the element was found
@@ -288,6 +315,7 @@ document.addEventListener("DOMContentLoaded", function () {
         top: '0px',
       },
     });
+
     const rotatingElement2 = document.querySelector('.bigSquare');
   
     gsap.to(rotatingElement2, {
@@ -349,6 +377,27 @@ document.addEventListener("DOMContentLoaded", function () {
         })
       })
     }
+  // dymon shape 
+    var webguard2 = document.querySelector(".service-info");
+
+    // Check if the element was found
+    if (webguard2) {
+      gsap.registerPlugin(ScrollTrigger);
+      const startanimation2 = document.querySelector('.worldwide');
+    
+      gsap.to(startanimation2, {
+        rotation: 60,
+        ease: 'none',
+        
+        scrollTrigger: {
+          trigger: startanimation2,
+          start: 'top 80%', // Adjust as needed
+          end: 'bottom 20%', // Adjust as needed
+          scrub: true,
+          // top: '400px',
+        },
+      });
+    }
 
 
   var targetElement3 = document.querySelector(".titleDownToUp");
@@ -381,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //career
 
-var shaperotate = document.querySelector(".employee-feedback ");
+var shaperotate = document.querySelector(".common-right-shape");
 
 // Check if the element was found
 if (shaperotate) {
