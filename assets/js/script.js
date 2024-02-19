@@ -377,6 +377,11 @@ gsap.set(".skewElem", {transformOrigin: "right center", force3D: true});
         })
       })
     }
+
+
+
+
+
   // dymon shape 
     var webguard2 = document.querySelector(".service-info");
 

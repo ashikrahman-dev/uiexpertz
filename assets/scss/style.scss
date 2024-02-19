@@ -7657,4 +7657,129 @@ z-index: 11;
   // overflow-x: hidden !important;
 }
 
+.webflowVideo{
+  .video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 32px;
+    height: 44px;
+    /* background: #fa183d; */
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+  }
+  
+  .video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #D4F941;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+  }
+  
+  .video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #D4F941;
+    border-radius: 50%;
+    transition: all 200ms;
+  }
+  
+  .video-play-button:hover:after {
+    background-color: darken(#D4F941, 10%);
+  }
+  
+  .video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .video-play-button span {
+    // display: block;
+    // position: relative;
+    // z-index: 3;
+    // width: 0;
+    // height: 0;
+    // border-left: 32px solid #fff;
+    // border-top: 22px solid transparent;
+    // border-bottom: 22px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+    z-index: 22;
+  }
+  
+  @keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  
+
+}
+
+
+.spectrum-area{
+  position: relative;
+  .webflowShape{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+
+    @media (max-width:991px) {
+      display: none;
+    }
+
+    @media (max-width:776px) {
+      
+    }
+
+    
+    animation: planIcon 3.5s ease infinite;
+    // animation-play-state: paused;
+
+    @keyframes planIcon {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-25px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  }
+}
+
 /*  15-2-24 -End */

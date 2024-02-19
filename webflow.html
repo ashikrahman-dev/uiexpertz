@@ -43,7 +43,7 @@
 	<!-- Splide slider css  -->
 	<link rel="stylesheet" type="text/css" href="assets/css/splide.min.css" />
 	<!-- Main CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/foysal.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/foysal.css" /> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/developer.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	<!-- jQuery (necessary for jQuery plugins) -->
@@ -148,16 +148,30 @@
 				<div class="container">
 					<div class="row gx-5">
 						<div class="col-lg-6">
-							<div class="saas-feature another-gradient-color">
-								<img class="img-fluid" src="assets/img/webflow-delivers.png" alt="img" data-tilt
-									data-tilt-max="0.05" data-tilt-speed="1500" data-tilt-perspective="15" />
-									<div class="play-btn-wrapper">
-										<div class="button-outer-circle has-scale-animation">
-											<button class="play-btn">
-												<img class="img-fluid" src="assets/img/play-button.svg" alt="img" />
-											</button>
-										</div>
-									</div>
+							<div class="saas-feature">
+								<div class="position-relative webflowVideo">
+									<img src="assets/img/webflow-delivers.png" alt="Customer" class="img-fluid ">
+									<a id="play-video" class="video-play-button" href="#">
+										<span>
+											<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_3709_26758)">
+												<path d="M27.4858 13.5696L7.53125 0.830322V33.2211L27.4777 20.4371C28.0583 20.0722 28.537 19.566 28.869 18.9659C29.2011 18.3659 29.3756 17.6914 29.3765 17.0056C29.3773 16.3198 29.2043 15.645 28.8737 15.0441C28.543 14.4432 28.0655 13.936 27.4858 13.5696V13.5696Z" fill="#00154C"/>
+												</g>
+												<defs>
+												<clipPath id="clip0_3709_26758">
+												<rect width="32.4706" height="32.4706" fill="white" transform="translate(0.765625 0.764648)"/>
+												</clipPath>
+												</defs>
+												</svg>
+												
+										</span>
+									  </a>
+									  
+									  
+									  <div id="video-overlay" class="video-overlay">
+										<a class="video-overlay-close">&times;</a>
+									  </div>
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-6">
@@ -186,23 +200,52 @@
 			<!-- Shopify Success Stories Start  -->
 			<div class="shopify-success-stories section-padding-140 common-btn-wrap">
 				<div class="container">
-					<div class="row gx-5 align-items-end flex-column-reverse flex-lg-row">
+					<div class="row gx-5 align-items-end flex-column-reverse flex-lg-row mb-3 mb-lg-0">
 						<div class="col-lg-7">
 							<div>
-								<h2 class="ff-sg-semibold-25 fs-62 text-clr-neviBlue mb-5">
+								<h2 class="ff-sg-semibold-25 fs-62 text-clr-neviBlue mb-lg-5 mb-4">
 									Fast site, frustrating user experience?
 								</h2>
 							</div>
-							<div class="shopify-success-stories-img">
-								<img class="img-fluid" src="./assets/img/webflow-user-exp-1.png" alt="img" />
-							</div>
 						</div>
 						<div class="col-lg-5">
-							<p class="fs-4 text-clr-neviBlue mb-5 w-75">
+							<p class="fs-4 text-clr-neviBlue mb-lg-5 mb-2 w-75">
 								Beyond speed and security, your site requires intuitive usability. Webflow delivers.
 							</p>
+						</div>
+					</div>
+					<div class="row gx-5 align-items-start flex-column-reverse flex-lg-row webguard">
+						<div class="col-lg-7 mb-lg-0 mb-4">
+							<div class="d-inline-block webguardWrap">
+                                <div class="webguardImg position-relative d-inline-block">
+									<img class="img-fluid" src="./assets/img/webflow-user-exp-1.png" alt="img" />
+                                    <div class="roundedCircle">
+                                        <img src="assets/img/circle-arrow.svg" class="img-fluid circleArrow" alt="">
+
+                                        <div class="rounded-text rotating ">
+                                            <img src="assets/img/getstarted.svg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <!-- <img src="assets/img/getstarted.svg" class="img-fluid iiiimmg" alt=""> -->
+                                </div>
+                               </div>
+						</div>
+						<div class="col-lg-5  mb-lg-0 mb-4">
 							<div class="shopify-success-stories-img">
-								<img class="img-fluid" src="./assets/img/webflow-user-exp-2.png" alt="img" />
+								
+								<div class="d-inline-block webguardWrap">
+									<div class="webguardImg position-relative d-inline-block">
+										<img class="img-fluid" src="./assets/img/webflow-user-exp-2.png" alt="img" />
+										<div class="roundedCircle">
+											<img src="assets/img/circle-arrow.svg" class="img-fluid circleArrow" alt="">
+	
+											<div class="rounded-text rotating ">
+												<img src="assets/img/getstarted.svg" class="img-fluid" alt="">
+											</div>
+										</div>
+										<!-- <img src="assets/img/getstarted.svg" class="img-fluid iiiimmg" alt=""> -->
+									</div>
+								   </div>
 							</div>
 						</div>
 					</div>
@@ -211,13 +254,17 @@
 			<!-- Shopify Success Stories End  -->
 
 			<!-- Spectrum section -/Start -->
-			<section class="spectrum-area section-padding-140 bg-clr-neviBlue">
+			<section class="spectrum-area section-padding-140 bg-clr-neviBlue common-title-position">
+				<div class="webflowShape">
+					<img src="assets/img/webflow-services-shape.png" class="img-fluid" alt="">
+				</div>
 				<div class="container">
-					<div class="maintenance-content-heading">
-						<h2 class="text-white fs-68 ff-sg-semibold-25 mb-lg-0 mb-5">
-							Our spectrum of Shopify <br class="d-none d-lg-inline" />
-							<span class="text-clr-primary">design solutions.</span>
-						</h2>
+					<div class="section-heading mb-lg-5 mb-0 pb-3">
+						<div class="project-overview-title">
+							<h2 class="projecttitle fs-132 ff-sg-thin-25 text-white">Webflow</h2>
+							<h2 class="projecttitle-overview fs-132 ff-sg-thin-25 text-clr-primary">Services</h2>
+						</div>
+
 					</div>
 					<div class="spectrum-services-wrap">
 						<!-- services-item -->
