@@ -317,6 +317,49 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
 .not-found-page .error-page-button { padding: 20px 50px; background: #020E34; border-radius: 150px; margin: 0 auto; -webkit-transition: all 230ms ease-in-out; transition: all 230ms ease-in-out; }
 .not-found-page .error-page-button:hover { background: #5648FF; }
 
+/* Back to home button */
+.back-to-home-button-wrap { bottom: 70px; left: calc(50% - 74px); }
+
+/* Back to home button */
 /*==================================
 - 404 Error page style - /End
+===================================*/
+/*==================================
+- Career Details page style - /Start
+===================================*/
+.back-to-career-btn-wrap a { color: #97A3C1; -webkit-transition: all 230ms ease-in-out; transition: all 230ms ease-in-out; }
+.back-to-career-btn-wrap a span svg * { -webkit-transition: all 230ms ease-in-out; transition: all 230ms ease-in-out; }
+.back-to-career-btn-wrap a:hover { color: #ffffff; }
+.back-to-career-btn-wrap a:hover span svg * { fill: #ffffff; }
+
+.apply-now-btn { padding: 30px 50px; border-radius: 250px; -webkit-transition: all 230ms ease-in-out; transition: all 230ms ease-in-out; }
+.apply-now-btn:hover { background-color: var(--primary-2); color: var(--nevi-blue) !important; }
+
+.career-page-content-wrap { padding-top: 100px; padding-bottom: 100px; }
+.career-page-content-wrap h2 { font-family: "Sharp Grotesk SemiBold 25"; color: #020E34; font-size: 36px; font-style: normal; font-weight: 600; line-height: 1.27em; /* 127.778% */ text-transform: capitalize; margin-top: 50px; }
+.career-page-content-wrap h2:first-child { margin-top: 0; }
+.career-page-content-wrap h2:last-child { margin-bottom: 0; }
+.career-page-content-wrap p { color: #384973; font-family: "Sharp Grotesk Book 20"; font-style: normal; font-weight: 400; line-height: 1.6em; margin-top: 30px; }
+.career-page-content-wrap p:last-child { margin-bottom: 0; }
+.career-page-content-wrap ul { list-style: none; padding: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 18px; margin-top: 30px; }
+.career-page-content-wrap ul li { font-family: "Sharp Grotesk Book 20"; font-weight: 400; line-height: 1.6em; color: #384973; position: relative; padding-left: 50px; }
+.career-page-content-wrap ul li::before { position: absolute; content: ''; width: 24px; height: 24px; background: url('data:image/svg+xml,<svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18.5" cy="18" r="18" fill="%23D4F941"/><path d="M11 17.1667L16.9583 23.125L26.0833 12" stroke="%2300154C" stroke-width="1.5"/></svg>'); background-size: contain; left: 4px; top: 1px; }
+
+.ready-to-apply-area .shape-1 { right: 15%; }
+@media (max-width: 1199px) { .ready-to-apply-area .shape-1 { right: 7%; } }
+@media (max-width: 991px) { .ready-to-apply-area .shape-1 { right: 5%; } }
+@media (max-width: 575px) { .ready-to-apply-area .shape-1 { right: 2%; } }
+@media (max-width: 1199px) { .ready-to-apply-area .shape-1 img { max-width: 140px; } }
+@media (max-width: 991px) { .ready-to-apply-area .shape-1 img { max-width: 110px; } }
+@media (max-width: 575px) { .ready-to-apply-area .shape-1 img { max-width: 70px; } }
+.ready-to-apply-area .shape-2 { left: 172px; }
+@media (max-width: 991px) { .ready-to-apply-area .shape-2 { left: 100px; } }
+@media (max-width: 575px) { .ready-to-apply-area .shape-2 { left: 70px; } }
+@media (max-width: 1199px) { .ready-to-apply-area .shape-2 img { max-width: 160px; } }
+@media (max-width: 991px) { .ready-to-apply-area .shape-2 img { max-width: 120px; } }
+@media (max-width: 575px) { .ready-to-apply-area .shape-2 img { max-width: 90px; } }
+.ready-to-apply-area .ready-to-apply-wrap p { text-wrap: balance; margin-bottom: 40px; }
+
+/*==================================
+- Career Details page style - /End
 ===================================*/
