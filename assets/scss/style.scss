@@ -5334,6 +5334,8 @@ body::-webkit-scrollbar-corner {
 ================================== */
 .styleguide {
   background-color: var(--gray-1);
+  padding-top: 470px;
+  margin-top: -300px;
 
   .styleguide-title {
     .title {
@@ -7379,8 +7381,31 @@ body::-webkit-scrollbar-corner {
   }
 }
 
+.common-right-shape{
+  .employeeShape{
+    bottom: -300px;
+    position: absolute;
+    right: -200px;
+    z-index: -22;
+    @media (max-width:776px) {
+      bottom: -167px;
+      position: absolute;
+      right: -130px;
+      z-index: -22;
+      height: 352px;
+      width: 352px;
+    }
+
+    &.caseShape{
+      height: 500px !important;
+      max-width: 500px !important;
+      width: 100%;
+    }
+  }
+}
+
 .employee-feedback{
-  background: linear-gradient(180deg, rgba(236, 239, 244, 0.95) 0%, rgba(255, 255, 255, 0.42) 56.17%, rgba(255, 255, 255, 0.00) 100%);
+background: linear-gradient(180deg, rgba(236, 239, 244, 0.95) 0%, rgba(255, 255, 255, 0.42) 56.17%, rgba(255, 255, 255, 0.00) 100%);
 backdrop-filter: blur(30px);
 position: relative;
 overflow: hidden;
@@ -7399,6 +7424,8 @@ z-index: 11;
     height: 352px;
     width: 352px;
   }
+
+
 }
 
 .employee-image-wrap{
@@ -7494,6 +7521,9 @@ z-index: 11;
       }
     }
   }
+}
+.pt-110{
+  padding-top: 110px;
 }
 
 /*  15-2-24 -End */
