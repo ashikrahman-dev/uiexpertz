@@ -43,7 +43,6 @@
     <!-- Splide slider css  -->
     <link rel="stylesheet" type="text/css" href="assets/css/splide.min.css" />
     <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/developer.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
 </head>
@@ -116,10 +115,15 @@
                 </nav>
             </header>
             <!--/ header -->
-
+            <div class="relative z-10 d-none d-md-block">
+                <div class="cursor"></div>
+                <div class="cursor-follower"></div>
+            </div>
             <!-- Sub page banner -/Start -->
-            <section
-                class="sub-page-banner-area2 common-btn-wrap lowerShape d-flex align-items-center justify-content-center">
+            <section class="sub-page-banner-area2 common-btn-wrap position-relative common-right-shape lowerShape d-flex align-items-center justify-content-center">
+                <div class="employeeShape career-detailsBanner">
+                    <img src="assets/img/career-detailsBanner.png" class="img-fluid" alt="">
+                </div>
                 <div class="container">
                     <div class="row align-items-center gap-lg-0 gap-5">
                         <div class="col-lg-6">
@@ -157,14 +161,6 @@
                                     Apply now
                                 </a>
                                 <!-- Apply Now btn -/End -->
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div
-                                class="subBannerImg d-flex flex-md-nowrap flex-wrap align-items-start justify-content-center">
-                                <img src="assets/img/saas-design-banner-img.png"
-                                    class="img-fluid d-inline-block smallSquare" alt="Banner">
-                                <!-- <img src="assets/img/uiuxBanner.png" class="img-fluid opacity-100 bigSquare" alt=""> -->
                             </div>
                         </div>
                     </div>
@@ -342,14 +338,14 @@
 
 
             <!-- Ready to apply -/Start -->
-            <section class="ready-to-apply-area section-padding-140 bg-clr-primary position-relative">
+            <section class="ready-to-apply-area spectrum-area section-padding-140 bg-clr-primary position-relative">
                 <!-- Shape 1  -->
-                <div class="shape-1 position-absolute">
+                <div class="shape-1 webflowShape position-absolute">
                     <img src="assets/img/career-details-shape-1.png" alt="shape" class="img-fluid">
                 </div>
                 <!-- Shape 1  -->
                 <!-- Shape 2  -->
-                <div class="shape-2 position-absolute bottom-0">
+                <div class="shape-2  position-absolute bottom-0">
                     <img src="assets/img/career-details-shape-2.png" alt="shape" class="img-fluid ">
                 </div>
                 <!-- Shape 2  -->
@@ -826,7 +822,6 @@
     <script src="assets/js/splide.min.js"></script>
     <script src="assets/js/paralax.js"></script>
     <!-- Script JS -->
-    <script src="assets/js/dev-slider.js"></script>
     <script src="assets/js/script.js"></script>
 
     <script>

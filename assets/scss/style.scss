@@ -5822,6 +5822,8 @@ body::-webkit-scrollbar-corner {
 
 // feathured-info-wrapper
 .feathured-info-wrapper {
+  position: relative;
+  z-index: 25;
   border-radius: 36px;
   background: var(--Liner-CTA,
       linear-gradient(291deg,
@@ -7782,4 +7784,880 @@ z-index: 11;
   }
 }
 
+
+
+// developer css start
+
+/*==============================
+- Saas Design page style - /Start
+===============================*/
+
+/*
+* Spectrum services section -/Start
+*/
+
+.spectrum-area {
+  .spectrum-services-wrap {
+      margin-top: 70px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @media (max-width: 991px) {
+          grid-template-columns: repeat(1, 1fr);
+      }
+
+      .spectrum-services-item {
+          gap: 60px;
+          border-bottom: 1px solid #2A3E70;
+          padding: 60px 80px;
+          border-right: 1px solid #2A3E70;
+
+          @media (max-width: 1399px) {
+              gap: 45px;
+              padding: 40px 60px;
+          }
+
+          @media (max-width: 1199px) {
+              gap: 40px;
+              padding: 40px;
+          }
+
+          @media (max-width: 911px) {
+              gap: 30px;
+              padding: 30px;
+          }
+
+          &:nth-child(1) {
+              padding-top: 0;
+              padding-left: 0;
+
+              @media (max-width: 991px) {
+                  border-right: 0;
+                  padding-right: 0;
+              }
+          }
+
+          &:nth-child(2) {
+              padding-top: 0;
+              border-right: 0;
+
+              @media (max-width: 991px) {
+                  padding-top: 40px;
+                  padding-left: 0;
+                  padding-right: 0;
+              }
+          }
+
+          &:nth-child(3) {
+              padding-left: 0;
+
+              @media (max-width: 991px) {
+                  border-right: 0;
+                  padding-right: 0;
+              }
+          }
+
+          &:nth-child(4) {
+              border-right: 0;
+
+              @media (max-width: 991px) {
+                  padding-left: 0;
+                  padding-right: 0;
+              }
+          }
+
+          &:nth-child(5) {
+              padding-bottom: 0;
+              padding-left: 0;
+              border-bottom: 0;
+
+              @media (max-width: 991px) {
+                  border-right: 0;
+                  border-bottom: 1px solid #2A3E70;
+                  padding-bottom: 40px;
+                  padding-right: 0;
+              }
+          }
+
+          &:nth-child(6) {
+              padding-bottom: 0;
+              border-right: 0;
+              border-bottom: 0;
+
+              @media (max-width: 991px) {
+                  padding-left: 0;
+                  padding-right: 0;
+              }
+          }
+
+          &:hover {
+              .services-item-img {
+
+                  img {
+                      animation-play-state: running;
+                  }
+              }
+          }
+
+          .services-item-img {
+              padding: 43px;
+              background: #0D2259;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-shrink: 0;
+
+              @media (max-width: 1399px) {
+                  padding: 32px;
+              }
+
+              @media (max-width: 1199px) {
+                  padding: 28px;
+              }
+
+              @media (max-width: 991px) {
+                  padding: 24px;
+              }
+
+              @media (max-width: 575px) {
+                  padding: 20px;
+              }
+
+              img {
+                  animation: spectrumIconAnimation 2.5s ease-in-out 0s infinite normal none;
+                  animation-play-state: paused;
+                  width: 76px;
+
+                  @media (max-width: 1399px) {
+                      width: 52px;
+                  }
+
+                  @media (max-width: 1199px) {
+                      width: 46px;
+                  }
+
+                  @media (max-width: 991px) {
+                      width: 36px;
+                  }
+
+                  @media (max-width: 575px) {
+                      width: 28px;
+                  }
+
+                  @keyframes spectrumIconAnimation {
+                      0% {
+                          transform: rotate(0deg);
+                          transform-origin: 50% 100%;
+                      }
+
+                      10% {
+                          transform: rotate(2deg);
+                      }
+
+                      20% {
+                          transform: rotate(-4deg);
+                      }
+
+                      30% {
+                          transform: rotate(4deg);
+                      }
+
+                      40% {
+                          transform: rotate(-4deg);
+                      }
+
+                      50% {
+                          transform: rotate(4deg);
+                      }
+
+                      60% {
+                          transform: rotate(-4deg);
+                      }
+
+                      70% {
+                          transform: rotate(4deg);
+                      }
+
+                      80% {
+                          transform: rotate(-2deg);
+                      }
+
+                      90% {
+                          transform: rotate(2deg);
+                      }
+
+                      100% {
+                          transform: rotate(0deg);
+                          transform-origin: 50% 100%;
+                      }
+                  }
+              }
+          }
+
+          .services-item-content {
+              max-width: 350px;
+
+              @media (max-width: 991px) {
+                  max-width: 460px;
+              }
+
+              h4 {
+                  margin-bottom: 16px;
+              }
+
+              p {
+                  font-size: 18px;
+                  color: #C1C6D4;
+
+                  @media (max-width: 1199px) {
+                      font-size: 16px;
+                  }
+
+                  @media (max-width: 1199px) {
+                      font-size: 16px;
+                  }
+
+                  @media (max-width: 991px) {
+                      font-size: 15px;
+                  }
+
+                  @media (max-width: 767px) {
+                      font-size: 14px;
+                  }
+
+                  @media (max-width: 575px) {
+                      font-size: 13px;
+                  }
+              }
+          }
+      }
+  }
+}
+
+/*
+* Spectrum services section -/End
+*/
+
+
+/*
+* Portfolio section -/Start
+*/
+
+.portfolio-area {
+  .portfolios-slider-wrap {
+      #portfolios-slider-right-to-left {
+          margin-bottom: 30px;
+
+          @media (max-width: 991px) {
+              margin-bottom: 24px;
+          }
+
+          @media (max-width: 575px) {
+              margin-bottom: 20px;
+          }
+
+          @media (max-width: 375px) {
+              margin-bottom: 16px;
+          }
+      }
+
+      .portfolio-slide-item {
+          max-width: 762px;
+
+          img {
+              border-radius: 36px;
+              max-width: 100%;
+
+              @media (max-width: 1199px) {
+                  border-radius: 30px;
+              }
+
+              @media (max-width: 991px) {
+                  border-radius: 28px;
+              }
+
+              @media (max-width: 575px) {
+                  border-radius: 18px;
+              }
+          }
+      }
+  }
+}
+
+// This css for Heading Star Shape in background color primary 
+section.bg-clr-primary {
+  .section-heading {
+      .heading-inner-star-shape {
+          &::after {
+              background: url('data:image/svg+xml,<svg width="51" height="49" viewBox="0 0 51 49" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.0107 0.768991L21.2575 19.6607L2.74865 15.4902L1.21018 20.2252L18.6355 27.7304L8.94959 44.0446L12.9774 46.971L25.5 32.7177L38.0226 46.971L42.0504 44.0446L32.3645 27.7304L49.7898 20.2252L48.2514 15.4902L29.7425 19.6607L27.9893 0.768991H23.0107Z" fill="%23D4F941" stroke="%235648FF" stroke-width="5"/></svg>');
+              left: 40px;
+              top: 28px;
+              background-size: contain;
+
+              @media (max-width: 1699px) {
+                  left: 44px;
+                  top: 35px;
+              }
+
+              @media (max-width: 1400px) {
+                  left: 34px;
+                  top: 26px;
+              }
+
+              @media (max-width: 1199px) {
+                  left: 24px;
+                  top: 20px;
+              }
+          }
+      }
+  }
+}
+
+/*
+* Portfolio section -/Start
+*/
+
+
+/*
+*- Common left image section
+*- SaaS Feature style
+*/
+
+.saas-feature {
+  padding: 40px 0;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+
+  &.mobile-app-left-img {
+      img {
+          box-shadow: none;
+      }
+  }
+
+  >img {
+      box-shadow: 60px 70px 90px 0 rgba(22, 8, 49, 0.12);
+      border-radius: 36px;
+
+      @media (max-width: 1399px) {
+          border-radius: 28px;
+      }
+
+      @media (max-width: 1199px) {
+          border-radius: 26px;
+      }
+
+      @media (max-width: 991px) {
+          border-radius: 34px;
+      }
+
+      @media (max-width: 767px) {
+          border-radius: 28px;
+      }
+  }
+
+  &.another-gradient-color {
+      &::before {
+          background: linear-gradient(180deg, #D3CFFF 0%, #DAEFEE 100%);
+      }
+  }
+
+  &::before {
+      position: absolute;
+      content: '';
+      width: 560px;
+      height: 560px;
+      left: calc(50% - 280px);
+      top: calc(50% - 280px);
+      background: linear-gradient(291deg, #F1FF48 7.28%, #F6FACA 32.76%, #DE59FF 58.24%, #C5C0FF 87.48%);
+      border-radius: 50%;
+      z-index: -1;
+      animation: featureBgAnimation 25s ease-in-out 0s infinite normal none;
+
+      @media (max-width: 1399px) {
+          width: 460px;
+          height: 460px;
+          left: calc(50% - 230px);
+          top: calc(50% - 230px);
+      }
+
+      @media (max-width: 1199px) {
+          width: 420px;
+          height: 420px;
+          left: calc(50% - 210px);
+          top: calc(50% - 210px);
+      }
+
+      @media (max-width: 991px) {
+          width: 540px;
+          height: 540px;
+          left: calc(50% - 270px);
+          top: calc(50% - 270px);
+      }
+
+      @media (max-width: 767px) {
+          width: 460px;
+          height: 460px;
+          left: calc(50% - 230px);
+          top: calc(50% - 230px);
+      }
+
+      @media (max-width: 767px) {
+          width: 460px;
+          height: 460px;
+          left: calc(50% - 230px);
+          top: calc(50% - 230px);
+      }
+
+      @media (max-width: 520px) {
+          width: 420px;
+          height: 420px;
+          left: calc(50% - 210px);
+          top: calc(50% - 210px);
+      }
+
+      @media (max-width: 480px) {
+          width: 400px;
+          height: 400px;
+          left: calc(50% - 200px);
+          top: calc(50% - 200px);
+      }
+
+      @media (max-width: 460px) {
+          width: 380px;
+          height: 380px;
+          left: calc(50% - 190px);
+          top: calc(50% - 190px);
+      }
+
+      @media (max-width: 420px) {
+          width: 340px;
+          height: 340px;
+          left: calc(50% - 170px);
+          top: calc(50% - 170px);
+      }
+
+      @media (max-width: 380px) {
+          width: 320px;
+          height: 320px;
+          left: calc(50% - 160px);
+          top: calc(50% - 160px);
+      }
+
+      @media (max-width: 380px) {
+          width: 300px;
+          height: 300px;
+          left: calc(50% - 150px);
+          top: calc(50% - 150px);
+      }
+
+      @media (max-width: 350px) {
+          width: 280px;
+          height: 280px;
+          left: calc(50% - 140px);
+          top: calc(50% - 140px);
+      }
+
+      @keyframes featureBgAnimation {
+          0% {
+              transform: rotate(0deg);
+          }
+
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+  }
+}
+
+.saas-feature>img {}
+
+.gray-bg-section {
+  background: #ffffff;
+  background: linear-gradient(270deg, rgba(236, 239, 244, 0.90) 0%, rgba(236, 239, 244, 0.90) 53.43%, rgba(255, 255, 255, 0.72) 102.89%);
+}
+
+/*
+*- Common left image section
+*- SaaS Feature style
+*/
+
+
+/*==============================
+- Saas Design page style - /End
+===============================*/
+
+
+
+
+
+
+/*==================================
+- Website Design page style - /Start
+===================================*/
+
+.only-top-border-section {
+  @media (max-width: 991px) {
+      padding-block: 100px;
+  }
+
+  @media (max-width: 767px) {
+      padding-block: 80px;
+  }
+
+  .section-img {
+      padding-top: 108px;
+
+      @media (max-width: 991px) {
+          padding-top: 0px;
+          padding-bottom: 60px;
+      }
+
+      @media (max-width: 767px) {
+          padding-top: 0px;
+          padding-bottom: 50px;
+      }
+  }
+}
+
+.border-radius-24 {
+  border-radius: 24px;
+
+}
+
+.portfolio-animation-slide-wrap {
+  gap: 18px;
+  padding-inline: 32px;
+  max-width: 642px;
+  margin: 0 auto;
+  backdrop-filter: blur(30px);
+  box-shadow: 60px 70px 90px rgba(22, 8, 49, 0.18);
+  position: relative;
+  border-radius: 36px;
+  z-index: -1;
+
+  @media (max-width: 991px) {
+      border-radius: 24px;
+  }
+
+  @media (max-width: 768px) {
+      border-radius: 20px;
+  }
+
+  @media (max-width: 575px) {
+      gap: 10px;
+      padding-inline: 16px;
+      border-radius: 16px;
+  }
+
+  &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 36px;
+      padding: 1px;
+      background: linear-gradient(149deg, rgba(197, 192, 255, 1) 0%, rgba(222, 89, 255, 1) 33%, rgba(246, 250, 202, 1) 67%, rgba(241, 255, 72, 1) 100%);
+      -webkit-mask:
+          linear-gradient(149deg, rgba(197, 192, 255, 1) 0%, rgba(222, 89, 255, 1) 33%, rgba(246, 250, 202, 1) 67%, rgba(241, 255, 72, 1) 100%) content-box,
+          linear-gradient(149deg, rgba(197, 192, 255, 1) 0%, rgba(222, 89, 255, 1) 33%, rgba(246, 250, 202, 1) 67%, rgba(241, 255, 72, 1) 100%);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      z-index: 5;
+
+      @media (max-width: 991px) {
+          border-radius: 24px;
+      }
+
+      @media (max-width: 768px) {
+          border-radius: 20px;
+      }
+
+      @media (max-width: 575px) {
+          border-radius: 16px;
+      }
+  }
+
+  .portfolio-image-slide {
+      img {
+          border-radius: 6px;
+      }
+  }
+
+}
+
+/*==================================
+- Website Design page style - /End
+===================================*/
+
+/*==================================
+- Shopify page style - /End
+===================================*/
+.feature-service {
+  .feature-img-bg {
+      padding: 40px 0;
+      background: url("../img/shopify-bg-circle.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+  }
+}
+
+.shopify-success-stories {
+  background: url("../img/shopify-success-stories-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .shopify-success-stories-img {
+      background: url("../img/shopify-success-triangle.png");
+      background-size: 180px;
+      background-position: bottom center;
+      background-repeat: no-repeat;
+  }
+}
+
+/*==================================
+- Shopify page style - /End
+===================================*/
+
+
+
+
+/*==================================
+- 404 Error page style - /Start
+===================================*/
+.not-found-page {
+  min-height: 100vh;
+  background: url('../img/error-page-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .page-heading {
+      margin-bottom: 40px;
+  }
+
+  .error-page-button {
+      padding: 20px 50px;
+      background: #020E34;
+      border-radius: 150px;
+      margin: 0 auto;
+      transition: all 230ms ease-in-out;
+
+      &:hover {
+          background: #5648FF;
+      }
+  }
+}
+
+
+/* Back to home button */
+.back-to-home-button-wrap {
+  bottom: 70px;
+  left: calc(50% - 74px);
+}
+
+/* Back to home button */
+
+/*==================================
+- 404 Error page style - /End
+===================================*/
+
+
+
+
+/*==================================
+- Career Details page style - /Start
+===================================*/
+
+.career-detailsBanner{
+  position: absolute;
+  z-index: 23 !important;
+  bottom: -500px !important;
+  right: -500px !important;
+}
+
+.back-to-career-btn-wrap {
+  a {
+      color: #97A3C1;
+      transition: all 230ms ease-in-out;
+
+      span {
+          svg * {
+              transition: all 230ms ease-in-out;
+          }
+      }
+
+      &:hover {
+          color: #ffffff;
+
+          span {
+              svg * {
+                  fill: #ffffff;
+              }
+          }
+      }
+  }
+}
+
+// Apply now button
+.apply-now-btn {
+  padding: 30px 50px;
+  border-radius: 250px;
+  transition: all 230ms ease-in-out;
+
+  &:hover {
+      background-color: var(--primary-2);
+      color: var(--nevi-blue) !important;
+  }
+}
+
+.career-page-content-wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h2 {
+      font-family: "Sharp Grotesk SemiBold 25";
+      color: #020E34;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.27em;
+      /* 127.778% */
+      text-transform: capitalize;
+      margin-top: 50px;
+
+      &:first-child {
+          margin-top: 0;
+      }
+
+      &:last-child {
+          margin-bottom: 0;
+      }
+  }
+
+  p {
+      color: #384973;
+      font-family: "Sharp Grotesk Book 20";
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.6em;
+      margin-top: 30px;
+
+      &:last-child {
+          margin-bottom: 0;
+      }
+  }
+
+  ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 30px;
+
+      li {
+          font-family: "Sharp Grotesk Book 20";
+          font-weight: 400;
+          line-height: 1.6em;
+          color: #384973;
+          position: relative;
+          padding-left: 50px;
+
+          &::before {
+              position: absolute;
+              content: '';
+              width: 24px;
+              height: 24px;
+              background: url('data:image/svg+xml,<svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18.5" cy="18" r="18" fill="%23D4F941"/><path d="M11 17.1667L16.9583 23.125L26.0833 12" stroke="%2300154C" stroke-width="1.5"/></svg>');
+              background-size: contain;
+              left: 4px;
+              top: 1px;
+          }
+      }
+  }
+
+}
+
+
+// Ready to apply section
+.ready-to-apply-area {
+  .shape-1 {
+      right: 15%;
+
+      @media (max-width: 1199px) {
+          right: 7%;
+      }
+
+      @media (max-width: 991px) {
+          right: 5%;
+      }
+
+      @media (max-width: 575px) {
+          right: 2%;
+      }
+
+      img {
+          @media (max-width: 1199px) {
+              max-width: 140px;
+          }
+
+          @media (max-width: 991px) {
+              max-width: 110px;
+          }
+
+          @media (max-width: 575px) {
+              max-width: 70px;
+          }
+      }
+  }
+
+  .shape-2 {
+      left: 172px;
+
+      @media (max-width: 991px) {
+          left: 100px;
+      }
+
+      @media (max-width: 575px) {
+          left: 70px;
+      }
+
+      img {
+          @media (max-width: 1199px) {
+              max-width: 160px;
+          }
+
+          @media (max-width: 991px) {
+              max-width: 120px;
+          }
+
+          @media (max-width: 575px) {
+              max-width: 90px;
+          }
+      }
+  }
+
+  .ready-to-apply-wrap {
+      p {
+          text-wrap: balance;
+          margin-bottom: 40px;
+      }
+  }
+}
+
+/*==================================
+- Career Details page style - /End
+===================================*/
+// developer css end
+
 /*  15-2-24 -End */
+
+

@@ -1100,6 +1100,8 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 
 //testimonial
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   let main = new Splide("#client_testimonial", {
     type: "loop",
@@ -1227,6 +1229,327 @@ document.addEventListener("DOMContentLoaded", function () {
     splide.mount(window.splide.Extensions);
   });
 });
+
+
+// dev js start 
+
+// SaaS Design Portfolio Slider 1 - Start
+document.addEventListener("DOMContentLoaded", function () {
+  let splideElements = document.querySelectorAll(
+      "#portfolios-slider-right-to-left"
+  );
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+          type: "loop",
+          perPage: 2,
+          perMove: 1,
+          padding: "14rem",
+          arrows: false,
+          pagination: false,
+          gap: "30px",
+          autoWidth: false,
+          drag: "free",
+          width: "100%",
+          focus: "center",
+          speed: 3500,
+          autoScroll: {
+              speed: 0.8,
+              pauseOnHover: true,
+          },
+          breakpoints: {
+              1499: {
+                  perPage: 2,
+                  padding: "2rem",
+                  gap: "30px",
+              },
+              1199: {
+                  perPage: 1,
+                  padding: "18rem",
+                  gap: "30px",
+              },
+              991: {
+                  perPage: 1,
+                  padding: "10rem",
+                  gap: "24px",
+              },
+              767: {
+                  perPage: 1,
+                  padding: "8rem",
+              },
+              575: {
+                  perPage: 1,
+                  padding: "4rem",
+                  gap: "20px",
+              },
+              450: {
+                  perPage: 1,
+                  padding: "2rem",
+                  gap: "20px",
+              },
+              375: {
+                  perPage: 1,
+                  padding: "1.5rem",
+                  gap: "16px",
+              },
+          },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+//  SaaS Design Portfolio Slider 1 - Start
+
+// SaaS Design Portfolio Slider 2 - Start
+document.addEventListener("DOMContentLoaded", function () {
+  let splideElements = document.querySelectorAll(
+      "#portfolios-slider-left-to-right"
+  );
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+          type: "loop",
+          perPage: 2,
+          perMove: 1,
+          padding: "14rem",
+          arrows: false,
+          pagination: false,
+          gap: "30px",
+          autoWidth: false,
+          drag: "free",
+          width: "100%",
+          focus: "center",
+          speed: 3500,
+          autoScroll: {
+              speed: -0.8,
+              pauseOnHover: true,
+          },
+          breakpoints: {
+              1499: {
+                  perPage: 2,
+                  padding: "2rem",
+                  gap: "30px",
+              },
+              1199: {
+                  perPage: 1,
+                  padding: "18rem",
+                  gap: "30px",
+              },
+              991: {
+                  perPage: 1,
+                  padding: "10rem",
+                  gap: "24px",
+              },
+              767: {
+                  perPage: 1,
+                  padding: "8rem",
+              },
+              575: {
+                  perPage: 1,
+                  padding: "4rem",
+                  gap: "20px",
+              },
+              450: {
+                  perPage: 1,
+                  padding: "2rem",
+                  gap: "20px",
+              },
+              375: {
+                  perPage: 1,
+                  padding: "1.5rem",
+                  gap: "16px",
+              },
+          },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+//  SaaS Design Portfolio Slider 2 - Start
+
+// Portfolio image animation slide - 1 -/Start
+document.addEventListener("DOMContentLoaded", function () {
+  let splideElements = document.querySelectorAll("#portfolio-first-slide");
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          direction: "ttb",
+          height: "480px",
+          arrows: false,
+          pagination: false,
+          autoHeight: true,
+          gap: "16px",
+          autoWidth: false,
+          speed: 3500,
+          pauseOnHover: false,
+          autoScroll: {
+              speed: 0.5,
+              pauseOnHover: false,
+          },
+          breakpoints: {
+              1399: {
+                  height: "400px",
+              },
+              1199: {
+                  height: "360px",
+              },
+              991: {
+                  height: "480px",
+              },
+              767: {
+                  height: "400px",
+              },
+              575: {
+                  height: "360px",
+                  gap: "10px",
+              },
+              450: {
+                  height: "340px",
+              },
+              420: {
+                  height: "270px",
+              },
+              400: {
+                  height: "280px",
+              },
+              375: {
+                  height: "250px",
+              },
+          },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+// Portfolio image animation slide -1 -/End
+
+// Portfolio image animation slide - 2 -/Start
+document.addEventListener("DOMContentLoaded", function () {
+  let splideElements = document.querySelectorAll("#portfolio-second-slide");
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          direction: "ttb",
+          height: "480px",
+          arrows: false,
+          pagination: false,
+          autoHeight: true,
+          gap: "16px",
+          autoWidth: false,
+          speed: 3500,
+          pauseOnHover: false,
+          autoScroll: {
+              speed: -0.4,
+              pauseOnHover: false,
+          },
+          breakpoints: {
+              1399: {
+                  height: "400px",
+              },
+              1199: {
+                  height: "360px",
+              },
+              991: {
+                  height: "480px",
+              },
+              767: {
+                  height: "400px",
+              },
+              575: {
+                  height: "360px",
+                  gap: "10px",
+              },
+              450: {
+                  height: "340px",
+              },
+              420: {
+                  height: "270px",
+              },
+              400: {
+                  height: "280px",
+              },
+              375: {
+                  height: "250px",
+              },
+          },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+// Portfolio image animation slide -2 -/End
+
+// Portfolio image animation slide - 3 -/Start
+document.addEventListener("DOMContentLoaded", function () {
+  let splideElements = document.querySelectorAll("#portfolio-third-slide");
+
+  splideElements.forEach(function (element) {
+      let splide = new Splide(element, {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          direction: "ttb",
+          height: "480px",
+          arrows: false,
+          pagination: false,
+          autoHeight: true,
+          gap: "16px",
+          autoWidth: false,
+          speed: 3500,
+          pauseOnHover: false,
+          autoScroll: {
+              speed: 0.2,
+              pauseOnHover: false,
+          },
+          breakpoints: {
+              1399: {
+                  height: "400px",
+              },
+              1199: {
+                  height: "360px",
+              },
+              991: {
+                  height: "480px",
+              },
+              767: {
+                  height: "400px",
+              },
+              575: {
+                  height: "360px",
+                  gap: "10px",
+              },
+              450: {
+                  height: "340px",
+              },
+              420: {
+                  height: "270px",
+              },
+              400: {
+                  height: "280px",
+              },
+              375: {
+                  height: "250px",
+              },
+          },
+      });
+
+      splide.mount(window.splide.Extensions);
+  });
+});
+// Portfolio image animation slide -3 -/End
+
+
+// dev js end
+
+
+
+//title bottom to top
 
 var targetElement5 = document.querySelector(".inventions-area");
 if (targetElement5) {
