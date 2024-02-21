@@ -312,13 +312,15 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
 /*==================================
 - 404 Error page style - /Start
 ===================================*/
-.not-found-page { min-height: 100vh; background: url("../img/error-page-bg.webp"); background-repeat: no-repeat; background-size: cover; background-position: center center; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .not-found-page .page-heading { margin-bottom: 40px; }
 .not-found-page .error-page-button { padding: 20px 50px; background: #020E34; border-radius: 150px; margin: 0 auto; -webkit-transition: all 230ms ease-in-out; transition: all 230ms ease-in-out; }
+@media (max-width: 991px) { .not-found-page .error-page-button { padding: 15px 35px; font-size: 14px; } }
 .not-found-page .error-page-button:hover { background: #5648FF; }
 
 /* Back to home button */
 .back-to-home-button-wrap { bottom: 70px; left: calc(50% - 74px); }
+@media (max-width: 991px) { .back-to-home-button-wrap { font-size: 14px; } }
+@media (max-width: 575px) { .back-to-home-button-wrap { bottom: 30px; } }
 
 /* Back to home button */
 /*==================================
@@ -363,3 +365,34 @@ section.bg-clr-primary .section-heading .heading-inner-star-shape::after { backg
 /*==================================
 - Career Details page style - /End
 ===================================*/
+.text-container { z-index: 100; width: 100vw; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; top: 0; left: 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: white; opacity: 0.8; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; text-shadow: 1px 1px rgba(0, 0, 0, 0.1); }
+
+@-webkit-keyframes moveInCircle { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@keyframes moveInCircle { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  50% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+@-webkit-keyframes moveVertical { 0% { -webkit-transform: translateY(-20%); transform: translateY(-20%); }
+  50% { -webkit-transform: translateY(20%); transform: translateY(20%); }
+  100% { -webkit-transform: translateY(-20%); transform: translateY(-20%); } }
+@keyframes moveVertical { 0% { -webkit-transform: translateY(-20%); transform: translateY(-20%); }
+  50% { -webkit-transform: translateY(20%); transform: translateY(20%); }
+  100% { -webkit-transform: translateY(-20%); transform: translateY(-20%); } }
+@-webkit-keyframes moveHorizontal { 0% { -webkit-transform: translateX(-30%) translateY(-10%); transform: translateX(-30%) translateY(-10%); }
+  50% { -webkit-transform: translateX(30%) translateY(10%); transform: translateX(30%) translateY(10%); }
+  100% { -webkit-transform: translateX(-30%) translateY(-10%); transform: translateX(-30%) translateY(-10%); } }
+@keyframes moveHorizontal { 0% { -webkit-transform: translateX(-30%) translateY(-10%); transform: translateX(-30%) translateY(-10%); }
+  50% { -webkit-transform: translateX(30%) translateY(10%); transform: translateX(30%) translateY(10%); }
+  100% { -webkit-transform: translateX(-30%) translateY(-10%); transform: translateX(-30%) translateY(-10%); } }
+.gradient-bg { width: 100vw; height: 100vh; position: relative; overflow: hidden; background: linear-gradient(40deg, #000d30, #000d30); top: 0; left: 0; }
+.gradient-bg svg { display: none; }
+.gradient-bg .gradients-container { -webkit-filter: url(#goo) blur(40px); filter: url(#goo) blur(40px); width: 100%; height: 100%; }
+.gradient-bg .g1 { position: absolute; background: radial-gradient(circle at center, rgba(86, 72, 255, 0.5) 0, rgba(86, 72, 255, 0) 50%) no-repeat; mix-blend-mode: hard-light; width: 80%; height: 80%; top: calc(50% - 80% / 2); left: calc(50% - 80% / 2); -webkit-transform-origin: center center; transform-origin: center center; -webkit-animation: moveVertical 30s ease infinite; animation: moveVertical 30s ease infinite; opacity: 1; }
+.gradient-bg .g2 { position: absolute; background: radial-gradient(circle at center, rgba(0, 255, 237, 0.5) 0, rgba(0, 255, 237, 0) 50%) no-repeat; mix-blend-mode: hard-light; width: 80%; height: 80%; top: calc(50% - 80% / 2); left: calc(50% - 80% / 2); -webkit-transform-origin: calc(50% - 400px); transform-origin: calc(50% - 400px); -webkit-animation: moveInCircle 20s reverse infinite; animation: moveInCircle 20s reverse infinite; opacity: 1; }
+.gradient-bg .g3 { position: absolute; background: radial-gradient(circle at center, rgba(255, 71, 237, 0.5) 0, rgba(255, 71, 237, 0) 50%) no-repeat; mix-blend-mode: hard-light; width: 80%; height: 80%; top: calc(50% - 80% / 2 + 200px); left: calc(50% - 80% / 2 - 500px); -webkit-transform-origin: calc(50% + 400px); transform-origin: calc(50% + 400px); -webkit-animation: moveInCircle 40s linear infinite; animation: moveInCircle 40s linear infinite; opacity: 1; }
+.gradient-bg .g4 { position: absolute; background: radial-gradient(circle at center, rgba(86, 72, 255, 0.5) 0, rgba(86, 72, 255, 0) 50%) no-repeat; mix-blend-mode: hard-light; width: 80%; height: 80%; top: calc(50% - 80% / 2); left: calc(50% - 80% / 2); -webkit-transform-origin: calc(50% - 200px); transform-origin: calc(50% - 200px); -webkit-animation: moveHorizontal 40s ease infinite; animation: moveHorizontal 40s ease infinite; opacity: 0.7; }
+.gradient-bg .g5 { position: absolute; background: radial-gradient(circle at center, rgba(212, 249, 65, 0.5) 0, rgba(212, 249, 65, 0) 50%) no-repeat; mix-blend-mode: hard-light; width: calc(80% * 2); height: calc(80% * 2); top: calc(50% - 80%); left: calc(50% - 80%); -webkit-transform-origin: calc(50% - 800px) calc(50% + 200px); transform-origin: calc(50% - 800px) calc(50% + 200px); -webkit-animation: moveInCircle 20s ease infinite; animation: moveInCircle 20s ease infinite; opacity: 1; }
+.gradient-bg .g6 { position: absolute; background: radial-gradient(circle at center, rgba(86, 72, 255, 0.5) 0, rgba(86, 72, 255, 0) 50%) no-repeat; mix-blend-mode: hard-light; width: 80%; height: 80%; top: calc(50% - 80% / 2 + 200px); left: calc(50% - 80% / 2 - 500px); -webkit-transform-origin: calc(50% + 400px); transform-origin: calc(50% + 400px); -webkit-animation: moveInCircle 40s linear infinite; animation: moveInCircle 40s linear infinite; opacity: 1; }
+.gradient-bg .interactive { position: absolute; background: radial-gradient(circle at center, rgba(0, 255, 237, 0.5) 0, rgba(0, 255, 237, 0) 50%) no-repeat; mix-blend-mode: hard-light; width: 100%; height: 100%; top: -50%; left: -50%; opacity: 0.7; }

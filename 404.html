@@ -44,8 +44,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/splide.min.css" />
     <!-- Main CSS -->
 
-    <link rel="stylesheet" type="text/css" href="assets/css/developer.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/developer.css" />
     <!-- jQuery (necessary for jQuery plugins) -->
 </head>
 
@@ -120,36 +120,60 @@
 
             <!-- 404 page /Start -->
             <section class="not-found-page position-relative">
-                <div class="container">
-                    <div class="text-center section-padding-140">
-                        <div class="page-heading h2 text-clr-neviBlue text-center fs-48 ff-sg-book-25">
-                            &copy; 404 <span class="ff-sg-light-25">- page not found</span>
-                        </div>
+                
+                    <div class="text-container">
+                        <div class="text-center section-padding-140">
+                            <div class="page-heading h2 text-clr-neviBlue text-center fs-48 ff-sg-book-25">
+                                &copy; 404 <span class="ff-sg-light-25">- page not found</span>
+                            </div>
 
 
-                        <a href="#"
-                            class="error-page-button text-uppercase text-decoration-none ff-sg-semibold-20 text-white d-inline-block">
-                            try random projects
-                        </a>
-
-                        <!-- Back to home button -/Start -->
-                        <div class="back-to-home-button-wrap text-center mt-5 position-absolute">
                             <a href="#"
-                                class="back-to-home-btn d-inline-block text-white text-decoration-none text-uppercase ff-sg-semibold-20">
-                                <span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M18.9996 11H8.99957L12.2926 7.70697L10.8786 6.29297L6.58557 10.586C6.21063 10.961 6 11.4696 6 12C6 12.5303 6.21063 13.0389 6.58557 13.414L10.8786 17.707L12.2926 16.293L8.99957 13H18.9996V11Z"
-                                            fill="white" />
-                                    </svg>
-                                </span>
-                                back to home
+                                class="error-page-button text-uppercase text-decoration-none ff-sg-semibold-20 text-white d-inline-block">
+                                try random projects
                             </a>
+
+                            <!-- Back to home button -/Start -->
+                            <div class="back-to-home-button-wrap text-center mt-5 position-absolute">
+                                <a href="#"
+                                    class="back-to-home-btn d-inline-block text-white text-decoration-none text-uppercase ff-sg-semibold-20">
+                                    <span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.9996 11H8.99957L12.2926 7.70697L10.8786 6.29297L6.58557 10.586C6.21063 10.961 6 11.4696 6 12C6 12.5303 6.21063 13.0389 6.58557 13.414L10.8786 17.707L12.2926 16.293L8.99957 13H18.9996V11Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    Back to home
+                                </a>
+                            </div>
+                            <!-- Back to home button -/Start -->
                         </div>
-                        <!-- Back to home button -/Start -->
                     </div>
-                </div>
+                    <!-- Animation elements -->
+                    <div class="gradient-bg">
+                        <svg xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                                    <feColorMatrix in="blur" mode="matrix"
+                                        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                                    <feBlend in="SourceGraphic" in2="goo" />
+                                </filter>
+                            </defs>
+                        </svg>
+                        <div class="gradients-container">
+                            <div class="g1"></div>
+                            <div class="g2"></div>
+                            <div class="g3"></div>
+                            <div class="g4"></div>
+                            <div class="g5"></div>
+                            <div class="g6"></div>
+                            <div class="interactive"></div>
+                        </div>
+                    </div>
+                    <!-- Animation elements -->
             </section>
             <!-- 404 page /End -->
 

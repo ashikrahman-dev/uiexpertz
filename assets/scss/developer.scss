@@ -1388,15 +1388,6 @@ section.bg-clr-primary {
 - 404 Error page style - /Start
 ===================================*/
 .not-found-page {
-    min-height: 100vh;
-    background: url('../img/error-page-bg.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 
     .page-heading {
         margin-bottom: 40px;
@@ -1409,6 +1400,11 @@ section.bg-clr-primary {
         margin: 0 auto;
         transition: all 230ms ease-in-out;
 
+        @media (max-width: 991px) {
+            padding: 15px 35px;
+            font-size: 14px;
+        }
+
         &:hover {
             background: #5648FF;
         }
@@ -1420,6 +1416,14 @@ section.bg-clr-primary {
 .back-to-home-button-wrap {
     bottom: 70px;
     left: calc(50% - 74px);
+
+    @media (max-width: 991px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 575px) {
+        bottom: 30px;
+    }
 }
 
 /* Back to home button */
@@ -1608,3 +1612,197 @@ section.bg-clr-primary {
 /*==================================
 - Career Details page style - /End
 ===================================*/
+
+
+// 404 error page style -/Start
+.text-container {
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0.8;
+    user-select: none;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes moveInCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveVertical {
+    0% {
+        transform: translateY(-20%);
+    }
+
+    50% {
+        transform: translateY(20%);
+    }
+
+    100% {
+        transform: translateY(-20%);
+    }
+}
+
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(-30%) translateY(-10%);
+    }
+
+    50% {
+        transform: translateX(30%) translateY(10%);
+    }
+
+    100% {
+        transform: translateX(-30%) translateY(-10%);
+    }
+}
+
+
+.gradient-bg {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(40deg, rgb(0, 13, 48), rgb(0, 13, 48));
+    top: 0;
+    left: 0;
+
+    svg {
+        display: none;
+    }
+
+
+    .gradients-container {
+        filter: url(#goo) blur(40px);
+        width: 100%;
+        height: 100%;
+    }
+
+    .g1 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba(86, 72, 255, 0.5) 0, rgba(86, 72, 255, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: 80%;
+        height: 80%;
+        top: calc(50% - 80% / 2);
+        left: calc(50% - 80% / 2);
+
+        transform-origin: center center;
+        animation: moveVertical 30s ease infinite;
+
+        opacity: 1;
+    }
+
+    .g2 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba(0, 255, 237, 0.5) 0, rgba(0, 255, 237, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: 80%;
+        height: 80%;
+        top: calc(50% - 80% / 2);
+        left: calc(50% - 80% / 2);
+
+        transform-origin: calc(50% - 400px);
+        animation: moveInCircle 20s reverse infinite;
+
+        opacity: 1;
+    }
+
+    .g3 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba(255, 71, 237, 0.5) 0, rgba(255, 71, 237, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: 80%;
+        height: 80%;
+        top: calc(50% - 80% / 2 + 200px);
+        left: calc(50% - 80% / 2 - 500px);
+
+        transform-origin: calc(50% + 400px);
+        animation: moveInCircle 40s linear infinite;
+
+        opacity: 1;
+    }
+
+    .g4 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba(86, 72, 255, 0.5) 0, rgba(86, 72, 255, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: 80%;
+        height: 80%;
+        top: calc(50% - 80% / 2);
+        left: calc(50% - 80% / 2);
+
+        transform-origin: calc(50% - 200px);
+        animation: moveHorizontal 40s ease infinite;
+
+        opacity: 0.7;
+    }
+
+    .g5 {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba(212, 249, 65, 0.5) 0, rgba(212, 249, 65, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: calc(80% * 2);
+        height: calc(80% * 2);
+        top: calc(50% - 80%);
+        left: calc(50% - 80%);
+
+        transform-origin: calc(50% - 800px) calc(50% + 200px);
+        animation: moveInCircle 20s ease infinite;
+
+        opacity: 1;
+    }
+
+    .g6 {
+
+        position: absolute;
+        background: radial-gradient(circle at center, rgba(86, 72, 255, 0.5) 0, rgba(86, 72, 255, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: 80%;
+        height: 80%;
+        top: calc(50% - 80% / 2 + 200px);
+        left: calc(50% - 80% / 2 - 500px);
+
+        transform-origin: calc(50% + 400px);
+        animation: moveInCircle 40s linear infinite;
+
+        opacity: 1;
+    }
+
+    .interactive {
+        position: absolute;
+        background: radial-gradient(circle at center, rgba(0, 255, 237, 0.5) 0, rgba(0, 255, 237, 0) 50%) no-repeat;
+        mix-blend-mode: hard-light;
+
+        width: 100%;
+        height: 100%;
+        top: -50%;
+        left: -50%;
+
+        opacity: 0.7;
+    }
+}
+
+// 404 error page style -/End
