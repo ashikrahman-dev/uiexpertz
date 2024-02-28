@@ -311,7 +311,7 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 99;
 
   &.fixed {
     position: fixed;
@@ -326,7 +326,7 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    z-index: 9999;
+    z-index: 99;
   }
 
   .navbar-nav {
@@ -642,12 +642,12 @@ body {
 
   .navbar-toggler {
     position: relative;
-    z-index: 999;
+    z-index: 99;
   }
 
   .navbar-brand {
     position: relative;
-    z-index: 9999;
+    z-index: 99;
   }
 
 }
@@ -2523,7 +2523,7 @@ body.body-active {
     //     background: linear-gradient(180deg, #00154C 0%, rgba(0, 21, 76, 0.80) 69.72%, rgba(0, 21, 76, 0.00) 100%);
     //     top: 0;
     //     left: 0;
-    //     z-index: 999;
+    //     z-index: 99;
     // }
 
     // &::after {
@@ -2534,7 +2534,7 @@ body.body-active {
     //     background: linear-gradient(0deg, #00154C 0%, rgba(0, 21, 76, 0.80) 69.72%, rgba(0, 21, 76, 0.00) 100%);
     //     bottom: 0;
     //     left: 0;
-    //     z-index: 999;
+    //     z-index: 99;
     // }
 
     .accordion {
@@ -2853,7 +2853,7 @@ body.body-active {
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
-    z-index: 888;
+    z-index: 88;
 
     ul {
       gap: 10px;
@@ -2947,7 +2947,6 @@ body.body-active {
 
 .faq {
   position: relative;
-  z-index: 55;
   overflow: hidden !important;
 
   .faqshape {
@@ -3472,7 +3471,7 @@ body::-webkit-scrollbar-corner {
 
   .footer-top {
     position: relative;
-    z-index: 99999;
+    z-index: 9;
     padding-bottom: 100px;
 
     @media (max-width:991px) {
@@ -3672,7 +3671,7 @@ body::-webkit-scrollbar-corner {
 
   // .footer-middle-social-media {
   //   position: relative;
-  //   z-index: 99999;
+  //   z-index: 9;
   //   padding-bottom: 47px;
   //   border-bottom: 1px solid hsla(223, 25%, 67%, 0.2);
 
@@ -4487,7 +4486,7 @@ body::-webkit-scrollbar-corner {
 .mission-vision-area {
   .section-heading {
     position: relative;
-    z-index: 999;
+    z-index: 99;
 
     .vision-star-shape {
       position: relative;
