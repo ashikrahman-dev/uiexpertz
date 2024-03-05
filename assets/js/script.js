@@ -1205,10 +1205,10 @@ document.addEventListener("DOMContentLoaded", function () {
             type: "loop",
             perPage: 1,
             perMove: 1,
-            gap: "70px",
+            gap: "40px",
             pagination: false,
             arrows: false,
-            padding: "580px",
+            padding: "640px",
             drag: "free",
             autoScroll: {
                 speed: 1,

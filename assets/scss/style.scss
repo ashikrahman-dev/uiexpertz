@@ -1862,7 +1862,7 @@ body.body-active {
   }
 
   .invention-inner-slide-section {
-    margin-top: -54px;
+    margin-top: -105px;
 
     @media (max-width: 1600px) {
       margin-top: 0px;
@@ -1870,10 +1870,11 @@ body.body-active {
 
     .invention-inner-slider-wrap {
       #invention-slider-list {
-        padding-block: 30px !important;
-
         .splide__slide {
           padding: 40px 10px;
+          &:nth-child(odd) {
+            margin-top: 50px;
+          }
         }
       }
     }
