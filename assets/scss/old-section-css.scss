@@ -1,0 +1,165 @@
+/* ==================================
+= Invention section -/ Start
+================================== */
+
+.inventions-area {
+    background-image: url(../img/inventionbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section-heading {
+        h2 {
+            font-size: 152px;
+            line-height: 1.06em;
+
+            @media (max-width: 1600px) {
+                font-size: 110px;
+            }
+
+            @media (max-width: 1200px) {
+                font-size: 82px;
+            }
+
+            @media (max-width: 991px) {
+                font-size: 56px;
+            }
+
+            @media (max-width: 776px) {
+                font-size: 52px;
+            }
+
+            @media (max-width: 540px) {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .invention-inner-slide-section {
+        margin-top: -54px;
+
+        @media (max-width: 1600px) {
+            margin-top: 0px;
+        }
+
+        .invention-inner-slider-wrap {
+            #invention_inner_slider-list {
+                padding-block: 30px !important;
+            }
+
+            .invention-inner-slide-item {
+                max-width: 1024px;
+                width: 100%;
+                max-height: 768px;
+                height: 100%;
+                padding: 40px;
+
+                @media (max-width: 1200px) {
+                    max-height: 580px;
+
+                    .invention-in-slider-item {
+                        img {
+                            height: 500px;
+                        }
+                    }
+                }
+
+                @media (max-width: 776px) {
+                    max-height: 380px;
+                    padding: 20px;
+
+                    .invention-in-slider-item {
+                        img {
+                            height: 300px;
+                        }
+                    }
+                }
+
+                &.invention-main-slide-bg-1 {
+                    border-radius: 62px;
+                    background: linear-gradient(270deg, #424242 1.51%, #1a1a1a 98.58%);
+
+                    @media (max-width: 776px) {
+                        border-radius: 24px;
+                    }
+                }
+
+                &.invention-main-slide-bg-2 {
+                    border-radius: 62px;
+                    background: #979aa1;
+
+                    @media (max-width: 776px) {
+                        border-radius: 24px;
+                    }
+                }
+
+                &.invention-main-slide-bg-3 {
+                    border-radius: 62px;
+                    background: #c3c3c8;
+
+                    @media (max-width: 776px) {
+                        border-radius: 24px;
+                    }
+                }
+
+                &.invention-main-slide-bg-4 {
+                    border-radius: 62px;
+                    background: linear-gradient(270deg, #424242 1.51%, #1a1a1a 98.58%);
+
+                    @media (max-width: 776px) {
+                        border-radius: 24px;
+                    }
+                }
+
+                &.invention-main-slide-bg-5 {
+                    border-radius: 62px;
+                    background: #c3c3c8;
+
+                    @media (max-width: 776px) {
+                        border-radius: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.invention-inner-slide-item {
+    .invention-in-slider-container {
+        //scroller
+        max-width: 1024px;
+
+        .scroller__inner {
+            //ul
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
+
+.scroller[data-animated="true"] {
+    overflow: hidden;
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 10s linear infinite;
+}
+
+.invention-inner-slide-item .scroller[data-animated="true"] .scroller__inner {
+    animation-play-state: paused;
+}
+
+.invention-inner-slide-item:hover .scroller[data-animated="true"] .scroller__inner {
+    animation-play-state: running;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+/* ==================================
+  = Invention section -/ End
+  ================================== */

@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Define the animation within the timeline
         tl.fromTo(
             ".spl-title",
-            { y: "100%", opacity: 0.2 },
+            { y: "50%", opacity: 0.2 },
             { y: "0%", opacity: 1 }
         );
 
@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ScrollTrigger.create({
             animation: tl,
             trigger: ".spl-title",
-            start: "top 80%",
-            end: "bottom 40%",
+            start: "top 95%",
+            end: "bottom 70%",
             markers: false,
             scrub: true,
         });
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         tl2.fromTo(
             ".common-title-animation",
-            { y: "100%", opacity: 0.2 },
+            { y: "50%", opacity: 0.2 },
             { y: "0%", opacity: 1 }
         );
 
@@ -94,8 +94,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ScrollTrigger.create({
             animation: tl2,
             trigger: ".common-title-animation",
-            start: "top 90%",
-            end: "bottom 60%",
+            start: "top 95%",
+            end: "bottom 70%",
             scrub: true,
         });
     }
@@ -111,24 +111,28 @@ document.addEventListener("DOMContentLoaded", function () {
         gsap.to("#call-left-shape", {
             scrollTrigger: {
                 trigger: "#call-left-shape",
-                start: "top 80%",
-                end: "bottom 20%",
+                start: "top 100%",
+                end: "bottom 0%",
                 scrub: true,
                 markers: false,
             },
-            y: -330,
-            x: -100,
-            rotation: 360,
+            y: -230,
+            x: -60,
+            rotation: 60,
+            scale: 0.6,
         });
         gsap.to("#call-right-shape", {
             scrollTrigger: {
                 trigger: "#call-right-shape",
-                start: "top 80%",
-                end: "bottom 20%",
+                start: "top 100%",
+                end: "bottom 0%",
                 scrub: true,
                 markers: false,
             },
-            rotation: 360,
+            y: 270,
+            x: 100,
+            rotation: -40,
+            scale: 0.85,
         });
     }
 
@@ -525,8 +529,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let tll = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".split-word",
-                    start: "top 80%",
-                    end: "bottom center",
+                    start: "top 90%",
+                    end: "bottom 80%",
                     scrub: 1,
                 },
             });
@@ -1194,21 +1198,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Invention slider
 document.addEventListener("DOMContentLoaded", function () {
-    let invention_inner = document.querySelectorAll("#invention_inner_slider");
+    let invention_inner = document.querySelectorAll("#invention-slider-list");
 
     invention_inner.forEach(function (element) {
         let splide = new Splide(element, {
             type: "loop",
-            perPage: 2,
+            perPage: 1,
             perMove: 1,
-            gap: "2rem",
+            gap: "70px",
             pagination: false,
             arrows: false,
-            padding: "7rem",
+            padding: "580px",
             drag: "free",
             autoScroll: {
-                speed: 0.9,
-                pauseOnHover: true,
+                speed: 1,
+                pauseOnHover: false,
             },
             breakpoints: {
                 991: {
@@ -1552,45 +1556,39 @@ document.addEventListener("DOMContentLoaded", function () {
 var targetElement5 = document.querySelector(".inventions-area");
 if (targetElement5) {
     // Invention inner Scroller slider
-    const scrollers = document.querySelectorAll(".scroller");
-
-    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        addAnimation();
-    }
-
-    function addAnimation() {
-        scrollers.forEach((scroller) => {
-            scroller.setAttribute("data-animated", true);
-
-            const scrollerInner = scroller.querySelector(".scroller__inner");
-            const scrollerContent = Array.from(scrollerInner.children);
-
-            scrollerContent.forEach((item) => {
-                const duplicatedItem = item.cloneNode(true);
-                duplicatedItem.setAttribute("area-hidden", true);
-                scrollerInner.appendChild(duplicatedItem);
-            });
-        });
-    }
-
+    // const scrollers = document.querySelectorAll(".scroller");
+    // if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    //     addAnimation();
+    // }
+    // function addAnimation() {
+    //     scrollers.forEach((scroller) => {
+    //         scroller.setAttribute("data-animated", true);
+    //         const scrollerInner = scroller.querySelector(".scroller__inner");
+    //         const scrollerContent = Array.from(scrollerInner.children);
+    //         scrollerContent.forEach((item) => {
+    //             const duplicatedItem = item.cloneNode(true);
+    //             duplicatedItem.setAttribute("area-hidden", true);
+    //             scrollerInner.appendChild(duplicatedItem);
+    //         });
+    //     });
+    // }
     // image parallax
-
-    VanillaTilt.init(document.querySelectorAll(".invention-inner-slide-item"), {
-        reverse: true,
-        max: 5,
-        perspective: 10,
-        easing: "cubic-bezier(.03,.98,.52,.99)",
-        scale: 1,
-        speed: 30,
-        transition: true,
-        axis: null,
-        glare: false,
-        "max-glare": 1,
-        "glare-prerender": false,
-        "mouse-event-element": null,
-        reset: true,
-        "reset-to-start": true,
-    });
+    // VanillaTilt.init(document.querySelectorAll(".invention-inner-slide-item"), {
+    //     reverse: true,
+    //     max: 5,
+    //     perspective: 10,
+    //     easing: "cubic-bezier(.03,.98,.52,.99)",
+    //     scale: 1,
+    //     speed: 30,
+    //     transition: true,
+    //     axis: null,
+    //     glare: false,
+    //     "max-glare": 1,
+    //     "glare-prerender": false,
+    //     "mouse-event-element": null,
+    //     reset: true,
+    //     "reset-to-start": true,
+    // });
 }
 
 // animation
